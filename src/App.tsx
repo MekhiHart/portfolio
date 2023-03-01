@@ -1,14 +1,26 @@
 import { useState } from 'react'
+import {BrowserRouter as Router,Routes, Route,useLocation, BrowserRouter} from "react-router-dom"
 import './App.css'
 
-import NavBar from './assets/Components/NavBar'
+import NavBar from './Components/NavBar'
+import Home from './Components/Home'
+import Projects from './Components/Projects'
+import Resume from './Components/Resume'
+import Contact from './Components/Contact'
 
 function App() {
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-    </>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Projects" element={<Projects/>} />
+        <Route path="/Resume" element={<Resume/>} />
+        <Route path="/Contact" element={<Contact/>} />
+
+      </Routes>
+    </BrowserRouter>
   )
 }
 
