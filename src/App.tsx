@@ -8,6 +8,11 @@ import Projects from './Components/Projects'
 import Resume from './Components/Resume'
 import Contact from './Components/Contact'
 
+// Font Awesome
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+library.add( faLinkedin, faGithub)
+
 function App() {
 
   return (
