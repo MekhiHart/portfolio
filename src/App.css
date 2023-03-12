@@ -7,8 +7,9 @@
 
 #root{
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: center;
+  justify-content: left;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -17,6 +18,8 @@
 .home--container{
   display: flex;
   flex-direction: column;
+  padding-top: 180px;
+  margin-left: 50px;
 }
 .home--container h1{
   margin-left: -3px
@@ -38,13 +41,40 @@
   scale:2;
 }
 
+.home--skills--container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 350px;
+
+}
+
+.home--skills--subcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  
+  margin-top: 20px;
+}
+
+.home--skills--subcontainer ul{
+  list-style-type: none;
+  background-color: #FFF764;
+  padding: 20px;
+}
+
 nav {
+  background-color: #FFF764;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
   height: 50px;
+
+  z-index: 100;
+
 }
 
 nav h2{
@@ -67,3 +97,4 @@ nav ul li{
 .fixed{
   position: relative;
 }
+

@@ -1,0 +1,21 @@
+{
+    "skills" : {
+        "frontEnd":[
+            "React.js",
+            "JavaScript", 
+            "TypeScript", 
+            "HTML/CSS"
+        ],
+        "backEnd":[
+            "Express.js",
+            "Node.js",
+            "MongoDB",
+            "Cloud Firestore"
+        ],
+        "software":[
+            "Git",
+            "GitHub",
+            "Figma"
+        ]
+    }
+}
