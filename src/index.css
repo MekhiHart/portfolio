@@ -12,6 +12,8 @@ code {
     monospace;
 }
 
+
+
 nav{
   margin-top: 25px;
   position: fixed;
@@ -25,7 +27,19 @@ nav a{
 }
 
 .hero--body{
-  padding: 10px;
-  background-color: aqua;
+  padding-left: 100px;
+}
+
+.hero--intro{
+  margin-top: 30vh;
+}
+
+.hero--intro > *{
+  font-weight: normal;
+}
+
+
+
+.fullScreen{
   height: 100vh;
 }
