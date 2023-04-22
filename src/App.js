@@ -13,7 +13,6 @@ function App() {
     const navbar = document.getElementById('nav');
     window.addEventListener('scroll',function(){
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      console.log("styke: ", navbar.style)
       if(scrollTop > lastScrollTop){
       navbar.style.top='-80px';
       }
@@ -33,6 +32,7 @@ function App() {
       <NavBar setNavBarIsRendered={setNavBarIsRendered}/>
       <Hero/>
       <Skills/>
+      <Hero/>
     </>
   )
 }

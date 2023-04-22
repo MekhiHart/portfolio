@@ -23,13 +23,49 @@ nav{
   right: 0;
 
   width: 100%;
-  background-color: antiquewhite;
+  background-color: #868B8E;
 }
 
 nav a{
   padding: 5px 38px;
   border: solid;
   border-width: 2px;
+  color:#EEEDE7;
+}
+
+nav a {
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  transition: color 0.3s;
+  border-color: #EEEDE7;
+}
+
+nav a:hover{
+  color:#868B8E;
+  border-color: #EEEDE7;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: #E7D2CC;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  transition: transform 0.17s ease-out;
+  
+}
+
+nav a:hover:before {
+  transform: scaleX(1);
+}
+
+#nav{
+  transition: 0.5s;
 }
 
 .hero--container{
@@ -49,44 +85,21 @@ nav a{
 }
 
 .skills--container{
-  background-color: aqua;
+  background-color: #E7D2CC;
+  height: 60vh;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.skills--grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 80px;
 }
 
 .fullScreen{
   height: 100vh;
 }
 
-nav a {
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  transition: color 0.3s;
-  border-color: black;
-}
-
-nav a:hover{
-  color:white;
-  border-color: black;
-}
-
-nav a:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background: #2098D1;
-  transform: scaleX(0);
-  transform-origin: 0 50%;
-  transition: transform 0.17s ease-out;
-  
-}
-
-nav a:hover:before {
-  transform: scaleX(1);
-}
-
-#nav{
-  transition: 0.5s;
-}

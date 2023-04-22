@@ -1,7 +1,29 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import {faFile} from '@fortawesome/free-solid-svg-icons'
+
 export default function Skills(){
+    const buttons = []
+    const names = ["Languages", "Frameworks", "Databases","Tools"]
+
+    for (let i=1; i<5; i++){
+        const style = i > 2 ? {paddingTop:"10px"} : {}
+        if(i > 2) console.log("style")
+        buttons.push(
+            (
+                <div>
+                    <a style={style} href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+                    <h2>{names[i - 1]}</h2>
+                </div>
+            )
+        )
+    }
     return(
-        <div className="fullScreen skills--container">
-            <h1>Skills</h1>
+        <div className="skills--container">
+            <h1>Technical Skills</h1>
+            <div className="skills--grid">
+                {buttons}
+            </div>
         </div>
     )
 }
