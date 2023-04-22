@@ -13,7 +13,6 @@ code {
 }
 
 
-
 nav{
   margin-top: 25px;
   position: fixed;
@@ -36,6 +35,10 @@ nav a{
 
 .hero--intro > *{
   font-weight: normal;
+}
+
+.hero--links a:not(:first-child){
+  padding-left:50px;
 }
 
 
