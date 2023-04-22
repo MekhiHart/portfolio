@@ -10,6 +10,8 @@ export default function Skills(){
     const icons = [faTerminal, faReact, faDatabase, faScrewdriverWrench]
     const iconStyle ={
         border:"solid",
+        borderRadius: "30px",
+        padding: "20px"
         
         
     }
