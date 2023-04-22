@@ -7,12 +7,12 @@ export default function Skills(){
     const names = ["Languages", "Frameworks", "Databases","Tools"]
 
     for (let i=1; i<5; i++){
-        const style = i > 2 ? {paddingTop:"10px"} : {}
+        const style = i > 2 ? {paddingTop:"30px"} : {} // * adds gap between first row and second row buttons
         if(i > 2) console.log("style")
         buttons.push(
             (
-                <div>
-                    <a style={style} href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+                <div style={style}>
+                    <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )
