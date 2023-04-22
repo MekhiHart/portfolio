@@ -7,10 +7,6 @@ export default function NavBar(){
             <a>Projects</a>
             <a>About</a>
             <a>Contact</a>
-            
-            
-            
-            
         </nav>
     )
 }

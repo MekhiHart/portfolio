@@ -13,8 +13,8 @@ export default function Hero(){
         </div>
 
         <div className="hero--links" style={{marginTop:"50px"}}>
-            <a href="" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
-            <a href="" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
+            <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+            <a href="https://www.linkedin.com/in/mekhihart-delacruz/" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
             <a href="" target='_blank'><FontAwesomeIcon icon={faFile} size='2x'/></a>
         </div>
 
