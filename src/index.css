@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav{
+  margin-top: 25px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+}
+
+nav a{
+  padding: 0px 30px
+}
+
+.hero--body{
+  padding: 10px;
+  background-color: aqua;
+  height: 100vh;
+}

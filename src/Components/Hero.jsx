@@ -1,6 +1,6 @@
 export default function Hero(){
     return(
-    <div>
+    <div className="hero--body">
         <h1>Mekhi Hart Dela Cruz.</h1>
         <h2>Full-Stack Software Developer</h2>
         <h3>California State Long Beach</h3>
