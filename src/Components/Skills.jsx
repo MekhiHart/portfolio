@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
-import {faFile} from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faReact} from "@fortawesome/free-brands-svg-icons"
+import {faDatabase,faScrewdriverWrench,faTerminal} from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Skills(){
     const buttons = []
     const names = ["Languages", "Frameworks", "Databases","Tools"]
+    const icons = [faTerminal, faReact, faDatabase, faScrewdriverWrench]
 
     for (let i=1; i<5; i++){
         const style = i > 2 ? {paddingTop:"30px"} : {} // * adds gap between first row and second row buttons
@@ -12,7 +14,7 @@ export default function Skills(){
         buttons.push(
             (
                 <div style={style}>
-                    <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+                    <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )
