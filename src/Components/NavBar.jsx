@@ -2,11 +2,11 @@
 export default function NavBar(){
     return(
         <nav>
-            <a>Skills</a>
-            <a>Experience</a>
-            <a>Projects</a>
-            <a>About</a>
             <a>Contact</a>
+            <a>About</a>
+            <a>Projects</a>
+            <a>Experience</a>
+            <a>Skills</a>
         </nav>
     )
 }

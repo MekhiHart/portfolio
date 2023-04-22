@@ -31,7 +31,7 @@ nav a{
 }
 
 
-.hero--body{
+.hero--container{
   padding-left: 100px;
 }
 
@@ -45,6 +45,10 @@ nav a{
 
 .hero--links a:not(:first-child){
   padding-left:50px;
+}
+
+.skills--container{
+  background-color: aqua;
 }
 
 .fullScreen{
