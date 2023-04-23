@@ -26,16 +26,17 @@ function App() {
   }
 
   function handleTabButtons(value){
+    console.log("Here Value: ", value)
     setTabButtons((prevState)=>{
-      return prevState.map((button) => ({...button, isClicked: value === button.value ? true : false}) )
+      return prevState.map((button) => ({...button, isClicked: value === button.name ? true : false}) )
     })
   }
 
   const [tabButtons, setTabButtons] = useState([
-    {value:"Languages", isClicked:false},
-    {value:"Frameworks", isClicked:false},
-    {value:"Databases", isClicked:false},
-    {value:"Tools", isClicked:false},
+    {name:"Languages", isClicked:false},
+    {name:"Frameworks", isClicked:false},
+    {name:"Databases", isClicked:false},
+    {name:"Tools", isClicked:false},
   ])
 
   const [popUpData,setPopUpData] = useState({})
@@ -77,7 +78,7 @@ function App() {
       <Hero/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Hero/>
-      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>}
+      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )
 }
