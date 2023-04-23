@@ -25,11 +25,17 @@ function App() {
     })
   }
 
-  const [buttons, setButtons] = useState([
-    {value:"languages", isClicked:false},
-    {value:"frameworks", isClicked:false},
-    {value:"databases", isClicked:false},
-    {value:"tools", isClicked:false},
+  function handleTabButtons(value){
+    setTabButtons((prevState)=>{
+      return prevState.map((button) => ({...button, isClicked: value === button.value ? true : false}) )
+    })
+  }
+
+  const [tabButtons, setTabButtons] = useState([
+    {value:"Languages", isClicked:false},
+    {value:"Frameworks", isClicked:false},
+    {value:"Databases", isClicked:false},
+    {value:"Tools", isClicked:false},
   ])
 
   const [popUpData,setPopUpData] = useState({})
@@ -61,15 +67,17 @@ function App() {
     bodyTarget.style = {margin: "0", height: "100%", overflow: "hidden"}
   },[])
 
+  useEffect(()=> console.log("data buttons: ", tabButtons),[tabButtons])
+
   // useEffect(() =>console.log("Clcicksed"),popUp)
 
   return (
     <>
       <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
-      <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData}/>
+      <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Hero/>
-      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData}/>}
+      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>}
     </>
   )
 }
