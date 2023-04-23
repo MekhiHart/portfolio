@@ -21,13 +21,13 @@ export default function PopUp(props){
 
         if (isClicked){
             console.log("here")
-            buttonStyle = {backgroundColor:"red"}
+            buttonStyle = {backgroundColor:"white"}
         }
         else{
-            buttonStyle = {backgroundColor:"green"}
+            // buttonStyle = {backgroundColor:"green"}
         }
 
-        return <button style={buttonStyle} onClick={() => handleButtonClick(name)}>
+        return <button className="popUp--tab" style={buttonStyle} onClick={() => handleButtonClick(name)}>
             {<FontAwesomeIcon icon={buttonIcons[index]} size='1x'/>} {name}
             </button>
     })
@@ -37,10 +37,7 @@ export default function PopUp(props){
             <div className="popUp--container">
                 <div className="popUp--tabs">
                     {buttons}
-                    {/* <button  onClick={() => handleButtonClick("Languages")}>{<FontAwesomeIcon icon={faLaptopCode} size='1x'/>} Languages</button>
-                    <button  onClick={() =>handleButtonClick("Frameworks")} >{<FontAwesomeIcon icon={faReact} size='1x'/>} Frameworks</button>
-                    <button  onClick={() =>handleButtonClick("Databases")}>{<FontAwesomeIcon icon={faDatabase} size='1x'/>} Databases</button>
-                    <button  onClick={() =>handleButtonClick("Tools")}>{<FontAwesomeIcon icon={faScrewdriverWrench} size='1x'/>} Tools</button> */}
+
                     <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='2x'/></button>
                 </div>
                 <h1>{popUpData.name}</h1>

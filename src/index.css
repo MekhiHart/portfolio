@@ -141,6 +141,10 @@ nav a:hover:before {
   justify-content:flex-start;
 }
 
+.popUp--tab{
+
+}
+
  #closePopUp{
   background-color: red;
   margin-left: auto;
@@ -194,3 +198,4 @@ nav a:hover:before {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
+
