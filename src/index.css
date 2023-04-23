@@ -63,16 +63,13 @@ nav a:before {
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.17s ease-out;
-
-
-  
 }
 
 nav a:hover:before {
   transform: scaleX(1);
 }
 
-#nav{
+#nav, .hero--links{
   transition: 0.5s;
 }
 
@@ -88,8 +85,17 @@ nav a:hover:before {
   font-weight: normal;
 }
 
+/* .hero--links a{
+  transition: all .5s ease-in;
+} */
+
 .hero--links a:not(:first-child){
   padding-left:50px;
+}
+
+.hero--links a:hover{
+  position: relative;
+  top: -2px;
 }
 
 .skills--container{
