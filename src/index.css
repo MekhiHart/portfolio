@@ -134,9 +134,16 @@ nav a:hover:before {
   height: 90vh;
 }
 
+
 .popUp--tabs{
   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
 
+ #closePopUp{
+  background-color: red;
+  margin-left: auto;
 }
 
 .fullScreen{
