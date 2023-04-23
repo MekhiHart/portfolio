@@ -1,15 +1,12 @@
 {
-    "frameworks":{
+    "frameworks":[
 
-    },
-    "languages":{
+        {"icon" : "https","name":"Python"}],
 
-    },
-    "databases":{
+    "languages":[{}],
 
-    },
-    "tools":{
-        
-    }
+    "databases":[{}],
+    
+    "tools":[{}]
     
 }
