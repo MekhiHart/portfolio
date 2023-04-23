@@ -69,7 +69,7 @@ function App() {
       <Hero/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData}/>
       <Hero/>
-      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData}/>}
+      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData}/>}
     </>
   )
 }
