@@ -19,7 +19,7 @@ export default function Skills(props){
         buttons.push(
             (
                 <div style={style}>
-                    <div style={iconStyle}  className='button-30'> <a  onClick={() => setPopUp({isClicked:true})} target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a></div>
+                    <button onClick={() => setPopUp({isClicked:true})} style={iconStyle}  className='button-30'> <FontAwesomeIcon icon={icons[i -1]} size='5x'/></button>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )

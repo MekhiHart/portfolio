@@ -14,6 +14,14 @@ function App() {
   const [scrollDivs, setScrollDivs] = useState([])
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
+  // * popUp Tabs
+  const [buttons, setButtons] = useState([
+    {value:"languages", isClicked:false},
+    {value:"frameworks", isClicked:false},
+    {value:"databases", isClicked:false},
+    {value:"tools", isClicked:false},
+])
+
   useEffect(() =>{ // * handles hiding nav bar
     var lastScrollTop;
     const navbar = document.getElementById('nav');
