@@ -7,7 +7,6 @@ import { useEffect, useState} from "react";
 
 function App() {
   function scrollToDiv(divTarget){
-    console.log("target: ", divTarget)
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
@@ -18,7 +17,7 @@ function App() {
     window.addEventListener('scroll',function(){
       var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       if(scrollTop > lastScrollTop){
-      navbar.style.top='-80px';
+      navbar.style.top='-90px';
       }
       else{
       navbar.style.top='0';

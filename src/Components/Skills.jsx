@@ -9,9 +9,7 @@ export default function Skills(){
     const names = ["Languages", "Frameworks", "Databases","Tools"]
     const icons = [faTerminal, faReact, faDatabase, faScrewdriverWrench]
     const iconStyle ={
-        border:"solid",
-        borderRadius: "30px",
-        padding: "20px"
+        padding: "30px"
         
         
     }
@@ -22,7 +20,7 @@ export default function Skills(){
         buttons.push(
             (
                 <div style={style}>
-                    <div style={iconStyle}> <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a></div>
+                    <div style={iconStyle}  className='button-30'> <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a></div>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )

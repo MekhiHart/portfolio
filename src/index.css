@@ -105,9 +105,6 @@ nav a:hover:before {
   height: 100vh;
 }
 
-
-
-/* CSS */
 .button-30 {
   align-items: center;
   appearance: none;
@@ -120,7 +117,7 @@ nav a:hover:before {
   cursor: pointer;
   display: inline-flex;
   font-family: "JetBrains Mono",monospace;
-  height: 48px;
+  /* height: 48px; */
   justify-content: center;
   line-height: 1;
   list-style: none;
