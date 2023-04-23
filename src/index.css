@@ -128,10 +128,15 @@ nav a:hover:before {
 }
 
 .popUp--container{
-  margin: 0px 50px;
+  margin: 40px 50px;
   z-index: 102;
   background-color: white;
   height: 90vh;
+}
+
+.popUp--tabs{
+  display: flex;
+
 }
 
 .fullScreen{
