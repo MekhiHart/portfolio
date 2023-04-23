@@ -24,6 +24,8 @@ nav{
 
   width: 100%;
   background-color: #868B8E;
+  z-index: 100;
+
 }
 
 nav a{
@@ -35,7 +37,8 @@ nav a{
   position: relative;
   transition: color 0.3s;
   border-color: #EEEDE7;
-  margin:0px 5px
+  margin:0px 5px;
+
 
 
 }
@@ -45,6 +48,7 @@ nav a:hover{
   color:#868B8E;
   border-color: #EEEDE7;
   cursor: pointer;
+
 }
 
 nav a:before {
@@ -54,11 +58,12 @@ nav a:before {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: -1;
+  z-index: 100;
   background: #E7D2CC;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.17s ease-out;
+
   
 }
 
