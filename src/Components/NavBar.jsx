@@ -8,8 +8,7 @@ export default function NavBar(props){
             <a>About</a>
             <a>Projects</a>
             <a>Experience</a>
-            <a>Skills</a>
-            {props.setNavBarIsRendered(true)}
+            <a href="#">Skills</a>
         </nav>
     )
 }

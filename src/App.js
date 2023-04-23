@@ -6,9 +6,7 @@ import { useEffect, useState} from "react";
 
 
 function App() {
-  const [navBarIsRendered, setNavBarIsRendered] = useState(false)
-
-  useEffect(() =>{ // * invoked when navbar is rendered
+  useEffect(() =>{ // * invoked when app is rendered
     var lastScrollTop;
     const navbar = document.getElementById('nav');
     window.addEventListener('scroll',function(){
@@ -21,7 +19,9 @@ function App() {
       }
       lastScrollTop = scrollTop;
     });
-  }, [navBarIsRendered])
+  }, [])
+
+
 
 
 
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <>
-      <NavBar setNavBarIsRendered={setNavBarIsRendered}/>
+      <NavBar/>
       <Hero/>
       <Skills/>
       <Hero/>
