@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -24,6 +26,8 @@ nav{
 
   width: 100%;
   background-color: #868B8E;
+  z-index: 100;
+
 }
 
 nav a{
@@ -31,18 +35,22 @@ nav a{
   border: solid;
   border-width: 2px;
   color:#EEEDE7;
-}
-
-nav a {
   transform: perspective(1px) translateZ(0);
   position: relative;
   transition: color 0.3s;
   border-color: #EEEDE7;
+  margin:0px 5px;
+
+
+
 }
+
 
 nav a:hover{
   color:#868B8E;
   border-color: #EEEDE7;
+  cursor: pointer;
+
 }
 
 nav a:before {
@@ -57,14 +65,13 @@ nav a:before {
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.17s ease-out;
-  
 }
 
 nav a:hover:before {
   transform: scaleX(1);
 }
 
-#nav{
+#nav, .hero--links{
   transition: 0.5s;
 }
 
@@ -80,13 +87,19 @@ nav a:hover:before {
   font-weight: normal;
 }
 
+
 .hero--links a:not(:first-child){
   padding-left:50px;
 }
 
+.hero--links a:hover{
+  position: relative;
+  top: -2px;
+}
+
 .skills--container{
   background-color: #E7D2CC;
-  height: 70vh;
+  height: 100vh;
   flex-direction: column;
   text-align: center;
   padding-top: 20px;
@@ -99,7 +112,90 @@ nav a:hover:before {
   padding-top: 80px;
 }
 
+.popup--overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height: 100vh;
+  width: 100%;
+
+  background:rgba(0, 0, 0, 0.5); /* Prevents children opacity change, only changes background opacity*/
+
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
+}
+
+.popUp--container{
+  margin: 40px 50px;
+  z-index: 102;
+  background-color: white;
+  height: 90vh;
+}
+
+
+.popUp--tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.popUp--tab{
+
+}
+
+ #closePopUp{
+  background-color: red;
+  margin-left: auto;
+}
+
 .fullScreen{
   height: 100vh;
+}
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  /* height: 48px; */
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
 }
 

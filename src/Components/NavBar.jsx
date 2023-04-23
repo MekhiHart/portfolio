@@ -1,15 +1,14 @@
 
 export default function NavBar(props){
-    
-    
+    const {scrollToDiv, scrollDivs} = props
+    const [heroDiv, skillsDiv] = scrollDivs
+    console.log("scroll: ", scrollDivs)
     return(
         <nav id="nav">
-            <a>Contact</a>
-            <a>About</a>
-            <a>Projects</a>
-            <a>Experience</a>
-            <a>Skills</a>
-            {props.setNavBarIsRendered(true)}
+            <a className="button-30">Contact</a>
+            <a className="button-30">Projects</a>
+            <a className="button-30">Experience</a>
+            <a  className="button-30"onClick={() => scrollToDiv(skillsDiv)}>Skills</a>
         </nav>
     )
 }
