@@ -5,7 +5,7 @@ import { icon } from '@fortawesome/fontawesome-svg-core'
 import { useEffect } from 'react'
 
 export default function Skills(props){
-    const {setPopUp} = props
+    const {setPopUp, handlePopUpData} = props
     const buttons = []
     const names = ["Languages", "Frameworks", "Databases","Tools"]
     const icons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
@@ -19,7 +19,10 @@ export default function Skills(props){
         buttons.push(
             (
                 <div style={style}>
-                    <button onClick={() => setPopUp({isClicked:true})} style={iconStyle}  className='button-30'> <FontAwesomeIcon icon={icons[i -1]} size='5x'/></button>
+                    <button value={[names[i-1]]} onClick={() => {
+                        setPopUp({isClicked:true})
+                        handlePopUpData(names[i-1])
+                    }} style={iconStyle}  className='button-30'> <FontAwesomeIcon icon={icons[i -1]} size='5x'/></button>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )

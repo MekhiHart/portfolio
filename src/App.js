@@ -4,6 +4,8 @@ import Skills from "./Components/Skills";
 import PopUp from "./Components/PopUp";
 
 import {useEffect, useState} from "react";
+import skills from "./Data/skills.json"
+
 
 
 function App() {
@@ -15,12 +17,22 @@ function App() {
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
   // * popUp Tabs
+  function handlePopUpData(value){
+    console.log("value: ", value)
+    setPopUpData({
+        name:value,
+        skills:skills[value]
+    })
+  }
+
   const [buttons, setButtons] = useState([
     {value:"languages", isClicked:false},
     {value:"frameworks", isClicked:false},
     {value:"databases", isClicked:false},
     {value:"tools", isClicked:false},
-])
+  ])
+
+  const [popUpData,setPopUpData] = useState({})
 
   useEffect(() =>{ // * handles hiding nav bar
     var lastScrollTop;
@@ -55,9 +67,9 @@ function App() {
     <>
       <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
-      <Skills setPopUp={setPopUp}/>
+      <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData}/>
       <Hero/>
-      {popUp.isClicked && <PopUp setPopUp={setPopUp}/>}
+      {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData}/>}
     </>
   )
 }
