@@ -7,6 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -111,7 +113,6 @@ nav a:hover:before {
 }
 
 .popup--overlay{
-  display: flex;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -124,6 +125,13 @@ nav a:hover:before {
   justify-content: center;
   align-items: center;
   z-index: 101;
+}
+
+.popUp--container{
+  margin: 0px 50px;
+  z-index: 102;
+  background-color: white;
+  height: 90vh;
 }
 
 .fullScreen{

@@ -14,7 +14,7 @@ function App() {
   const [scrollDivs, setScrollDivs] = useState([])
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
-  useEffect(() =>{ // * invoked when app is rendered
+  useEffect(() =>{ // * handles hiding nav bar
     var lastScrollTop;
     const navbar = document.getElementById('nav');
     window.addEventListener('scroll',function(){
@@ -30,9 +30,15 @@ function App() {
   }, [])
 
   useEffect(() =>{
+    // * web page section
     const heroDiv = document.getElementById("HERO")
     const skillsDiv = document.getElementById("SKILLS")
     setScrollDivs([heroDiv, skillsDiv])
+
+
+    // *
+    const bodyTarget = document.getElementsByTagName("html")[0]
+    bodyTarget.style = {margin: "0", height: "100%", overflow: "hidden"}
   },[])
 
   // useEffect(() =>console.log("Clcicksed"),popUp)
