@@ -4,7 +4,7 @@ import {faFile} from '@fortawesome/free-solid-svg-icons'
 
 export default function Hero(){
     return(
-    <div className="hero--container fullScreen">
+    <div className="hero--container fullScreen" id='HERO'>
         <div className="hero--intro">
             <h1 style={{marginBottom: "-20px" , fontWeight:"bold"}}>Mekhi Hart Dela Cruz</h1>
             <h2>Full-Stack Software Developer</h2>

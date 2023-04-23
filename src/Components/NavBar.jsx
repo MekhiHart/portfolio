@@ -1,14 +1,13 @@
 
 export default function NavBar(props){
-    
-    
+    const {scrollToDiv, scrollDivs} = props
+    const [skillsDiv] = scrollDivs
     return(
         <nav id="nav">
             <a>Contact</a>
-            <a>About</a>
             <a>Projects</a>
             <a>Experience</a>
-            <a href="#">Skills</a>
+            <a onClick={() => scrollToDiv(skillsDiv)}>Skills</a>
         </nav>
     )
 }

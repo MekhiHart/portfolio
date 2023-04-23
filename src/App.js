@@ -6,6 +6,12 @@ import { useEffect, useState} from "react";
 
 
 function App() {
+  function scrollToDiv(divTarget){
+    console.log("target: ", divTarget)
+    divTarget.scrollIntoView({behavior:"smooth"})
+  }
+
+  const [scrollDivs, setScrollDivs] = useState([])
   useEffect(() =>{ // * invoked when app is rendered
     var lastScrollTop;
     const navbar = document.getElementById('nav');
@@ -21,15 +27,15 @@ function App() {
     });
   }, [])
 
-
-
-
-
-
+  useEffect(() =>{
+    const heroDiv = document.getElementById("HERO")
+    const skillsDiv = document.getElementById("SKILLS")
+    setScrollDivs([heroDiv, skillsDiv])
+  },[])
 
   return (
     <>
-      <NavBar/>
+      <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
       <Skills/>
       <Hero/>
