@@ -5,10 +5,10 @@ export default function NavBar(props){
     console.log("scroll: ", scrollDivs)
     return(
         <nav id="nav">
-            <a>Contact</a>
-            <a>Projects</a>
-            <a>Experience</a>
-            <a onClick={() => scrollToDiv(skillsDiv)}>Skills</a>
+            <a className="button-30">Contact</a>
+            <a className="button-30">Projects</a>
+            <a className="button-30">Experience</a>
+            <a  className="button-30"onClick={() => scrollToDiv(skillsDiv)}>Skills</a>
         </nav>
     )
 }
