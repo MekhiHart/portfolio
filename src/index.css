@@ -24,7 +24,7 @@ nav{
 
   width: 100%;
   background-color: #868B8E;
-  /* z-index: 100; */
+  z-index: 100;
 
 }
 
@@ -85,9 +85,6 @@ nav a:hover:before {
   font-weight: normal;
 }
 
-/* .hero--links a{
-  transition: all .5s ease-in;
-} */
 
 .hero--links a:not(:first-child){
   padding-left:50px;
@@ -111,6 +108,22 @@ nav a:hover:before {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   padding-top: 80px;
+}
+
+.popup--overlay{
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  height: 100vh;
+  width: 100%;
+
+  background:rgba(0, 0, 0, 0.5); /* Prevents children opacity change, only changes background opacity*/
+
+  justify-content: center;
+  align-items: center;
+  z-index: 101;
 }
 
 .fullScreen{

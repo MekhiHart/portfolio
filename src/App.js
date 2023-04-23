@@ -1,8 +1,9 @@
 import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import Skills from "./Components/Skills";
+import PopUp from "./Components/PopUp";
 
-import { useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
   }
 
   const [scrollDivs, setScrollDivs] = useState([])
+  const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
+
   useEffect(() =>{ // * invoked when app is rendered
     var lastScrollTop;
     const navbar = document.getElementById('nav');
@@ -32,12 +35,15 @@ function App() {
     setScrollDivs([heroDiv, skillsDiv])
   },[])
 
+  // useEffect(() =>console.log("Clcicksed"),popUp)
+
   return (
     <>
       <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
-      <Skills/>
+      <Skills setPopUp={setPopUp}/>
       <Hero/>
+      {popUp.isClicked && <PopUp/>}
     </>
   )
 }

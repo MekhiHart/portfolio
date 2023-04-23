@@ -4,14 +4,13 @@ import {faDatabase,faScrewdriverWrench,faTerminal, faLaptopCode} from '@fortawes
 import { icon } from '@fortawesome/fontawesome-svg-core'
 import { useEffect } from 'react'
 
-export default function Skills(){
+export default function Skills(props){
+    const {setPopUp} = props
     const buttons = []
     const names = ["Languages", "Frameworks", "Databases","Tools"]
     const icons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
     const iconStyle ={
         padding: "30px"
-        
-        
     }
 
     for (let i=1; i<5; i++){
@@ -20,7 +19,7 @@ export default function Skills(){
         buttons.push(
             (
                 <div style={style}>
-                    <div style={iconStyle}  className='button-30'> <a  href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a></div>
+                    <div style={iconStyle}  className='button-30'> <a  onClick={() => setPopUp({isClicked:true})} target='_blank'><FontAwesomeIcon icon={icons[i -1]} size='5x'/></a></div>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )
