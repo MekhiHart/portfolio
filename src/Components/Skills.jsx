@@ -1,13 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faTerminal} from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faScrewdriverWrench,faTerminal, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 import { icon } from '@fortawesome/fontawesome-svg-core'
 import { useEffect } from 'react'
 
 export default function Skills(){
     const buttons = []
     const names = ["Languages", "Frameworks", "Databases","Tools"]
-    const icons = [faTerminal, faReact, faDatabase, faScrewdriverWrench]
+    const icons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
     const iconStyle ={
         padding: "30px"
         
