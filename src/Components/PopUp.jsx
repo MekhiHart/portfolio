@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact} from "@fortawesome/free-brands-svg-icons"
 import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
-
+import profile from "../Assets/mekhi_profile.png"
 import { useState, useEffect } from 'react'
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
@@ -52,12 +52,13 @@ export default function PopUp(props){
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
+                    
                     <div id="popUp--header--search">
-                        <FontAwesomeIcon style={{marginTop:"2px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                        <span style={{marginTop:"2px", marginLeft:"5px"}}>www.MekhiHart.isCool.com</span>
+                        <FontAwesomeIcon style={{marginTop:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                        <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart.isCool.com</span>
                     </div>
 
-                    <img></img>
+                    <img className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
                 </div>
 
                 <h1>{popUpData.name}</h1>

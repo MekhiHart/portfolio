@@ -181,6 +181,7 @@ nav a:hover:before {
   border-radius: 50px;
   padding: 5px;
   transition: background-color .5s;
+  margin-top: 5px;
 }
 .popUp--header--icon:hover{
   background-color: #545c6d;
@@ -192,7 +193,8 @@ nav a:hover:before {
   margin-left: 10px;
   border-radius: 20px;
   display: flex;
-  margin-right: 50px;
+  margin-right: 10px;
+  /* margin-bottom:10px; */
 }
 
 
