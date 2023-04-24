@@ -49,11 +49,11 @@ export default function PopUp(props){
                 </div>
 
                 <div id="popUp--header">
-                    <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"20px"}}  icon={faArrowLeft} size='1x'/>
+                    <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
-                    
+
                     <div>
 
                     </div>

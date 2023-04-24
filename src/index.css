@@ -139,7 +139,7 @@ nav a:hover:before {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  background-color: #efefef; /* Prevents children opacity change, only changes background opacity*/
+  background-color: #dee1e6; /* Prevents children opacity change, only changes background opacity*/
 }
 
 /* .popUp--tabs > button:nth-child(even){
@@ -151,6 +151,7 @@ nav a:hover:before {
 .popUp--tab{
   border: none;
   padding: 0 20px;
+  background-color: #dee1e6;
 }
 
 .popUp--tab:hover{
@@ -159,7 +160,7 @@ nav a:hover:before {
 }
 
 .popUp--tab:hover{
-  background-color: #36395A;
+  background-color: #f0f1f4;
 }
 
 #popUp--header{
@@ -182,7 +183,7 @@ nav a:hover:before {
 }
 
  #closePopUp{
-  background-color: #e7e7e7;
+  background-color: #dee1e6;
   margin-left: auto;
   padding: 0 5px;
   border: none;
