@@ -35,7 +35,7 @@ export default function PopUp(props){
 
     const icons = popUpData.skills.map((skill) => (<div>
         <img className="svg--icon" src={SVG[skill]} />
-        <h2>{skill}</h2>
+        <h2 style={{marginTop:"-30px"}}>{skill}</h2>
         
     </div>))
 
@@ -64,7 +64,7 @@ export default function PopUp(props){
 
                 <h1>{popUpData.name}</h1>
                 <br></br>
-                <div style={{display: "flex", justifyContent:"center"}}>
+                <div style={{display: "flex", justifyContent:"center", flexWrap:"wrap"}}>
                     {icons}
                 </div>
                 

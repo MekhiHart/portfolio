@@ -1,7 +1,16 @@
 {
     "Frameworks":["React"],
 
-    "Languages":["JavaScript"],
+    "Languages":[
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C",
+        "Java",
+        "SQL",
+        "HTML",
+        "CSS"
+    ],
 
     "Databases":["MongoDB"],
 
