@@ -145,7 +145,7 @@ nav a:hover:before {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  background-color: #282c34; /* Prevents children opacity change, only changes background opacity*/
+  background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
 }
 
 /* .popUp--tabs > button:nth-child(even){
@@ -190,8 +190,8 @@ nav a:hover:before {
 }
 
 #popUp--header--search{
-  background-color: #333842;
-  width: 100%;
+  background-color: #6a768a;
+  width: 80%;
   margin-left: 10px;
   border-radius: 20px;
   display: flex;
@@ -206,7 +206,7 @@ nav a:hover:before {
 } */
 
  #closePopUp{
-  background-color: #282c34;
+  background-color: #6a768a;
   margin-left: auto;
   border: none;
   padding: 10px 10px;
