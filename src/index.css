@@ -98,7 +98,7 @@ nav a:hover:before {
 }
 
 .skills--container{
-  background-color: #E7D2CC;
+  background-color: #B9B7BD;
   height: 100vh;
   flex-direction: column;
   text-align: center;
@@ -139,15 +139,24 @@ nav a:hover:before {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
+  background-color: #e7e7e7; /* Prevents children opacity change, only changes background opacity*/
 }
 
 .popUp--tab{
+  border: none;
+  padding: 0 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
 
+.popUp--tab:hover{
+  background-color: #36395A;
 }
 
  #closePopUp{
   background-color: red;
   margin-left: auto;
+  padding: 0 5px
 }
 
 .fullScreen{
@@ -160,7 +169,7 @@ nav a:hover:before {
   background-color: #FCFCFD;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset; */
   box-sizing: border-box;
   color: #36395A;
   cursor: pointer;

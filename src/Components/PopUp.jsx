@@ -21,7 +21,7 @@ export default function PopUp(props){
 
         if (isClicked){
             console.log("here")
-            buttonStyle = {backgroundColor:"white"}
+            buttonStyle = {backgroundColor:"white" }
         }
         else{
             // buttonStyle = {backgroundColor:"green"}
@@ -37,7 +37,6 @@ export default function PopUp(props){
             <div className="popUp--container">
                 <div className="popUp--tabs">
                     {buttons}
-
                     <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='2x'/></button>
                 </div>
                 <h1>{popUpData.name}</h1>
