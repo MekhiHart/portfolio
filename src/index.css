@@ -133,10 +133,13 @@ nav a:hover:before {
   background-color: #21252b;
   height: 90vh;
   color: #EEEDE7;
+  border-radius: 20px;
 }
 
 
 .popUp--tabs{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
@@ -188,17 +191,19 @@ nav a:hover:before {
 } */
 
  #closePopUp{
-  background-color: #dee1e6;
+  background-color: #282c34;
   margin-left: auto;
   padding: 0 5px;
   border: none;
   padding: 5px 5px;
-  transition: color .5s
+  transition: color .5s;
+  margin-top: 10px;
+  margin-right: 10px;
+  color:#EEEDE7
 }
 
 #closePopUp:hover{
-  background-color: red;
-  transition: .5;
+  color: red;
   
 }
 

@@ -44,7 +44,7 @@ export default function PopUp(props){
             <div className="popUp--container">
                 <div className="popUp--tabs">
                     {buttons}
-                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='2x'/></button>
+                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
                 </div>
 
                 <div id="popUp--header">
