@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, } from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse } from '@fortawesome/free-solid-svg-icons'
 
 import { useState, useEffect } from 'react'
 
@@ -48,9 +48,15 @@ export default function PopUp(props){
                     <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='2x'/></button>
                 </div>
 
-                <div className="popUp--header">
-                    <FontAwesomeIcon icon={faArrowLeft} size='1x'/>
-                    <FontAwesomeIcon icon={faArrowRight} size='1x'/>
+                <div id="popUp--header">
+                    <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"20px"}}  icon={faArrowLeft} size='1x'/>
+                    <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
+                    <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
+                    <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
+                    
+                    <div>
+
+                    </div>
                 </div>
 
                 <h1>{popUpData.name}</h1>

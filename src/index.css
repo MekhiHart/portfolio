@@ -162,6 +162,20 @@ nav a:hover:before {
   background-color: #36395A;
 }
 
+#popUp--header{
+  display: flex;
+  padding: 20px 10px 0 10px;
+}
+
+.popUp--header--icon{
+  border-radius: 50px;
+  padding: 5px
+}
+.popUp--header--icon:hover{
+  background-color: #eeeeee;
+}
+
+
 #tab--seperator{
   border-left: 1px solid #94979c;
   margin: 6px 2px
