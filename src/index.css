@@ -157,7 +157,7 @@ nav a:hover:before {
 .popUp--tab{
   border: none;
   padding: 10px 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   background-color: #333842;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
@@ -197,6 +197,11 @@ nav a:hover:before {
   display: flex;
   margin-right: 10px;
   /* margin-bottom:10px; */
+}
+
+.svg--icon{
+  max-height: 70px;
+  min-height: 70px;
 }
 
 

@@ -5,6 +5,8 @@ import profile from "../Assets/mekhi_profile.png"
 import { useState, useEffect } from 'react'
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
+import SVG from "../Assets/SVG/svg"
+
 
 export default function PopUp(props){
     const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
@@ -14,7 +16,6 @@ export default function PopUp(props){
         handleTabButtons(value)
     }
     
-
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
         let buttonStyle = {}
@@ -31,6 +32,12 @@ export default function PopUp(props){
             {<FontAwesomeIcon icon={buttonIcons[index]} size='1x'/>} {name}
             </button>
     })
+
+    const icons = popUpData.skills.map((skill) => (<div>
+        <img className="svg--icon" src={SVG[skill]} />
+        <h2>{skill}</h2>
+        
+    </div>))
 
 
     return(
@@ -56,7 +63,12 @@ export default function PopUp(props){
                 </div>
 
                 <h1>{popUpData.name}</h1>
-                <h2>{popUpData.skills}</h2>
+                <br></br>
+                <div style={{display: "flex", justifyContent:"center"}}>
+                    {icons}
+                </div>
+                
+                
             </div>
         </div>
     )
