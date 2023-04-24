@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse } from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 
 import { useState, useEffect } from 'react'
 
@@ -52,10 +52,12 @@ export default function PopUp(props){
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                     <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
-
-                    <div>
-
+                    <div id="popUp--header--search">
+                        <FontAwesomeIcon style={{marginTop:"2px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                        <span style={{marginTop:"2px", marginLeft:"5px"}}>www.MekhiHart.isCool.com</span>
                     </div>
+
+                    <img></img>
                 </div>
 
                 <h1>{popUpData.name}</h1>

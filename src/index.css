@@ -186,6 +186,15 @@ nav a:hover:before {
   background-color: #545c6d;
 }
 
+#popUp--header--search{
+  background-color: #333842;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  margin-right: 50px;
+}
+
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;
