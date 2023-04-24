@@ -22,7 +22,7 @@ export default function PopUp(props){
 
         if (isClicked){
             console.log("here")
-            buttonStyle = {backgroundColor:"white", borderTopRightRadius:"10px", borderTopLeftRadius:"10px" }
+            buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
         }
         else{
             // buttonStyle = {backgroundColor:"green"}
@@ -33,11 +33,10 @@ export default function PopUp(props){
     })
 
     // * seperators
-    const seperator = <div id="tab--seperator"></div>
-    buttons.splice(1,0, seperator)
-    buttons.splice(3,0, seperator)
-    buttons.splice(5,0, seperator)
-    buttons.splice(7,0, seperator)
+    // buttons.splice(1,0, seperator)
+    // buttons.splice(3,0, seperator)
+    // buttons.splice(5,0, seperator)
+    // buttons.splice(7,0, seperator)
 
 
     return(

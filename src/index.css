@@ -130,8 +130,9 @@ nav a:hover:before {
 .popUp--container{
   margin: 40px 50px;
   z-index: 102;
-  background-color: white;
+  background-color: #21252b;
   height: 90vh;
+  color: #EEEDE7;
 }
 
 
@@ -139,7 +140,7 @@ nav a:hover:before {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  background-color: #dee1e6; /* Prevents children opacity change, only changes background opacity*/
+  background-color: #282c34; /* Prevents children opacity change, only changes background opacity*/
 }
 
 /* .popUp--tabs > button:nth-child(even){
@@ -150,8 +151,12 @@ nav a:hover:before {
 
 .popUp--tab{
   border: none;
-  padding: 0 20px;
-  background-color: #dee1e6;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #333842;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: #EEEDE7
 }
 
 .popUp--tab:hover{
@@ -160,7 +165,7 @@ nav a:hover:before {
 }
 
 .popUp--tab:hover{
-  background-color: #f0f1f4;
+  background-color: #545c6d;
 }
 
 #popUp--header{
@@ -173,14 +178,14 @@ nav a:hover:before {
   padding: 5px
 }
 .popUp--header--icon:hover{
-  background-color: #eeeeee;
+  background-color: #545c6d;
 }
 
 
-#tab--seperator{
+/* #tab--seperator{
   border-left: 1px solid #94979c;
   margin: 6px 2px
-}
+} */
 
  #closePopUp{
   background-color: #dee1e6;
