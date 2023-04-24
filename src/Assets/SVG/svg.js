@@ -10,7 +10,8 @@ import CSS from "./CSS.svg"
 import SQL from "./SQL.svg"
 import TypeScript from "./TypeScript.svg"
 import CPlusPlus from "./C++.svg"
-import CSharp from "./C#.svg"
+import CSharp from "./Csharp.svg"
+
 
 export default {
     JavaScript, 
@@ -26,5 +27,6 @@ export default {
     SQL,
     TypeScript,
     CPlusPlus,
+
     
  }
