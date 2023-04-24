@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faLaptopCode} from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, } from '@fortawesome/free-solid-svg-icons'
+
 import { useState, useEffect } from 'react'
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
@@ -37,7 +38,7 @@ export default function PopUp(props){
     buttons.splice(3,0, seperator)
     buttons.splice(5,0, seperator)
     buttons.splice(7,0, seperator)
-    
+
 
     return(
         <div className="popup--overlay">
@@ -46,6 +47,12 @@ export default function PopUp(props){
                     {buttons}
                     <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='2x'/></button>
                 </div>
+
+                <div className="popUp--header">
+                    <FontAwesomeIcon icon={faArrowLeft} size='1x'/>
+                    <FontAwesomeIcon icon={faArrowRight} size='1x'/>
+                </div>
+
                 <h1>{popUpData.name}</h1>
                 <h2>This is Mekhi</h2>
             </div>
