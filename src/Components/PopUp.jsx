@@ -33,11 +33,28 @@ export default function PopUp(props){
             </button>
     })
 
-    const icons = popUpData.skills.map((skill) => (<div>
-        <img className="svg--icon" src={SVG[skill]} />
-        <h2 style={{marginTop:"-30px"}}>{skill}</h2>
+    const icons = popUpData.skills.map((skill) => {
+        let src
+
+        switch (skill) {
+            case ("C++"):
+                src = SVG["CPlusPlus"]
+                break;
+
+            case ("C#"):
+                console.log("C#")
+                src = SVG["CSharp"]
+                break;
         
-    </div>))
+            default:
+                src = SVG[skill]
+        }
+
+        return (<div>
+            <img className="svg--icon" src={src} />
+            <h2 style={{marginTop:"-30px"}}>{skill}</h2>
+        </div>)
+    })
 
 
     return(

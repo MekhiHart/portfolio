@@ -9,6 +9,8 @@ import HTML from "./HTML.svg"
 import CSS from "./CSS.svg"
 import SQL from "./SQL.svg"
 import TypeScript from "./TypeScript.svg"
+import CPlusPlus from "./C++.svg"
+import CSharp from "./C#.svg"
 
 export default {
     JavaScript, 
@@ -18,8 +20,11 @@ export default {
     Python,
     Java,
     C,
+    CSharp,
     HTML,
     CSS,
     SQL,
-    TypeScript
+    TypeScript,
+    CPlusPlus,
+    
  }
