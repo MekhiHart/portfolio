@@ -1,12 +1,10 @@
 {
-    "Frameworks":[
+    "Frameworks":["React"],
 
-        {"icon" : "https","name":"Python"}],
+    "Languages":["Python"],
 
-    "Languages":[{}],
+    "Databases":["MongoDB"],
 
-    "Databases":[{}],
-
-    "Tools":[{}]
+    "Tools":["GitHub"]
     
 }

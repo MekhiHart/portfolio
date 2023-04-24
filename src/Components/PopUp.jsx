@@ -32,12 +32,6 @@ export default function PopUp(props){
             </button>
     })
 
-    // * seperators
-    // buttons.splice(1,0, seperator)
-    // buttons.splice(3,0, seperator)
-    // buttons.splice(5,0, seperator)
-    // buttons.splice(7,0, seperator)
-
 
     return(
         <div className="popup--overlay">
@@ -62,7 +56,7 @@ export default function PopUp(props){
                 </div>
 
                 <h1>{popUpData.name}</h1>
-                <h2>This is Mekhi</h2>
+                <h2>{popUpData.skills}</h2>
             </div>
         </div>
     )
