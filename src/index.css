@@ -135,6 +135,7 @@ nav a:hover:before {
   color: #EEEDE7;
   border-radius: 20px;
   text-align: center;
+  border:none
 }
 
 
