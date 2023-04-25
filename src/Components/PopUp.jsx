@@ -68,21 +68,24 @@ export default function PopUp(props){
                 </div>
 
                 <div id="popUp--header">
+                    <div className='popUp--header--left'>
+                        <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
+                        <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
+                        <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
+                        <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
+                    </div>
                     
-                    <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
-                    <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
-                    <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
-                    <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
-                    
-                    <div id="popUp--header--search">
-                        <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                        <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
+                    <div className='popUp--header--right'>
+                        <div id="popUp--header--search">
+                            <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                            <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
+                        </div>
+                        <img className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
                     </div>
 
-                    <img className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
-                </div>
+                </div> 
 
-                <h1>{popUpData.name}</h1>
+                <h1 id="popUp--name">{popUpData.name}</h1>
 
                 <div style={{display: "flex", justifyContent:"center", flexWrap:"wrap", alignSelf:"center"}}>
                     {icons}
