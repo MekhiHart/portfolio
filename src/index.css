@@ -75,6 +75,11 @@ nav a:hover:before {
   transition: 0.5s;
 }
 
+.hero--links > *{
+  color:#868B8E
+}
+
+
 .hero--container{
   padding-left: 100px;
 }
@@ -271,3 +276,11 @@ nav a:hover:before {
   transform: translateY(2px);
 }
 
+
+#resume{
+  text-decoration: none;
+}
+
+#resume:hover{
+  text-decoration: underline;
+}
