@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faTerminal, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
-import { icon } from '@fortawesome/fontawesome-svg-core'
+import {faDatabase,faScrewdriverWrench, faLaptopCode, faA} from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, } from '@fortawesome/free-solid-svg-icons'
 import { useEffect } from 'react'
 
 export default function Skills(props){
@@ -33,6 +33,8 @@ export default function Skills(props){
     return(
         <div className="skills--container" id='SKILLS'>
             <h1>Technical Skills</h1>
+            <h4 style={{fontWeight:"normal", marginTop:"-10px"}}>* <i>Click on an Icon :)</i></h4>
+
             <div className="skills--grid">
                 {buttons}
             </div>

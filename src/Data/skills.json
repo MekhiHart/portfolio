@@ -1,12 +1,21 @@
 {
-    "Frameworks":[
+    "Frameworks":["React", "Express"],
 
-        {"icon" : "https","name":"Python"}],
+    "Languages":[
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "C++",
+        "C#",
+        "C",
+        "Java",
+        "SQL",
+        "HTML",
+        "CSS"
+    ],
 
-    "Languages":[{}],
+    "Databases":["MongoDB"],
 
-    "Databases":[{}],
-
-    "Tools":[{}]
+    "Tools":["GitHub"]
     
 }
