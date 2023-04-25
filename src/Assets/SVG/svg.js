@@ -12,6 +12,12 @@ import TypeScript from "./TypeScript.svg"
 import CPlusPlus from "./C++.svg"
 import CSharp from "./Csharp.svg"
 import Express from "./Express.svg"
+import Node from "./Node.svg"
+import Unity from "./Unity.svg"
+import PostgreSQL from "./Postgres.svg"
+import Firestore from "./Firestore.svg"
+import Git from "./Git.svg"
+import AWS from "./AWS.svg"
 
 
 export default {
@@ -29,6 +35,10 @@ export default {
     TypeScript,
     CPlusPlus,
     Express,
-
-    
+    Node,
+    Unity,
+    PostgreSQL,
+    Firestore,
+    Git,
+    AWS
  }

@@ -1,5 +1,12 @@
 {
-    "Frameworks":["React", "Express"],
+    "Frameworks":[
+    "React", 
+    "Express", 
+    "Node",
+    "Unity"
+
+
+    ],
 
     "Languages":[
         "JavaScript",
@@ -14,8 +21,17 @@
         "CSS"
     ],
 
-    "Databases":["MongoDB"],
+    "Databases":[ 
+        "PostgreSQL",
+        "MongoDB", 
+        "Firestore"
+    ],
 
-    "Tools":["GitHub"]
+    "Tools":[
+        "GitHub",
+        "Git",
+        "AWS",
+        "Firebase"
+    ]
     
 }

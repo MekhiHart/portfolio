@@ -135,7 +135,7 @@ nav a:hover:before {
   color: #EEEDE7;
   border-radius: 20px;
   text-align: center;
-  border:none
+  border: none
 }
 
 
@@ -146,13 +146,8 @@ nav a:hover:before {
   flex-direction: row;
   justify-content:flex-start;
   background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
+  border: none;
 }
-
-/* .popUp--tabs > button:nth-child(even){
-  border-right-color: #8b8e92;
-  border-left-color: #8b8e92;
-  border-right: solid;
-} */
 
 .popUp--tab{
   border: none;
@@ -202,7 +197,7 @@ nav a:hover:before {
 .svg--icon{
   max-height: 70px;
   min-height: 70px;
-  padding: 30px 70px
+  padding: 30px 50px;
 }
 
 
