@@ -1,8 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faGithub, faReact} from "@fortawesome/free-brands-svg-icons"
 import {faDatabase,faScrewdriverWrench, faLaptopCode, faA} from '@fortawesome/free-solid-svg-icons'
-import { faArrowLeft, faArrowRight, } from '@fortawesome/free-solid-svg-icons'
-import { useEffect } from 'react'
 
 export default function Skills(props){
     function handleButtonClick(value){
@@ -23,8 +21,8 @@ export default function Skills(props){
         style.margin = "0 auto"
         buttons.push(
             (
-                <div style={style}>
-                    <button onClick={() => handleButtonClick(names[i-1])} style={iconStyle}  className='button-30'> <FontAwesomeIcon icon={icons[i -1]} size='5x'/></button>
+                <div className="" style={style}>
+                    <button onClick={() => handleButtonClick(names[i-1])} style={iconStyle}  className='button-30 skill--button'> <FontAwesomeIcon className="skill--icon" icon={icons[i -1]} size='5x'/></button>
                     <h2>{names[i - 1]}</h2>
                 </div>
             )
@@ -33,8 +31,6 @@ export default function Skills(props){
     return(
         <div className="skills--container" id='SKILLS'>
             <h1>Technical Skills</h1>
-            <h4 style={{fontWeight:"normal", marginTop:"-10px"}}>* <i>Click on an Icon :)</i></h4>
-
             <div className="skills--grid">
                 {buttons}
             </div>
