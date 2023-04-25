@@ -30,6 +30,26 @@
   .popUp--tab--name{
     display: none;
   }
+
+
+  /**  For search bar */
+  #popUp--header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    
+  }
+  
+  .popUp--header--left{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .popUp--header--right{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 612px ) and (max-height: 740px){ /** For Smaller Heigh Phones */
