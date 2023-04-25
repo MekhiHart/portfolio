@@ -1,6 +1,44 @@
-@media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 950px) {
+  .svg--container{
+    scale:70%
+  }
+
+  .svg--container > *{
+    padding: -20px;
+    margin: -10px
+  }
 }
+
+@media screen and (max-width: 612px) {
+  .svg--container{
+    scale:60%;
+    padding: 0 5px
+    /* padding: -20px;
+    margin: -15px - 15px */
+  }
+
+  .svg--icon{
+    margin: -10px -35px -10px -35px
+  }
+
+  .svg--container > h2{
+    padding-top: 10px;
+    margin: -20px
+  }
+}
+
+@media screen and (max-width: 612px ) and (max-height: 740px){ /** For Smaller Heigh Phones */
+  .svg--icon{
+    margin: -10px -50px -10px -50px
+  }
+  .svg--container{
+    scale:65%;
+    padding: 0 5px
+    /* padding: -20px;
+    margin: -15px - 15px */
+  }
+}
+
 
 body {
   margin: 0;
