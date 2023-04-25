@@ -11,6 +11,7 @@ import SQL from "./SQL.svg"
 import TypeScript from "./TypeScript.svg"
 import CPlusPlus from "./C++.svg"
 import CSharp from "./Csharp.svg"
+import Express from "./Express.svg"
 
 
 export default {
@@ -27,6 +28,7 @@ export default {
     SQL,
     TypeScript,
     CPlusPlus,
+    Express,
 
     
  }
