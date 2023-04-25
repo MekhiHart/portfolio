@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-width: 612px) {
+@media screen and (max-width: 612px) { /** For phones */
   .svg--container{
     scale:60%;
     padding: 0 5px
@@ -22,8 +22,13 @@
   }
 
   .svg--container > h2{
-    padding-top: 10px;
     margin: -20px
+  }
+
+  /** For PopUp Tabs */
+
+  .popUp--tab--name{
+    display: none;
   }
 }
 

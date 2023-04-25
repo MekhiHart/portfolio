@@ -22,14 +22,13 @@ export default function PopUp(props){
         console.log("status: ", isClicked)
 
         if (isClicked){
-            console.log("here")
             buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
         }
         else{
             // buttonStyle = {backgroundColor:"green"}
         }
         return  <button className="popUp--tab" style={buttonStyle} onClick={() => handleButtonClick(name)}>
-            {<FontAwesomeIcon icon={buttonIcons[index]} size='1x'/>} {name}
+            {<FontAwesomeIcon icon={buttonIcons[index]} size='1x'/>} <span className="popUp--tab--name">{name}</span>
             </button>
     })
 
