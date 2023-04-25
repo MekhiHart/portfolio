@@ -24,7 +24,8 @@
     "Databases":[ 
         "PostgreSQL",
         "MongoDB", 
-        "Firestore"
+        "Firestore",
+        "DynamoDB"
     ],
 
     "Tools":[

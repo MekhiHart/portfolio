@@ -75,8 +75,8 @@ export default function PopUp(props){
                     <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                     
                     <div id="popUp--header--search">
-                        <FontAwesomeIcon style={{marginTop:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                        <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart.isCool.com</span>
+                        <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                        <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
                     </div>
 
                     <img className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>

@@ -18,7 +18,7 @@ import PostgreSQL from "./Postgres.svg"
 import Firestore from "./Firestore.svg"
 import Git from "./Git.svg"
 import AWS from "./AWS.svg"
-
+import DynamoDB from "./DynamoDB.svg"
 
 export default {
     JavaScript, 
@@ -40,5 +40,6 @@ export default {
     PostgreSQL,
     Firestore,
     Git,
-    AWS
+    AWS,
+    DynamoDB
  }
