@@ -156,7 +156,10 @@ nav a:hover:before {
   color: #EEEDE7;
   border-radius: 20px;
   text-align: center;
-  border: none
+  border: none;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -228,6 +231,11 @@ nav a:hover:before {
   margin-top: -25px;
 }
 
+.svg--container > h2{
+  margin-top: -25px !important;
+}
+
+
 .svg--icon{
   max-height: 70px;
   min-height: 70px;
@@ -239,6 +247,9 @@ nav a:hover:before {
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* background-color: yellow; */
 }
 
 
@@ -396,11 +407,12 @@ nav a:hover:before {
   }
 
   .skills--icons--container{
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 70%;
   }
 
 }
+
 
 @media screen and (max-height: 740px){ /** For Smaller Heigh Phones; Iphone7 */
   .svg--icon{
@@ -422,4 +434,5 @@ nav a:hover:before {
   .body{
     background-color: red !important;
   }
+  
 }
