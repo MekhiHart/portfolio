@@ -86,7 +86,7 @@ export default function PopUp(props){
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
 
-                <div style={{display: "flex", justifyContent:"center", flexWrap:"wrap", alignSelf:"center"}}>
+                <div id="popUp--icons--container" >
                     {icons}
                 </div>
                 

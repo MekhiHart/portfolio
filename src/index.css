@@ -223,6 +223,18 @@ nav a:hover:before {
   padding: 30px 50px;
 }
 
+#popUp--icons--container{
+  margin-top: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+  max-height: 450px;
+  background-color: yellowgreen;
+}
+
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;
@@ -386,3 +398,7 @@ nav a:hover:before {
     margin: -15px - 15px */
   }
 }
+
+/* @media screen and () {
+  
+} */
