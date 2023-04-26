@@ -223,6 +223,13 @@ nav a:hover:before {
   padding: 30px 50px;
 }
 
+.skills--icon--container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;

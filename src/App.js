@@ -18,7 +18,6 @@ function App() {
 
   // * popUp Tabs
   function handlePopUpData(value){
-    console.log("value: ", value)
     setPopUpData({
         name:value,
         skills:skills[value]
@@ -26,7 +25,6 @@ function App() {
   }
 
   function handleTabButtons(value){
-    console.log("Here Value: ", value)
     setTabButtons((prevState)=>{
       return prevState.map((button) => ({...button, isClicked: value === button.name ? true : false}) )
     })
