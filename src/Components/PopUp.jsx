@@ -18,7 +18,6 @@ export default function PopUp(props){
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
         let buttonStyle = {}
-        console.log("status: ", isClicked)
 
         if (isClicked){
             buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
@@ -86,7 +85,7 @@ export default function PopUp(props){
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
 
-                <div className="skills--icons--container">
+                <div className="skills--icon--container">
                     {icons}
                 </div>
                 

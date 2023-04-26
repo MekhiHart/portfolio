@@ -234,6 +234,13 @@ nav a:hover:before {
   padding: 30px 50px;
 }
 
+.skills--icon--container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;
@@ -329,21 +336,20 @@ nav a:hover:before {
   }
 }
 
-@media screen and (max-width: 612px) { /** For phones */
+@media screen and (max-width: 612px) { /** For phones medium sized */
   .body{
     background-color: rebeccapurple;
   }
   .svg--container{
     scale:50% !important;
-    background-color: #21252b;
-    padding: 20px
-    
+    padding: 10px;    
     /* padding: -20px;
     margin: -15px - 15px */
   }
 
   .svg--icon{
-    margin: -20px -60px !important;
+    margin: -15px -40px !important;
+
   }
 
   .svg--container > h2{
@@ -402,9 +408,7 @@ nav a:hover:before {
   }
   .svg--container{
     scale:50% !important;
-    padding: 5px 5px !important;
-    background-color: red !important;
-    
+    padding: 5px 5px !important;    
     max-height: 100px;
   }
 
