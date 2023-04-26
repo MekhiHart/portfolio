@@ -309,35 +309,38 @@ nav a:hover:before {
 
 @media screen and (max-width: 950px) {
   .svg--container{
-    scale:70%
+    scale:70% !important
   }
 
   .svg--container > *{
-    padding: -20px;
-    margin: -10px
+    padding: -20px !important;
+    margin: -10px !important;
   }
 }
 
 @media screen and (max-width: 612px) { /** For phones */
+  .body{
+    background-color: rebeccapurple;
+  }
   .svg--container{
-    scale:60%;
-    padding: 0 5px
+    scale:60% !important;
+    padding: 0 5px !important;
     /* padding: -20px;
     margin: -15px - 15px */
   }
 
   .svg--icon{
-    margin: -10px -35px -10px -35px
+    margin: -10px -35px -10px -35px !important
   }
 
   .svg--container > h2{
-    margin: -20px
+    margin: -20px !important
   }
 
   /** For PopUp Tabs */
 
   .popUp--tab--name{
-    display: none;
+    display: none !important; 
   }
 
   #popUp--name{
@@ -356,33 +359,39 @@ nav a:hover:before {
 
   
   .popUp--header--right{
-    grid-row: 1;
-    scale: 90%;
-    margin-left: 30px;
+    grid-row: 1 !important;
+    scale: 90% !important;
+    margin-left: 30px !important;
   }
 
   #popUp--header--search{
-    display: flex;
-    justify-content: center;
-    scale: 70%;
-    padding-right: 30px;
-    padding-left: 5px;
+    display: flex !important;
+    justify-content: center !important;
+    scale: 70% !important;
+    padding-right: 30px !important;
+    padding-left: 5px !important;
   }
 
   .popUp--header--right > img{
-    margin-left: -20px;
+    margin-left: -20px !important;
   }
 
 }
 
 @media screen and (max-height: 740px){ /** For Smaller Heigh Phones */
   .svg--icon{
-    margin: -10px -50px -10px -50px
+    margin: -10px -50px -10px -50px !important;
   }
   .svg--container{
-    scale:65%;
-    padding: 0 5px
+    scale:65% !important;
+    padding: 0 5px !important;
     /* padding: -20px;
     margin: -15px - 15px */
+    background-color: red !important;
+  
+  }
+
+  .body{
+    background-color: red !important;
   }
 }
