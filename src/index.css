@@ -380,3 +380,7 @@ nav a:hover:before {
 #resume:hover{
   text-decoration: underline;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faGithub, faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench, faLaptopCode, faA} from '@fortawesome/free-solid-svg-icons'
+import { faReact} from "@fortawesome/free-brands-svg-icons"
+import {faDatabase,faScrewdriverWrench, faLaptopCode} from '@fortawesome/free-solid-svg-icons'
 
 export default function Skills(props){
     function handleButtonClick(value){

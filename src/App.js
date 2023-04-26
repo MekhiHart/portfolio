@@ -68,7 +68,20 @@ function App() {
     bodyTarget.style = {margin: "0", height: "100%", overflow: "hidden"}
   },[])
 
-  useEffect(()=> console.log("data buttons: ", tabButtons),[tabButtons])
+  useEffect(()=> {
+    const body = document.querySelector('body');
+    if (popUp.isClicked){
+      // Add a class to the body element to disable scrolling
+      body.classList.add('no-scroll');
+
+
+    }
+
+    else{
+        // Remove the class to re-enable scrolling
+        body.classList.remove('no-scroll')
+    }
+  },[popUp.isClicked])
 
   // useEffect(() =>console.log("Clcicksed"),popUp)
 
