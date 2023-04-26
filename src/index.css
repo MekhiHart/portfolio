@@ -1,4 +1,4 @@
-@media screen and (max-width: 950px) {
+@media all and (max-width: 950px) {
   .svg--container{
     scale:70%
   }
@@ -9,7 +9,7 @@
   }
 }
 
-@media screen and (max-width: 612px) { /** For phones */
+@media all and (max-width: 612px) { /** For phones */
   .svg--container{
     scale:60%;
     padding: 0 5px
@@ -66,13 +66,24 @@
 
 }
 
-@media screen and (max-height: 740px){ /** For Smaller Heigh Phones */
+@media all and (max-height: 740px){ /** For Smaller Heigh Phones */
   .svg--icon{
     margin: -10px -50px -10px -50px
   }
   .svg--container{
     scale:65%;
     padding: 0 5px
+    /* padding: -20px;
+    margin: -15px - 15px */
+  }
+}
+@media all and (min-width:320px){
+  .svg--icon{
+    margin: -10px -50px -10px -50px !important;
+  }
+  .svg--container{
+    scale:65% !important;
+    padding: 0 5px !important;
     /* padding: -20px;
     margin: -15px - 15px */
   }
