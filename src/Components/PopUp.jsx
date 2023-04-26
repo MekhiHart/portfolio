@@ -32,7 +32,6 @@ export default function PopUp(props){
 
     const icons = popUpData.skills.map((skill) => {
         let src
-
         switch (skill) {
             case ("C++"):
                 src = SVG["CPlusPlus"]

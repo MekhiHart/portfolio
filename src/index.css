@@ -156,7 +156,10 @@ nav a:hover:before {
   color: #EEEDE7;
   border-radius: 20px;
   text-align: center;
-  border: none
+  border: none;
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
@@ -228,6 +231,11 @@ nav a:hover:before {
   margin-top: -25px;
 }
 
+.svg--container > h2{
+  margin-top: -25px !important;
+}
+
+
 .svg--icon{
   max-height: 70px;
   min-height: 70px;
@@ -239,6 +247,9 @@ nav a:hover:before {
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* background-color: yellow; */
 }
 
 
@@ -337,14 +348,13 @@ nav a:hover:before {
 }
 
 @media screen and (max-width: 612px) { /** For phones medium sized */
-  .body{
-    background-color: rebeccapurple;
-  }
-  .svg--container{
+
+
+  /* .svg--container{
     scale:50% !important;
     padding: 10px;    
     /* padding: -20px;
-    margin: -15px - 15px */
+    margin: -15px - 15px 
   }
 
   .svg--icon{
@@ -356,7 +366,7 @@ nav a:hover:before {
     margin: -15px !important
   }
 
-  /** For PopUp Tabs */
+  / * For Pop Up  tabs //*
 
   .popUp--tab--name{
     display: none !important; 
@@ -365,7 +375,7 @@ nav a:hover:before {
   #popUp--name{
     margin-top: -10px;
     margin-bottom: -10px;
-  }
+  } */
 
 
   /**  For search bar */
@@ -396,14 +406,15 @@ nav a:hover:before {
   }
 
   .skills--icons--container{
-    background-color: yellow;
+    /* background-color: yellow; */
     height: 70%;
   }
 
 }
 
+
 @media screen and (max-height: 740px){ /** For Smaller Heigh Phones; Iphone7 */
-  .svg--icon{
+  /* .svg--icon{
     margin: -10px -50px -10px -50px !important;
   }
   .svg--container{
@@ -422,4 +433,5 @@ nav a:hover:before {
   .body{
     background-color: red !important;
   }
+   */
 }
