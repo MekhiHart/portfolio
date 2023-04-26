@@ -387,9 +387,14 @@ nav a:hover:before {
     margin-left: -20px !important;
   }
 
+  .skills--icons--container{
+    background-color: yellow;
+    height: 70%;
+  }
+
 }
 
-@media screen and (max-height: 740px){ /** For Smaller Heigh Phones */
+@media screen and (max-height: 740px){ /** For Smaller Heigh Phones; Iphone7 */
   .svg--icon{
     margin: -10px -50px -10px -50px !important;
   }
@@ -400,6 +405,11 @@ nav a:hover:before {
     margin: -15px - 15px */
     background-color: red !important;
   
+  }
+
+  .skills--icons--container{
+    background-color: rebeccapurple;
+    height: 70%;
   }
 
   .body{
