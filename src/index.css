@@ -348,14 +348,13 @@ nav a:hover:before {
 }
 
 @media screen and (max-width: 612px) { /** For phones medium sized */
-  .body{
-    background-color: rebeccapurple;
-  }
-  .svg--container{
+
+
+  /* .svg--container{
     scale:50% !important;
     padding: 10px;    
     /* padding: -20px;
-    margin: -15px - 15px */
+    margin: -15px - 15px 
   }
 
   .svg--icon{
@@ -367,7 +366,7 @@ nav a:hover:before {
     margin: -15px !important
   }
 
-  /** For PopUp Tabs */
+  / * For Pop Up  tabs //*
 
   .popUp--tab--name{
     display: none !important; 
@@ -376,7 +375,7 @@ nav a:hover:before {
   #popUp--name{
     margin-top: -10px;
     margin-bottom: -10px;
-  }
+  } */
 
 
   /**  For search bar */
@@ -415,7 +414,7 @@ nav a:hover:before {
 
 
 @media screen and (max-height: 740px){ /** For Smaller Heigh Phones; Iphone7 */
-  .svg--icon{
+  /* .svg--icon{
     margin: -10px -50px -10px -50px !important;
   }
   .svg--container{
@@ -434,5 +433,5 @@ nav a:hover:before {
   .body{
     background-color: red !important;
   }
-  
+   */
 }
