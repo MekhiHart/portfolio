@@ -334,18 +334,20 @@ nav a:hover:before {
     background-color: rebeccapurple;
   }
   .svg--container{
-    scale:60% !important;
-    padding: 0 5px !important;
+    scale:50% !important;
+    background-color: #21252b;
+    padding: 20px
+    
     /* padding: -20px;
     margin: -15px - 15px */
   }
 
   .svg--icon{
-    margin: -10px -35px -10px -35px !important
+    margin: -20px -60px !important;
   }
 
   .svg--container > h2{
-    margin: -20px !important
+    margin: -15px !important
   }
 
   /** For PopUp Tabs */
@@ -410,6 +412,8 @@ nav a:hover:before {
   .skills--icons--container{
     background-color: rebeccapurple;
     height: 70%;
+    
+
   }
 
   .body{
