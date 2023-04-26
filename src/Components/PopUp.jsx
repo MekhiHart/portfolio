@@ -89,8 +89,6 @@ export default function PopUp(props){
                 <div id="popUp--icons--container" >
                     {icons}
                 </div>
-                
-                
             </div>
         </div>
     )
