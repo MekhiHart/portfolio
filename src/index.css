@@ -111,6 +111,13 @@ nav a:hover:before {
   padding-top: 20px;
 }
 
+.skills--icons--container{
+  display: flex;
+  justify-content: center;;
+  flex-wrap: wrap;
+  align-self: center;
+}
+
 .skills--grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -215,6 +222,10 @@ nav a:hover:before {
   display: flex;
   margin-right: 10px;
   /* margin-bottom:10px; */
+}
+
+.svg--container{
+  margin-top: -25px;
 }
 
 .svg--icon{

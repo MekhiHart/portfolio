@@ -53,7 +53,7 @@ export default function PopUp(props){
 
         return (<div className="svg--container">
             <img alt="SVG icon" className="svg--icon" src={src} />
-            <h2 style={{marginTop:"-30px"}}>{skill}</h2>
+            <h2>{skill}</h2>
         </div>)
     })
 
@@ -86,7 +86,7 @@ export default function PopUp(props){
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
 
-                <div style={{display: "flex", justifyContent:"center", flexWrap:"wrap", alignSelf:"center"}}>
+                <div className="skills--icons--container">
                     {icons}
                 </div>
                 
