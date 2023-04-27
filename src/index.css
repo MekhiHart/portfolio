@@ -331,6 +331,14 @@ nav a:hover:before {
 
   /** For PopUp Tabs */
 
+  .popUp--overlay{
+    padding-top: 7%;
+  }
+
+  /* .popUp--tab{
+    margin-bottom: -2px;
+  } */
+
   .popUp--tab--name{
     display: none;
   }
