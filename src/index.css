@@ -222,16 +222,13 @@ nav a:hover:before {
 .svg--icon{
   max-height: 50px;
   min-height: 50px;
-  padding: 20px 70px;
+  padding: 20px 20px
+  /* padding: 20px 70px; */
 }
 
 #popUp--icons--container{
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-self: center;
-  /* background-color: yellowgreen; */
+  margin-top: 20px;
+  background-color: yellowgreen;
 }
 
 
@@ -344,7 +341,7 @@ nav a:hover:before {
   }
 
   #popUp--name{
-    margin-top: -10px;
+    margin-top: -7px;
     margin-bottom: -10px;
   }
 

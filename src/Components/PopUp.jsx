@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faReact} from "@fortawesome/free-brands-svg-icons"
+import {faPython, faReact} from "@fortawesome/free-brands-svg-icons"
 import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import profile from "../Assets/mekhi_profile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
 import SVG from "../Assets/SVG/svg"
+import Python from "../Assets/PNG/Python.png"
 
 
 export default function PopUp(props){
@@ -61,6 +62,13 @@ export default function PopUp(props){
 
     })
 
+    const testIcons = []
+
+    for (let i = 0; i < 10; i++){
+        testIcons.push(
+            <img alt="SVG icon" src={Python} className="svg--icon" />
+        )
+    }
 
     // return(
     //     <div className="popup--overlay">
@@ -97,7 +105,6 @@ export default function PopUp(props){
             </div>
 
             <div className="popUp--container"> 
-
                 <div id="popUp--header">
                     <div className='popUp--header--left'>
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
@@ -105,7 +112,7 @@ export default function PopUp(props){
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                         <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                     </div>
-                    
+
                     <div className='popUp--header--right'>
                         <div id="popUp--header--search">
                             <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
@@ -113,6 +120,12 @@ export default function PopUp(props){
                         </div>
                         <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
                     </div>
+                </div>
+
+                <h1 id="popUp--name">{popUpData.name}</h1>
+
+                <div id="popUp--icons--container">
+                    {testIcons}
                 </div>
 
             </div>
