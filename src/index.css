@@ -220,9 +220,9 @@ nav a:hover:before {
 
 
 .svg--icon{
-  max-height: 80px;
-  min-height: 80px;
-  padding: 20px 20px
+  max-height: 100px;
+  min-height: 100px;
+  padding: 30px 30px
   /* padding: 20px 70px; */
 }
 
@@ -232,12 +232,6 @@ nav a:hover:before {
   margin-top: 20px;
   flex-wrap: wrap;
 }
-
-
-/* #tab--seperator{
-  border-left: 1px solid #94979c;
-  margin: 6px 2px
-} */
 
  #closePopUp{
   background-color: #6a768a;
@@ -327,11 +321,20 @@ nav a:hover:before {
 
 /** Media Queries */
 
-@media screen and (max-width: 668px) { /** For laptops resizing window */
+@media screen and (max-width: 1030px) { /** For laptops resizing window */
   .svg--icon{
-    max-height: 60px;
-    min-height: 60px;
+    max-height: 80px;
+    min-height: 80px;
     padding: 20px 20px
+    /* padding: 20px 70px; */
+  }
+}
+
+@media screen and (max-width: 825px) { /** For laptops resizing window */
+  .svg--icon{
+    max-height: 70px;
+    min-height: 70px;
+    padding: 15px 15px
     /* padding: 20px 70px; */
   }
 }
@@ -390,7 +393,7 @@ nav a:hover:before {
 
 
 
-@media screen and (max-height: 854px){ /** For Smaller Heigh Phones */
+@media screen and (max-height: 854px) and (max-width: 500px){ /** For Smaller Heigh Phones */
   .svg--icon{
     max-height: 35px;
     min-height: 35px;
