@@ -1,7 +1,7 @@
 
 export default function NavBar(props){
     const {scrollToDiv, scrollDivs} = props
-    const [heroDiv, skillsDiv] = scrollDivs
+    const [skillsDiv] = scrollDivs
     console.log("scroll: ", scrollDivs)
     return(
         <nav id="nav">
