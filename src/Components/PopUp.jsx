@@ -51,10 +51,15 @@ export default function PopUp(props){
                 src = SVG[skill]
         }
 
-        return (<div className="svg--container">
+        // return (<div className="svg--container">
+        //     <img alt="SVG icon" className="svg--icon" src={src} />
+        //     <h2 >{skill}</h2>
+        // </div>)
+
+        return (<div >
             <img alt="SVG icon" className="svg--icon" src={src} />
-            <h2 style={{marginTop:"-30px"}}>{skill}</h2>
         </div>)
+
     })
 
 
