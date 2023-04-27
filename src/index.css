@@ -314,6 +314,12 @@ nav a:hover:before {
   overflow: hidden;
 }
 
+.svg--container{
+  background-color: yellowgreen;
+  max-width: 100px;
+  max-height: 100px;
+  border: yellow;
+}
 /** Media Queries */
 
 @media screen and (max-width: 950px) {

@@ -51,14 +51,15 @@ export default function PopUp(props){
                 src = SVG[skill]
         }
 
-        // return (<div className="svg--container">
-        //     <img alt="SVG icon" className="svg--icon" src={src} />
-        //     <h2 >{skill}</h2>
-        // </div>)
+        return (<div className="svg--container">
 
-        return (<div >
             <img alt="SVG icon" className="svg--icon" src={src} />
+            {/* <h2 >{skill}</h2> */}
         </div>)
+
+        return <div className="svg--container" >
+            
+        </div>
 
     })
 
@@ -78,15 +79,6 @@ export default function PopUp(props){
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                         <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                     </div>
-                    
-                    <div className='popUp--header--right'>
-                        <div id="popUp--header--search">
-                            <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                            <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
-                        </div>
-                        <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
-                    </div>
-
                 </div> 
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
