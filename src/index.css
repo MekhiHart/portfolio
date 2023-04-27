@@ -80,17 +80,40 @@ nav a:hover:before {
   color:#868B8E
 }
 
-
 .hero--container{
+  display: grid;
+  grid-template-columns: auto auto;
   padding-left: 100px;
 }
 
-.hero--intro{
+.hero--left{
   padding-top: 35vh;
 }
 
-.hero--intro > *{
+.hero--right{
+  padding-top: 30vh;
+  padding-left: 50px;
+}
+
+.hero--left--container > *{
   font-weight: normal;
+}
+
+.hero--right--container{
+  background-color: #E7D2CC;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-right: 20px;
+  padding: 10px;
+  max-width: 300px;
+  border-radius: 20px;
+  text-align: center;
+
+  
 }
 
 
@@ -341,6 +364,16 @@ nav a:hover:before {
 
 @media screen and (max-width: 612px) { /** For phones */
 
+  /** For Hero section */
+
+  .hero--container{
+    margin-left: -50px ;
+    scale: 80%;
+  }
+
+  .hero--left--container{
+    padding-top: 10vh;
+  }
   /** For icons */
   .svg--icon{
     max-height: 50px;
