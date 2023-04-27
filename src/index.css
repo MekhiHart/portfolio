@@ -126,30 +126,28 @@ nav a:hover:before {
   opacity: 50%;
 }
 
-.popup--overlay{
+.popUp--overlay{
   position: fixed;
   top: 0px;
   left: 0px;
-
   height: 100vh;
   width: 100%;
-
   background:rgba(0, 0, 0, 0.5); /* Prevents children opacity change, only changes background opacity*/
-
-  justify-content: center;
-  align-items: center;
   z-index: 101;
+  padding-top: 2%;
 }
 
 .popUp--container{
-  margin: 40px 50px;
   z-index: 102;
   background-color: #21252b;
-  height: 90vh;
+  height: 85vh;
   color: #EEEDE7;
-  border-radius: 20px;
   text-align: center;
-  border: none
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0 10px
+  
 }
 
 
@@ -161,6 +159,8 @@ nav a:hover:before {
   justify-content:flex-start;
   background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
   border: none;
+
+  margin: 0 10px
 }
 
 .popUp--tab{
@@ -194,9 +194,19 @@ nav a:hover:before {
 }
 .popUp--header--right{
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
 }
+
+#popUp--header--search{
+  background-color: #6a768a;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  margin-right: 10px;
+}
+
 .popUp--header--icon{
   border-radius: 50px;
   padding: 5px;
@@ -207,15 +217,7 @@ nav a:hover:before {
   background-color: #545c6d;
 }
 
-#popUp--header--search{
-  background-color: #6a768a;
-  width: 80%;
-  margin-left: 10px;
-  border-radius: 20px;
-  display: flex;
-  margin-right: 10px;
-  /* margin-bottom:10px; */
-}
+
 
 .svg--icon{
   max-height: 50px;
@@ -322,31 +324,10 @@ nav a:hover:before {
 /** Media Queries */
 
 @media screen and (max-width: 950px) {
-  .svg--container{
-    scale:70%
-  }
 
-  .svg--container > *{
-    padding: -20px;
-    margin: -10px
-  }
 }
 
 @media screen and (max-width: 612px) { /** For phones */
-  .svg--container{
-    scale:60%;
-    padding: 0 5px
-    /* padding: -20px;
-    margin: -15px - 15px */
-  }
-
-  .svg--icon{
-    margin: -10px -35px -10px -35px
-  }
-
-  .svg--container > h2{
-    margin: -20px
-  }
 
   /** For PopUp Tabs */
 
@@ -367,12 +348,10 @@ nav a:hover:before {
     justify-content: center;
   }
   
-
-  
   .popUp--header--right{
     grid-row: 1;
-    scale: 90%;
-    margin-left: 30px;
+    /* scale: 90%; */
+    /* margin-left: 30px; */
   }
 
   #popUp--header--search{
@@ -390,17 +369,6 @@ nav a:hover:before {
 }
 
 @media screen and (max-height: 740px){ /** For Smaller Heigh Phones */
-  .svg--icon{
-    margin: -10px -50px -10px -50px
-  }
-  .svg--container{
-    scale:65%;
-    padding: 0 5px
-    /* padding: -20px;
-    margin: -15px - 15px */
-  }
+
 }
 
-/* @media screen and () {
-  
-} */

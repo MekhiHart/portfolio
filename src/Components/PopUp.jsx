@@ -57,20 +57,46 @@ export default function PopUp(props){
             {/* <h2 >{skill}</h2> */}
         </div>)
 
-        return <div className="svg--container" >
-            
-        </div>
+
 
     })
 
 
+    // return(
+    //     <div className="popup--overlay">
+    //         <div className="popUp--container">
+    //             <div className="popUp--tabs">
+    //                 {buttons}
+    //                 <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+    //             </div>
+
+    //             <div id="popUp--header">
+    //                 <div className='popUp--header--left'>
+    //                     <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
+    //                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
+    //                     <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
+    //                     <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
+    //                 </div>
+    //             </div> 
+
+    //             <h1 id="popUp--name">{popUpData.name}</h1>
+
+    //             <div id="popUp--icons--container" >
+    //                 {icons}
+    //             </div>
+    //         </div>
+    //     </div>
+    // )
+
     return(
-        <div className="popup--overlay">
-            <div className="popUp--container">
-                <div className="popUp--tabs">
-                    {buttons}
-                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
-                </div>
+        <div className="popUp--overlay">
+
+            <div className="popUp--tabs">
+                {buttons}
+                <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+            </div>
+
+            <div className="popUp--container"> 
 
                 <div id="popUp--header">
                     <div className='popUp--header--left'>
@@ -79,13 +105,16 @@ export default function PopUp(props){
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                         <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                     </div>
-                </div> 
-
-                <h1 id="popUp--name">{popUpData.name}</h1>
-
-                <div id="popUp--icons--container" >
-                    {icons}
+                    
+                    <div className='popUp--header--right'>
+                        <div id="popUp--header--search">
+                            <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                            <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
+                        </div>
+                        <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
+                    </div>
                 </div>
+
             </div>
         </div>
     )
