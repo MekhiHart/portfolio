@@ -10,6 +10,7 @@ import skills from "./Data/skills.json"
 
 function App() {
   function scrollToDiv(divTarget){
+    console.log("div target: ", divTarget)
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
@@ -18,7 +19,6 @@ function App() {
 
   // * popUp Tabs
   function handlePopUpData(value){
-    console.log("value: ", value)
     setPopUpData({
         name:value,
         skills:skills[value]
@@ -26,7 +26,6 @@ function App() {
   }
 
   function handleTabButtons(value){
-    console.log("Here Value: ", value)
     setTabButtons((prevState)=>{
       return prevState.map((button) => ({...button, isClicked: value === button.name ? true : false}) )
     })
@@ -56,16 +55,11 @@ function App() {
     });
   }, [])
 
-  useEffect(() =>{
+  useEffect(() =>{ // * Handles getting divs for nav bar to jumpt to
     // * web page section
     const heroDiv = document.getElementById("HERO")
     const skillsDiv = document.getElementById("SKILLS")
     setScrollDivs([heroDiv, skillsDiv])
-
-
-    // *
-    const bodyTarget = document.getElementsByTagName("html")[0]
-    bodyTarget.style = {margin: "0", height: "100%", overflow: "hidden"}
   },[])
 
   useEffect(()=> {
@@ -73,8 +67,6 @@ function App() {
     if (popUp.isClicked){
       // Add a class to the body element to disable scrolling
       body.classList.add('no-scroll');
-
-
     }
 
     else{
