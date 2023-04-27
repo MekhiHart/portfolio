@@ -230,7 +230,7 @@ nav a:hover:before {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  background-color: yellowgreen;
+  flex-wrap: wrap;
 }
 
 
@@ -319,9 +319,12 @@ nav a:hover:before {
   max-width: 100px;
   max-height: 100px;
   padding: 20px 20px;
-  border: black;
-  border: #21252b;
 }
+
+.svg--container > h2{
+  margin-top: -20px;
+}
+
 /** Media Queries */
 
 @media screen and (max-width: 950px) {

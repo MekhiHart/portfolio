@@ -56,7 +56,7 @@ export default function PopUp(props){
 
         return (<div className="svg--container">
 
-            <img alt="SVG icon" className="svg--icon" src={src} />
+            <img alt="PNG icon" className="svg--icon" src={src} />
             <h2 >{skill}</h2>
         </div>)
 
@@ -66,11 +66,11 @@ export default function PopUp(props){
 
     const testIcons = []
 
-    for (let i = 0; i < 2; i++){
+    for (let i = 0; i < 3; i++){
         testIcons.push(
             <div className='svg--container'>
                 <img alt="SVG icon" src={Python} className="svg--icon" />
-                <p>Python</p>
+                <h2>Python</h2>
             </div>
             
         )
@@ -133,7 +133,7 @@ export default function PopUp(props){
                 
 
                 <div id="popUp--icons--container">
-                    {testIcons}
+                    {icons}
                 </div>
 
             </div>
