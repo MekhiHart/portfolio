@@ -220,8 +220,8 @@ nav a:hover:before {
 
 
 .svg--icon{
-  max-height: 40px;
-  min-height: 40px;
+  max-height: 80px;
+  min-height: 80px;
   padding: 20px 20px
   /* padding: 20px 70px; */
 }
@@ -316,32 +316,40 @@ nav a:hover:before {
 }
 
 .svg--container{
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 200px;
+  max-height: 200px;
   padding: 20px 20px;
 }
 
 .svg--container > h2{
-  margin-top: -20px;
+  margin-top: -10px;
 }
 
 /** Media Queries */
 
-@media screen and (max-width: 950px) {
-
+@media screen and (max-width: 668px) { /** For laptops resizing window */
+  .svg--icon{
+    max-height: 60px;
+    min-height: 60px;
+    padding: 20px 20px
+    /* padding: 20px 70px; */
+  }
 }
 
 @media screen and (max-width: 612px) { /** For phones */
 
-  /** For PopUp Tabs */
+  /** For icons */
+  .svg--icon{
+    max-height: 50px;
+    min-height: 50px;
+    padding: 12px 15px
+    /* padding: 20px 70px; */
+  }
 
+  /** For PopUp Tabs */
   .popUp--overlay{
     padding-top: 7%;
   }
-
-  /* .popUp--tab{
-    margin-bottom: -2px;
-  } */
 
   .popUp--tab--name{
     display: none;
@@ -380,7 +388,31 @@ nav a:hover:before {
 
 }
 
-@media screen and (max-height: 740px){ /** For Smaller Heigh Phones */
 
+
+@media screen and (max-height: 854px){ /** For Smaller Heigh Phones */
+  .svg--icon{
+    max-height: 35px;
+    min-height: 35px;
+    padding: 10px 10px
+    /* padding: 20px 70px; */
+  }
+
+  .svg--container{
+    padding: 12px 12px;
+  }
+  
 }
 
+@media screen and (max-height: 600px){ /** For really small phones (iphone5, etc  */
+  .svg--icon{
+    max-height: 30px;
+    min-height: 30px;
+    padding: 7px 7px
+    /* padding: 20px 70px; */
+  }
+
+  .svg--container{
+    padding: 9px 9px;
+  }
+}

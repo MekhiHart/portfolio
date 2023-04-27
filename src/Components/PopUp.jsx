@@ -21,8 +21,6 @@ export default function PopUp(props){
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
         let buttonStyle = {}
-        console.log("status: ", isClicked)
-
         if (isClicked){
             buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
         }
@@ -36,7 +34,6 @@ export default function PopUp(props){
 
     const icons = popUpData.skills.map((skill) => {
         let src
-
         switch (skill) {
             case ("C++"):
                 src = PNG["CPlusPlus"]
@@ -53,7 +50,6 @@ export default function PopUp(props){
             default:
                 src = PNG[skill]
         }
-
         return (
         <div className="svg--container">
             <img alt="PNG icon" className="svg--icon" src={src} />
