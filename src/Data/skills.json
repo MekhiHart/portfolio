@@ -10,15 +10,11 @@
 
     "Languages":[
         "JavaScript",
-        "TypeScript",
+
         "Python",
-        "C++",
-        "C#",
-        "C",
-        "Java",
-        "SQL",
-        "HTML",
-        "CSS"
+
+        "Java"
+
     ],
 
     "Databases":[ 

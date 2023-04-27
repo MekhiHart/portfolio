@@ -4,8 +4,10 @@ import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, f
 import profile from "../Assets/mekhi_profile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
+import PNG from "../Assets/PNG/PNG"
 import SVG from "../Assets/SVG/svg"
 import Python from "../Assets/PNG/Python.png"
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 
 export default function PopUp(props){
@@ -37,25 +39,25 @@ export default function PopUp(props){
 
         switch (skill) {
             case ("C++"):
-                src = SVG["CPlusPlus"]
+                src = PNG["CPlusPlus"]
                 break;
 
             case ("C#"):
-                src = SVG["CSharp"]
+                src = PNG["CSharp"]
                 break;
 
                 case ("Firebase"):
-                    src = SVG["Firestore"]
+                    src = PNG["Firestore"]
                     break;
         
             default:
-                src = SVG[skill]
+                src = PNG[skill]
         }
 
         return (<div className="svg--container">
 
             <img alt="SVG icon" className="svg--icon" src={src} />
-            {/* <h2 >{skill}</h2> */}
+            <h2 >{skill}</h2>
         </div>)
 
 
@@ -64,9 +66,13 @@ export default function PopUp(props){
 
     const testIcons = []
 
-    for (let i = 0; i < 10; i++){
+    for (let i = 0; i < 2; i++){
         testIcons.push(
-            <img alt="SVG icon" src={Python} className="svg--icon" />
+            <div className='svg--container'>
+                <img alt="SVG icon" src={Python} className="svg--icon" />
+                <p>Python</p>
+            </div>
+            
         )
     }
 
@@ -123,6 +129,8 @@ export default function PopUp(props){
                 </div>
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
+
+                
 
                 <div id="popUp--icons--container">
                     {testIcons}
