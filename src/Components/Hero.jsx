@@ -23,13 +23,13 @@ export default function Hero(){
         <div className="hero--right">
             <div className="hero--right--container">
                 <h2>About Me</h2>
-                <p style={{marginTop:"-10px"}}>
+                <h3 style={{marginTop:"-10px", fontWeight:"normal"}}>
                     I am a first-generation student that immigrated from the Philippines when I was 13 with my mom and two siblings. 
                     It was a struggle to fit in at first due the language barriers and the 
                     overwhelming new environment. However, the challenge of adapting to a new 
                     country as an immigrant shaped me to a curious-minded person that essentially made
                     me love trying out new things I was not familiar with.
-                    </p>
+                    </h3>
             </div>
         </div>
     </div>

@@ -83,6 +83,7 @@ nav a:hover:before {
 .hero--container{
   display: grid;
   grid-template-columns: auto auto;
+  
   padding-left: 100px;
 }
 
@@ -91,7 +92,7 @@ nav a:hover:before {
 }
 
 .hero--right{
-  padding-top: 30vh;
+  padding-top: 35vh;
   padding-left: 50px;
 }
 
@@ -109,11 +110,9 @@ nav a:hover:before {
 
   margin-right: 20px;
   padding: 10px;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 20px;
   text-align: center;
-
-  
 }
 
 
@@ -358,7 +357,22 @@ nav a:hover:before {
     max-height: 70px;
     min-height: 70px;
     padding: 15px 15px
-    /* padding: 20px 70px; */
+  }
+
+  .hero--left{
+    padding-top: 10vh;
+  }
+  .hero--right{
+    padding-top: 10vh;
+    margin-left: -50px;
+  }
+
+  .hero--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100px;
   }
 }
 
@@ -366,14 +380,25 @@ nav a:hover:before {
 
   /** For Hero section */
 
+  .hero--left{
+    padding-top: 0vh;
+  }
+  .hero--right{
+    padding-top: 5vh;
+  }
+
   .hero--container{
     margin-left: -50px ;
-    scale: 80%;
+    scale: 75%;
   }
 
   .hero--left--container{
     padding-top: 10vh;
   }
+
+
+
+  
   /** For icons */
   .svg--icon{
     max-height: 50px;
