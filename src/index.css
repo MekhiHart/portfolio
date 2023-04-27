@@ -479,6 +479,14 @@ nav a:hover:before {
   .svg--container{
     padding: 12px 12px;
   }
+
+  #nav > *{
+    font-size: 12px !important;
+  }
+
+  #nav > a > span {
+    padding: 2px !important;
+  }
   
 }
 
