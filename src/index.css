@@ -359,9 +359,9 @@ nav a:hover:before {
     padding: 15px 15px
   }
 
-  .hero--left{
+  /* .hero--left{
     padding-top: 10vh;
-  }
+  } */
   .hero--right{
     padding-top: 10vh;
     margin-left: -50px;
@@ -376,8 +376,13 @@ nav a:hover:before {
   }
 }
 
-@media screen and (max-width: 612px) { /** For phones */
+@media screen and (max-width: 612px) and (min-height: 820px) { /* Tall Phones */
+  .hero--left{
+    margin-top: -30vh;
+  }
+}
 
+@media screen and (max-width: 612px) { /** For normal sized phones */
   /** For Hero section */
 
   .hero--left{
@@ -413,9 +418,9 @@ nav a:hover:before {
   
   /** For icons */
   .svg--icon{
-    max-height: 50px;
-    min-height: 50px;
-    padding: 12px 15px
+    max-height: 35px;
+    min-height: 35px;
+    padding: 6px 6px
     /* padding: 20px 70px; */
   }
 
@@ -463,10 +468,10 @@ nav a:hover:before {
 
 
 
-@media screen and (max-height: 854px) and (max-width: 500px){ /** For Smaller Heigh Phones */
+@media screen and (max-height: 754px) and (max-width: 500px){ /** For Smaller Heigh Phones */
   .svg--icon{
-    max-height: 35px;
-    min-height: 35px;
+    max-height: 32px;
+    min-height: 30px;
     padding: 10px 10px
     /* padding: 20px 70px; */
   }
@@ -477,7 +482,12 @@ nav a:hover:before {
   
 }
 
-@media screen and (max-height: 600px){ /** For really small phones (iphone5, etc  */
+@media screen and (max-width: 340px)  and (max-height: 600px){ /** For really small phones (iphone5, etc  */
+
+  .hero--left--container{
+    margin-top: 50vh;
+  }
+
   .svg--icon{
     max-height: 30px;
     min-height: 30px;
