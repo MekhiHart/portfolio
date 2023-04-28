@@ -406,6 +406,11 @@ nav a:hover:before {
     margin-top: -60px;
   }
 
+  .skills--icon{
+    scale: 80%;
+  }
+
+
   #nav > *{
     scale: 90%
   }
