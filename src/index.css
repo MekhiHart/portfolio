@@ -325,6 +325,18 @@ nav a:hover:before {
 
 /** Media Queries */
 
+/* Desktop  */
+@media screen and (min-width:1600px){ 
+
+}
+
+/* Laptop  */
+@media screen and (min-width:1600px){ 
+  
+}
+
+
+
 @media screen and (max-width: 950px) {
   .svg--container{
     scale:70% !important
@@ -336,15 +348,12 @@ nav a:hover:before {
   }
 }
 
-@media screen and (max-width: 612px) { /** For phones medium sized */
-  .body{
-    background-color: rebeccapurple;
-  }
+@media screen and (max-width: 612px) { 
+
   .svg--container{
     scale:50% !important;
     padding: 10px;    
-    /* padding: -20px;
-    margin: -15px - 15px */
+
   }
 
   .svg--icon{
@@ -356,7 +365,7 @@ nav a:hover:before {
     margin: -15px !important
   }
 
-  /** For PopUp Tabs */
+
 
   .popUp--tab--name{
     display: none !important; 
@@ -368,7 +377,7 @@ nav a:hover:before {
   }
 
 
-  /**  For search bar */
+ 
   #popUp--header{
     display: grid !important;
     grid-template-rows: 1fr 1fr;
@@ -396,13 +405,12 @@ nav a:hover:before {
   }
 
   .skills--icons--container{
-    background-color: yellow;
     height: 70%;
   }
 
 }
 
-@media screen and (max-height: 740px){ /** For Smaller Heigh Phones; Iphone7 */
+@media screen and (max-height: 740px){ 
   .svg--icon{
     margin: -10px -50px -10px -50px !important;
   }
@@ -413,13 +421,8 @@ nav a:hover:before {
   }
 
   .skills--icons--container{
-    background-color: rebeccapurple;
     height: 70%;
     
 
-  }
-
-  .body{
-    background-color: red !important;
   }
 }
