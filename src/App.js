@@ -13,11 +13,9 @@ function App() {
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
-  const [scrollDivs, setScrollDivs] = useState([])
-  const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
-
   // * popUp Tabs
   function handlePopUpData(value){
+    console.log("Value: ", value)
     setPopUpData({
         name:value,
         skills:skills[value]
@@ -29,6 +27,9 @@ function App() {
       return prevState.map((button) => ({...button, isClicked: value === button.name ? true : false}) )
     })
   }
+
+  const [scrollDivs, setScrollDivs] = useState([])
+  const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
   const [tabButtons, setTabButtons] = useState([
     {name:"Languages", isClicked:false},

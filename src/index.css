@@ -82,18 +82,24 @@ nav a:hover:before {
 
 
 .hero--container{
-  padding-left: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .hero--intro{
-  padding-top: 35vh;
+  align-self: center;
+
 }
 
 .hero--intro > *{
   font-weight: normal;
 }
 
-
+.hero--links{
+  padding-top: 15px;
+}
 .hero--links a:not(:first-child){
   padding-left:50px;
 }
@@ -346,9 +352,16 @@ nav a:hover:before {
 }
 
 /* Mobile */
-@media screen and (max-width: 480px){ 
+@media screen and (min-width: 380px) and (max-width: 480px){ 
   
 }
+ /* Smaller Width Mobile */
+@media screen and (max-width: 400px) { 
+  .hero--container{
+    scale: 80%;
+  }
+}
+
 
 
 /* @media screen and () {
@@ -356,7 +369,7 @@ nav a:hover:before {
 } */
 
 
-
+/*
 @media screen and (max-width: 950px) {
   .svg--container{
     scale:70% !important
@@ -446,3 +459,5 @@ nav a:hover:before {
 
   }
 }
+
+*/

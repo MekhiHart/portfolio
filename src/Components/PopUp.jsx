@@ -8,13 +8,15 @@ import SVG from "../Assets/SVG/svg"
 
 
 export default function PopUp(props){
-    const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
-    const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
     function handleButtonClick(value){
+        // changes what to render when tab is clicked
         handlePopUpData(value)
         handleTabButtons(value)
     }
-    
+
+    const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
+    const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
+
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
         let buttonStyle = {}

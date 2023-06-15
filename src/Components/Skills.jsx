@@ -5,7 +5,8 @@ import {faDatabase,faScrewdriverWrench, faLaptopCode} from '@fortawesome/free-so
 export default function Skills(props){
     function handleButtonClick(value){
         setPopUp({isClicked:true})
-        handlePopUpData(value)
+        
+        handlePopUpData(value) // changes what to render based on button clicked on the skills section
         handleTabButtons(value)
     }
     const {setPopUp, handlePopUpData, handleTabButtons} = props
@@ -21,7 +22,7 @@ export default function Skills(props){
         style.margin = "0 auto"
         buttons.push(
             (
-                <div className="" style={style}>
+                <div style={style}>
                     <button onClick={() => handleButtonClick(names[i-1])} style={iconStyle}  className='button-30 skill--button'> <FontAwesomeIcon className="skill--icon" icon={icons[i -1]} size='5x'/></button>
                     <h2>{names[i - 1]}</h2>
                 </div>
