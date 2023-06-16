@@ -112,7 +112,7 @@ nav a:hover:before {
 .skills--container{
   display: flex;
   justify-content: center;
-  
+
   background-color: #EEEDE7;
   height: 100vh;
   flex-direction: column;
@@ -133,6 +133,7 @@ nav a:hover:before {
   grid-template-rows: 1fr 1fr;
   padding-top: 80px;
 }
+
 
 .skill--button .skill--icon{
   transition: opacity .2s;
@@ -359,6 +360,10 @@ nav a:hover:before {
   #nav > a{
     scale: 90%;
   }
+
+  .skills--container > *{
+    scale: 80%;
+  }
 }
  /* Smaller Width Mobile */
 @media screen and (max-width: 400px) { 
@@ -367,6 +372,10 @@ nav a:hover:before {
   }
   .hero--container{
     scale: 80%;
+  }
+
+  .skills--container > *{
+    scale: 70%;
   }
 }
 
