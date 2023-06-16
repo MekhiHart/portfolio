@@ -226,11 +226,10 @@ nav a:hover:before {
 
 #popUp--header--search{
   background-color: #6a768a;
-  width: 80%;
-  margin-left: 10px;
+  width: 100%;
   border-radius: 20px;
   display: flex;
-  margin-right: 10px;
+  margin-left: 20px;
   /* margin-bottom:10px; */
 }
 
@@ -249,6 +248,11 @@ nav a:hover:before {
   justify-content: center;
   flex-wrap: wrap;
   align-self: center;
+}
+
+#popUp--header--search--url{
+  margin-top: 7px;
+  margin-left: 5px;
 }
 
 
@@ -355,8 +359,17 @@ nav a:hover:before {
   
 }
 
-/* Mobile */
-@media screen and (min-width: 380px) and (max-width: 480px){ 
+/* Includes both normal width mobile and small mobile */
+@media screen and (max-width:485px) {
+  #popUp--header--search--url{
+    font-size: 12px;
+    padding-top: 4px;
+  }
+
+}
+
+/* Normal Width Mobile */
+@media screen and (min-width: 380px) and (max-width: 485px){ 
   #nav > a{
     scale: 90%;
   }
@@ -366,7 +379,7 @@ nav a:hover:before {
   }
 }
  /* Smaller Width Mobile */
-@media screen and (max-width: 400px) { 
+@media screen and (max-width: 380px) { 
   #nav > a{
     scale: 80%;
   }
@@ -377,8 +390,44 @@ nav a:hover:before {
   .skills--container > *{
     scale: 70%;
   }
+
+  #popUp--header--search--url{
+    font-size: 9px !important;
+    padding-top: 5px;
+  }
 }
 
+
+/** Edge Cases */
+
+/* Width when popUp browser starts to break */
+@media screen and (max-width:566px ){ 
+  .popUp--tab--name{
+    display: none ; 
+  }
+  
+  #popUp--header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #popUp--header--search--icon{
+    margin-top: 3px;
+  }
+
+  #popUp--header--search--url{
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .popUp--header--right > img{
+    display: none;
+  }
+
+
+
+}
 
 
 /* @media screen and () {
