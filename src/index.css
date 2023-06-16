@@ -110,11 +110,14 @@ nav a:hover:before {
 }
 
 .skills--container{
+  display: flex;
+  justify-content: center;
+  
   background-color: #EEEDE7;
   height: 100vh;
   flex-direction: column;
   text-align: center;
-  padding-top: 20px;
+
 }
 
 .skills--icons--container{
