@@ -405,6 +405,10 @@ nav a:hover:before {
   .popUp--tab--name{
     display: none ; 
   }
+
+  .popUp--header--right{
+    margin-top: 5px;
+  }
   
   #popUp--header{
     display: flex;
@@ -424,9 +428,6 @@ nav a:hover:before {
   .popUp--header--right > img{
     display: none;
   }
-
-
-
 }
 
 
