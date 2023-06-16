@@ -1,10 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faReact} from "@fortawesome/free-brands-svg-icons"
+import {faPython, faReact} from "@fortawesome/free-brands-svg-icons"
 import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
 import profile from "../Assets/mekhi_profile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
+import PNG from "../Assets/PNG/PNG"
 import SVG from "../Assets/SVG/svg"
+import Python from "../Assets/PNG/Python.png"
+import { icon } from '@fortawesome/fontawesome-svg-core'
 
 
 export default function PopUp(props){
@@ -34,39 +37,39 @@ export default function PopUp(props){
 
     const icons = popUpData.skills.map((skill) => {
         let src
-
         switch (skill) {
             case ("C++"):
-                src = SVG["CPlusPlus"]
+                src = PNG["CPlusPlus"]
                 break;
 
             case ("C#"):
-                src = SVG["CSharp"]
+                src = PNG["CSharp"]
                 break;
 
                 case ("Firebase"):
-                    src = SVG["Firestore"]
+                    src = PNG["Firestore"]
                     break;
         
             default:
-                src = SVG[skill]
+                src = PNG[skill]
         }
 
         return (<div className="svg--container">
             <img alt="SVG icon" className="svg--icon" src={src} />
             <h2>{skill}</h2>
+
         </div>)
     })
 
-
     return(
-        <div className="popup--overlay">
-            <div className="popUp--container">
-                <div className="popUp--tabs">
-                    {buttons}
-                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
-                </div>
+        <div className="popUp--overlay">
 
+            <div className="popUp--tabs">
+                {buttons}
+                <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+            </div>
+
+            <div className="popUp--container"> 
                 <div id="popUp--header">
                     <div className='popUp--header--left'>
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
@@ -74,7 +77,7 @@ export default function PopUp(props){
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
                         <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                     </div>
-                    
+
                     <div className='popUp--header--right'>
                         <div id="popUp--header--search">
                             <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
@@ -82,16 +85,16 @@ export default function PopUp(props){
                         </div>
                         <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
                     </div>
-
-                </div> 
+                </div>
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
 
+
                 <div className="skills--icon--container">
+
                     {icons}
                 </div>
-                
-                
+
             </div>
         </div>
     )

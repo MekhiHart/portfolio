@@ -10,13 +10,14 @@ import skills from "./Data/skills.json"
 
 function App() {
   function scrollToDiv(divTarget){
-    console.log("Target: ", divTarget)
+
+    console.log("div target: ", divTarget)
+
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
   // * popUp Tabs
   function handlePopUpData(value){
-    console.log("Value: ", value)
     setPopUpData({
         name:value,
         skills:skills[value]
@@ -56,16 +57,11 @@ function App() {
     });
   }, [])
 
-  useEffect(() =>{
+  useEffect(() =>{ // * Handles getting divs for nav bar to jumpt to
     // * web page section
     const heroDiv = document.getElementById("HERO")
     const skillsDiv = document.getElementById("SKILLS")
     setScrollDivs([heroDiv, skillsDiv])
-
-
-    // *
-    const bodyTarget = document.getElementsByTagName("html")[0]
-    bodyTarget.style = {margin: "0", height: "100%", overflow: "hidden"}
   },[])
 
   useEffect(()=> {
@@ -73,8 +69,6 @@ function App() {
     if (popUp.isClicked){
       // Add a class to the body element to disable scrolling
       body.classList.add('no-scroll');
-
-
     }
 
     else{
@@ -90,7 +84,6 @@ function App() {
       <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
-      {/* <Hero/> */}
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )
