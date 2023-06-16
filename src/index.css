@@ -339,6 +339,51 @@ nav a:hover:before {
 
 /** Media Queries */
 
+/** Edge Cases */
+
+/* When browser icons starts to break */
+@media screen and (max-width: 777px){
+
+  .svg--container{
+    scale: 70%;
+    margin: -36px;
+  }
+  .skills--icon--container{
+    margin-top: -20px;
+  }
+}
+
+/* Width when popUp browser header starts to break */
+@media screen and (max-width:566px ){ 
+  .popUp--tab--name{
+    display: none ; 
+  }
+
+  .popUp--header--right{
+    margin-top: 5px;
+  }
+  
+  #popUp--header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #popUp--header--search--icon{
+    margin-top: 3px;
+  }
+
+  #popUp--header--search--url{
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .popUp--header--right > img{
+    display: none;
+  }
+}
+
+
 /* Desktop  */
 @media screen and (min-width:1600px){ 
 
@@ -355,7 +400,7 @@ nav a:hover:before {
 }
 
 /* Tablet*/
-@media screen and (min-width:480px) and (max-width: 768){ 
+@media screen and (min-width:480px) and (max-width: 777){ 
   
 }
 
@@ -364,6 +409,14 @@ nav a:hover:before {
   #popUp--header--search--url{
     font-size: 12px;
     padding-top: 4px;
+  }
+
+  .svg--container{
+    scale: 60%;
+    margin: -45px;
+  }
+  .skills--icon--container{
+    margin-top: -20px;
   }
 
 }
@@ -395,40 +448,11 @@ nav a:hover:before {
     font-size: 9px !important;
     padding-top: 5px;
   }
+
 }
 
 
-/** Edge Cases */
 
-/* Width when popUp browser starts to break */
-@media screen and (max-width:566px ){ 
-  .popUp--tab--name{
-    display: none ; 
-  }
-
-  .popUp--header--right{
-    margin-top: 5px;
-  }
-  
-  #popUp--header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #popUp--header--search--icon{
-    margin-top: 3px;
-  }
-
-  #popUp--header--search--url{
-    margin-top: 3px;
-    margin-left: 5px;
-  }
-
-  .popUp--header--right > img{
-    display: none;
-  }
-}
 
 
 /* @media screen and () {
