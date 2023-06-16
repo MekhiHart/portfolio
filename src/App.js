@@ -10,6 +10,7 @@ import skills from "./Data/skills.json"
 
 function App() {
   function scrollToDiv(divTarget){
+    console.log("Target: ", divTarget)
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
