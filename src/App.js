@@ -10,12 +10,11 @@ import skills from "./Data/skills.json"
 
 function App() {
   function scrollToDiv(divTarget){
+
     console.log("div target: ", divTarget)
+
     divTarget.scrollIntoView({behavior:"smooth"})
   }
-
-  const [scrollDivs, setScrollDivs] = useState([])
-  const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
   // * popUp Tabs
   function handlePopUpData(value){
@@ -30,6 +29,9 @@ function App() {
       return prevState.map((button) => ({...button, isClicked: value === button.name ? true : false}) )
     })
   }
+
+  const [scrollDivs, setScrollDivs] = useState([])
+  const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
   const [tabButtons, setTabButtons] = useState([
     {name:"Languages", isClicked:false},

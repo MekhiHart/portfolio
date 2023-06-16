@@ -81,14 +81,17 @@ nav a:hover:before {
 }
 
 .hero--container{
-  display: grid;
-  grid-template-columns: auto auto;
-  
-  padding-left: 100px;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hero--left{
-  padding-top: 35vh;
+.hero--intro{
+  align-self: center;
+
+
 }
 
 .hero--right{
@@ -100,21 +103,10 @@ nav a:hover:before {
   font-weight: normal;
 }
 
-.hero--right--container{
-  background-color: #E7D2CC;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-right: 20px;
-  padding: 10px;
-  max-width: 400px;
-  border-radius: 20px;
-  text-align: center;
+.hero--links{
+  padding-top: 15px;
 }
-
 
 .hero--links a:not(:first-child){
   padding-left:50px;
@@ -126,11 +118,21 @@ nav a:hover:before {
 }
 
 .skills--container{
+  display: flex;
+  justify-content: center;
+
   background-color: #EEEDE7;
   height: 100vh;
   flex-direction: column;
   text-align: center;
-  padding-top: 20px;
+
+}
+
+.skills--icons--container{
+  display: flex;
+  justify-content: center;;
+  flex-wrap: wrap;
+  align-self: center;
 }
 
 .skills--grid{
@@ -139,6 +141,7 @@ nav a:hover:before {
   grid-template-rows: 1fr 1fr;
   padding-top: 80px;
 }
+
 
 .skill--button .skill--icon{
   transition: opacity .2s;
@@ -240,6 +243,19 @@ nav a:hover:before {
 }
 
 
+#popUp--header--search{
+  background-color: #6a768a;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  margin-left: 20px;
+  /* margin-bottom:10px; */
+}
+
+
+.svg--container{
+  margin-top: -25px;
+}
 
 .svg--icon{
   max-height: 100px;
@@ -248,12 +264,25 @@ nav a:hover:before {
   /* padding: 20px 70px; */
 }
 
-#popUp--icons--container{
+
+.skills--icon--container{
   display: flex;
   justify-content: center;
-  margin-top: 20px;
   flex-wrap: wrap;
+  align-self: center;
 }
+
+#popUp--header--search--url{
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+
+/* #tab--seperator{
+  border-left: 1px solid #94979c;
+  margin: 6px 2px
+} */
+
 
  #closePopUp{
   background-color: #6a768a;
@@ -343,99 +372,163 @@ nav a:hover:before {
 
 /** Media Queries */
 
-@media screen and (max-width: 1030px) { /** For laptops resizing window */
-  .svg--icon{
-    max-height: 80px;
-    min-height: 80px;
-    padding: 20px 20px
-    /* padding: 20px 70px; */
+/** Edge Cases */
+
+/* When browser icons starts to break */
+@media screen and (max-width: 777px){
+
+  .svg--container{
+    scale: 70%;
+    margin: -36px;
+  }
+  .skills--icon--container{
+    margin-top: -20px;
   }
 }
 
-@media screen and (max-width: 825px) { /** For laptops resizing window */
-  .svg--icon{
-    max-height: 70px;
-    min-height: 70px;
-    padding: 15px 15px
+/* Width when popUp browser header starts to break */
+@media screen and (max-width:566px ){ 
+  .popUp--tab--name{
+    display: none ; 
   }
 
-  /* .hero--left{
-    padding-top: 10vh;
-  } */
-  .hero--right{
-    padding-top: 10vh;
-    margin-left: -50px;
+  .popUp--header--right{
+    margin-top: 5px;
   }
-
-  .hero--container{
+  
+  #popUp--header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-left: -100px;
+  }
+
+  #popUp--header--search--icon{
+    margin-top: 3px;
+  }
+
+  #popUp--header--search--url{
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+
+  .popUp--header--right > img{
+    display: none;
   }
 }
 
-@media screen and (max-width: 612px) and (min-height: 820px) { /* Tall Phones */
-  .hero--left{
-    margin-top: -30vh;
-  }
+
+/* Desktop  */
+@media screen and (min-width:1600px){ 
+
 }
 
-@media screen and (max-width: 612px) { /** For normal sized phones */
-  /** For Hero section */
+/* Laptop  */
+@media screen and (min-width:1024px) and (max-width: 1599){ 
+  
+}
 
-  .hero--left{
-    padding-top: 0vh;
-  }
-  .hero--right{
-    padding-top: 5vh;
+/* Tablet Landscape */
+@media screen and (min-width:768px) and (max-width: 1024){ 
+  
+}
+
+/* Tablet*/
+@media screen and (min-width:480px) and (max-width: 777){ 
+  
+}
+
+/* Includes both normal width mobile and small mobile */
+@media screen and (max-width:485px) {
+  #popUp--header--search--url{
+    font-size: 12px;
+    padding-top: 4px;
   }
 
+  .svg--container{
+    scale: 60%;
+    margin: -45px;
+  }
+  .skills--icon--container{
+    margin-top: -20px;
+  }
+
+}
+
+/* Normal Width Mobile */
+@media screen and (min-width: 380px) and (max-width: 485px){ 
+  #nav > a{
+    scale: 90%;
+  }
+
+  .skills--container > *{
+    scale: 80%;
+  }
+}
+ /* Smaller Width Mobile */
+@media screen and (max-width: 380px) { 
+  #nav > a{
+    scale: 80%;
+  }
   .hero--container{
-    margin-left: -50px ;
-    scale: 75%;
-  }
-
-  .hero--left--container{
-    padding-top: 10vh;
-  }
-
-  /** Skills section */
-  .skills--grid{
-    margin-top: -60px;
-  }
-
-  .skills--icon{
     scale: 80%;
   }
 
-
-  #nav > *{
-    scale: 90%
+  .skills--container > *{
+    scale: 70%;
   }
 
-  #nav > a{
-    padding: 10px
+  #popUp--header--search--url{
+    font-size: 9px !important;
+    padding-top: 5px;
   }
 
+}
 
+
+
+
+
+/* @media screen and () {
   
-  /** For icons */
+} */
+
+
+
+@media screen and (max-width: 950px) {
+  .svg--container{
+    scale:70% !important
+
+}
+
+
+  .svg--container > *{
+    padding: -20px !important;
+    margin: -10px !important;
+  }
+}
+
+@media screen and (max-width: 612px) { 
+
+  .svg--container{
+    scale:50% !important;
+    padding: 10px;    
+
+
+
   .svg--icon{
-    max-height: 35px;
-    min-height: 35px;
-    padding: 6px 6px
-    /* padding: 20px 70px; */
+    margin: -15px -40px !important;
+
   }
 
-  /** For PopUp Tabs */
-  .popUp--overlay{
-    padding-top: 7%;
+  .svg--container > h2{
+    margin: -15px !important
   }
+
+
+
 
   .popUp--tab--name{
-    display: none;
+    display: none !important; 
   }
 
   #popUp--name{
@@ -444,7 +537,7 @@ nav a:hover:before {
   }
 
 
-  /**  For search bar */
+ 
   #popUp--header{
     display: grid !important;
     grid-template-rows: 1fr 1fr;
@@ -452,63 +545,50 @@ nav a:hover:before {
   }
   
   .popUp--header--right{
-    grid-row: 1;
-    /* scale: 90%; */
-    /* margin-left: 30px; */
+
+    grid-row: 1 !important;
+    scale: 90% !important;
+    margin-left: 30px !important;
+
   }
 
   #popUp--header--search{
-    display: flex;
-    justify-content: center;
-    scale: 70%;
-    padding-right: 30px;
-    padding-left: 5px;
+    display: flex !important;
+    justify-content: center !important;
+    scale: 70% !important;
+    padding-right: 30px !important;
+    padding-left: 5px !important;
   }
 
   .popUp--header--right > img{
-    margin-left: -20px;
+    margin-left: -20px !important;
+  }
+
+  .skills--icons--container{
+    height: 70%;
   }
 
 }
 
 
-
-@media screen and (max-height: 754px) and (max-width: 500px){ /** For Smaller Heigh Phones */
+@media screen and (max-height: 740px){ 
   .svg--icon{
-    max-height: 32px;
-    min-height: 30px;
-    padding: 10px 10px
-    /* padding: 20px 70px; */
+    margin: -10px -50px -10px -50px !important;
+
   }
 
   .svg--container{
-    padding: 12px 12px;
+
+    scale:50% !important;
+    padding: 5px 5px !important;    
+    max-height: 100px;
   }
 
-  #nav > *{
-    font-size: 12px !important;
-  }
+  .skills--icons--container{
+    height: 70%;
+    
 
-  #nav > a > span {
-    padding: 2px !important;
-  }
-  
-}
-
-@media screen and (max-width: 340px)  and (max-height: 600px){ /** For really small phones (iphone5, etc  */
-
-  .hero--left--container{
-    margin-top: 50vh;
-  }
-
-  .svg--icon{
-    max-height: 30px;
-    min-height: 30px;
-    padding: 7px 7px
-    /* padding: 20px 70px; */
-  }
-
-  .svg--container{
-    padding: 9px 9px;
   }
 }
+
+

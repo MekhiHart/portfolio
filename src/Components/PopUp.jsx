@@ -11,16 +11,19 @@ import { icon } from '@fortawesome/fontawesome-svg-core'
 
 
 export default function PopUp(props){
-    const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
-    const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
     function handleButtonClick(value){
+        // changes what to render when tab is clicked
         handlePopUpData(value)
         handleTabButtons(value)
     }
-    
+
+    const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
+    const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
+
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
         let buttonStyle = {}
+
         if (isClicked){
             buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
         }
@@ -50,10 +53,11 @@ export default function PopUp(props){
             default:
                 src = PNG[skill]
         }
-        return (
-        <div className="svg--container">
-            <img alt="PNG icon" className="svg--icon" src={src} />
-            <h2 >{skill}</h2>
+
+        return (<div className="svg--container">
+            <img alt="SVG icon" className="svg--icon" src={src} />
+            <h2>{skill}</h2>
+
         </div>)
     })
 
@@ -76,8 +80,8 @@ export default function PopUp(props){
 
                     <div className='popUp--header--right'>
                         <div id="popUp--header--search">
-                            <FontAwesomeIcon style={{marginTop:"6px", marginLeft:"5px"}} className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                            <span style={{marginTop:"7px", marginLeft:"5px"}}>www.MekhiHart_isCool.dev</span>
+                            <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                            <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
                         </div>
                         <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
                     </div>
@@ -85,7 +89,9 @@ export default function PopUp(props){
 
                 <h1 id="popUp--name">{popUpData.name}</h1>
 
-                <div id="popUp--icons--container">
+
+                <div className="skills--icon--container">
+
                     {icons}
                 </div>
 
