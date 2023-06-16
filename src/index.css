@@ -353,10 +353,15 @@ nav a:hover:before {
 
 /* Mobile */
 @media screen and (min-width: 380px) and (max-width: 480px){ 
-  
+  #nav > a{
+    scale: 90%;
+  }
 }
  /* Smaller Width Mobile */
 @media screen and (max-width: 400px) { 
+  #nav > a{
+    scale: 80%;
+  }
   .hero--container{
     scale: 80%;
   }
