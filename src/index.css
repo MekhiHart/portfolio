@@ -360,9 +360,9 @@ nav a:hover:before {
 
 #project--video{
   justify-self: center;
+  align-self: center;
   margin-top: 20px;
   margin-left: 50px;
-  padding-left: 40px;
   width: 640px;
 }
 
