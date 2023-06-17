@@ -18,6 +18,8 @@ export default function Hero(){
             <a id="resume" href="https://drive.google.com/file/d/12Kqr3mP8Z75CRPphWRdP-PGQisb6zUsJ/view?usp=sharing" target='_blank'><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} >Resume</span></a>
         </div>
 
+
+
     </div>
     )
 }

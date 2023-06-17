@@ -80,7 +80,6 @@ nav a:hover:before {
   color:#868B8E
 }
 
-
 .hero--container{
   align-items: center;
   display: flex;
@@ -93,7 +92,12 @@ nav a:hover:before {
 
 }
 
-.hero--intro > *{
+.hero--right{
+  padding-top: 35vh;
+  padding-left: 50px;
+}
+
+.hero--left--container > *{
   font-weight: normal;
 }
 
@@ -143,30 +147,28 @@ nav a:hover:before {
   opacity: 50%;
 }
 
-.popup--overlay{
+.popUp--overlay{
   position: fixed;
   top: 0px;
   left: 0px;
-
   height: 100vh;
   width: 100%;
-
   background:rgba(0, 0, 0, 0.5); /* Prevents children opacity change, only changes background opacity*/
-
-  justify-content: center;
-  align-items: center;
   z-index: 101;
+  padding-top: 2%;
 }
 
 .popUp--container{
-  margin: 40px 50px;
   z-index: 102;
   background-color: #21252b;
-  height: 90vh;
+  height: 85vh;
   color: #EEEDE7;
-  border-radius: 20px;
   text-align: center;
-  border: none
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 0 10px
+  
 }
 
 
@@ -178,6 +180,8 @@ nav a:hover:before {
   justify-content:flex-start;
   background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
   border: none;
+
+  margin: 0 10px
 }
 
 .popUp--tab{
@@ -211,9 +215,19 @@ nav a:hover:before {
 }
 .popUp--header--right{
   display: flex;
-  width: 80%;
+  width: 90%;
   justify-content: center;
 }
+
+#popUp--header--search{
+  background-color: #6a768a;
+  width: 100%;
+  margin-left: 10px;
+  border-radius: 20px;
+  display: flex;
+  margin-right: 10px;
+}
+
 .popUp--header--icon{
   border-radius: 50px;
   padding: 5px;
@@ -238,9 +252,10 @@ nav a:hover:before {
 }
 
 .svg--icon{
-  max-height: 70px;
-  min-height: 70px;
-  padding: 30px 50px;
+  max-height: 100px;
+  min-height: 100px;
+  padding: 30px 30px
+  /* padding: 20px 70px; */
 }
 
 .skills--icon--container{
@@ -337,6 +352,16 @@ nav a:hover:before {
   overflow: hidden;
 }
 
+.svg--container{
+  max-width: 200px;
+  max-height: 200px;
+  padding: 20px 20px;
+}
+
+.svg--container > h2{
+  margin-top: -10px;
+}
+
 /** Media Queries */
 
 /** Edge Cases */
@@ -383,6 +408,7 @@ nav a:hover:before {
   }
 }
 
+/* Device Media Quries */
 
 /* Desktop  */
 @media screen and (min-width:1600px){ 
@@ -396,12 +422,17 @@ nav a:hover:before {
 
 /* Tablet Landscape */
 @media screen and (min-width:768px) and (max-width: 1024){ 
-  
+  .svg--container{
+    scale: 40%;
+    margin: -40px;
+  }
 }
 
 /* Tablet*/
-@media screen and (min-width:480px) and (max-width: 777){ 
-  
+@media screen and (min-width:480px) and (max-width: 811px){ 
+  .svg--container{
+    margin: -5px;
+  }
 }
 
 /* Includes both normal width mobile and small mobile */
@@ -412,8 +443,8 @@ nav a:hover:before {
   }
 
   .svg--container{
-    scale: 60%;
-    margin: -45px;
+    scale: 45%;
+    margin: -55px;
   }
   .skills--icon--container{
     margin-top: -20px;
@@ -460,95 +491,3 @@ nav a:hover:before {
 } */
 
 
-/*
-@media screen and (max-width: 950px) {
-  .svg--container{
-    scale:70% !important
-  }
-
-  .svg--container > *{
-    padding: -20px !important;
-    margin: -10px !important;
-  }
-}
-
-@media screen and (max-width: 612px) { 
-
-  .svg--container{
-    scale:50% !important;
-    padding: 10px;    
-
-  }
-
-  .svg--icon{
-    margin: -15px -40px !important;
-
-  }
-
-  .svg--container > h2{
-    margin: -15px !important
-  }
-
-
-
-  .popUp--tab--name{
-    display: none !important; 
-  }
-
-  #popUp--name{
-    margin-top: -10px;
-    margin-bottom: -10px;
-  }
-
-
- 
-  #popUp--header{
-    display: grid !important;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-  }
-  
-
-  
-  .popUp--header--right{
-    grid-row: 1 !important;
-    scale: 90% !important;
-    margin-left: 30px !important;
-  }
-
-  #popUp--header--search{
-    display: flex !important;
-    justify-content: center !important;
-    scale: 70% !important;
-    padding-right: 30px !important;
-    padding-left: 5px !important;
-  }
-
-  .popUp--header--right > img{
-    margin-left: -20px !important;
-  }
-
-  .skills--icons--container{
-    height: 70%;
-  }
-
-}
-
-@media screen and (max-height: 740px){ 
-  .svg--icon{
-    margin: -10px -50px -10px -50px !important;
-  }
-  .svg--container{
-    scale:50% !important;
-    padding: 5px 5px !important;    
-    max-height: 100px;
-  }
-
-  .skills--icons--container{
-    height: 70%;
-    
-
-  }
-}
-
-*/
