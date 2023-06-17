@@ -24,7 +24,7 @@
         "collaborators" :[
 
         ],
-        "description" : "A web application that streamlines the process of taking attendance through the use of QR codes. This application is developed for organization hosting large events with the requirement of taking attendance of attendees.",
+        "description" : "A web application that streamlines the process of taking attendance through the use of QR codes. This application is developed for organization hosting large events with the requirement of taking attendance quickly and reliably.",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "",

@@ -25,7 +25,7 @@ export default function Projects(){
                         {collaboratorSize === 0 ? <b>Solo Project</b> : <><b>Collaborators: </b> {collaborators}</>}
                     </div>
 
-                    <span style={{marginLeft:"10px", marginTop:"10px"}}>{project.description}</span>
+                    <span className="project--description">{project.description}</span>
 
                     {project.note !== "" && <em style={{marginLeft: "10px"}}>Note:  {project.note} </em>}
 
