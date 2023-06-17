@@ -331,7 +331,7 @@ nav a:hover:before {
   display: grid;
   grid-template-columns: 3fr 4fr;
 
-  background-color: #E7D2CC;
+  /* background-color: #E7D2CC; */
   height: 500px;
   width: 1140px;
   margin-bottom: 50px;
@@ -340,7 +340,7 @@ nav a:hover:before {
 .project--information{
   display: flex;
   flex-direction: column;
-  background-color: #8286b8;
+  /* background-color: #8286b8; */
 }
 
 .project--technology{
@@ -359,8 +359,10 @@ nav a:hover:before {
 }
 
 #project--video{
-  align-self: center;
   justify-self: center;
+  margin-top: 20px;
+  margin-left: 50px;
+  padding-left: 40px;
 }
 
 .project--source{
