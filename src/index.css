@@ -451,13 +451,15 @@ nav a:hover:before {
     margin-top: -20px;
   }
 
+  #nav > a{
+    scale: 75%;
+  }
+
 }
 
 /* Normal Width Mobile */
 @media screen and (min-width: 380px) and (max-width: 485px){ 
-  #nav > a{
-    scale: 90%;
-  }
+
 
   .skills--container > *{
     scale: 80%;
