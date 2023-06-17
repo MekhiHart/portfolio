@@ -326,21 +326,20 @@ nav a:hover:before {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  background-color: yellow;
+ 
 }
 
 #about--container--wrapper{
-  display: flex;
-
-  justify-content: center;
-  align-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
-
-  padding:30px;
-  width: 500px;
-  margin-bottom: 100px;
-  background-color:#EED6D3;
+  padding:70px;
+  margin: 0 100px;
   border-radius: 30px;
+  background-color: #EED6D3;
+
   
 }
 
@@ -532,6 +531,35 @@ nav a:hover:before {
 
 /** Edge Cases */
 
+
+/* About Section */
+@media screen and (max-width: 980px){
+  #about--container--wrapper{
+    display: flex;
+    flex-direction: column;
+    scale: 90%;
+    margin: 0 20px
+
+  }
+
+  #about--container--wrapper > img{
+    padding-bottom: 30px;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  #about--container--wrapper{
+    display: flex;
+    flex-direction: column;
+    scale: 70%;
+    margin: 0 10px
+  }
+}
+
+
+
+
 /* When shape dividers are not rendered anymore */
 @media screen and (max-width: 1200px){
   .divider{
@@ -551,9 +579,8 @@ nav a:hover:before {
     margin-top: -20px;
   }
 
-  .about--container{
-    scale: 80%;
-  }
+
+
 }
 
 /* Width when popUp browser header starts to break */
@@ -585,9 +612,6 @@ nav a:hover:before {
     display: none;
   }
 
-  .about--container{
-    scale: 65%;
-  }
 
   .svg--container{
     scale: 65%;
@@ -690,11 +714,6 @@ nav a:hover:before {
 
   .skills--grid{
     margin-top: -70px;
-  }
-
-
-  .about--container{
-    scale: 50%;
   }
 
 
