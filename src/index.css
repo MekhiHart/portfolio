@@ -325,6 +325,10 @@ nav a:hover:before {
   flex-direction: column;
 }
 
+.projects--container > h1{
+  margin-top: 60px;
+}
+
 
 
 .project--component{
@@ -336,6 +340,7 @@ nav a:hover:before {
   width: 1140px;
   margin-bottom: 50px;
 }
+
 
 .project--information{
   display: flex;

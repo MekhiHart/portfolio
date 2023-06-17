@@ -13,7 +13,7 @@ export default function Projects(){
 
 
         return (
-            <div className="project--component">
+            <div className="project--component" id="PROJECTS">
                 <div className="project--information">
                     <h3 style={{marginLeft:"10px"}}>{project.projectName}</h3>
 
