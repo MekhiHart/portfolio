@@ -7,7 +7,7 @@
         "collaborators" :[
             "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Ken Ng"
         ],
-        "description" : "A central hub that is built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates to strategically cater their content to their demographics, and mint their social media posts as a NFTs to potetnially avoid payola if the influencer is in conract with a brand ",
+        "description" : "A central hub that is built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates to strategically cater their content to their demographic audience, and mint their social media posts as a NFTs to avoid payola attempts if their content is affiliated with a brand or company",
         "liveLink" : "",
         "sourceCodeLink" : "",
         "youtubeLink" : "",
@@ -24,7 +24,7 @@
         "collaborators" :[
 
         ],
-        "description" : "A web application that streamlines the process of taking attendance through the use of QR codes. This application is developed for organization hosting large events with the requirement of taking attendance quickly and reliably.",
+        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably.",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
