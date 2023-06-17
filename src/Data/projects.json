@@ -2,7 +2,7 @@
     {
         "projectName" : "Hash Bio",
         "techStack" : [
-            "React", "Express.js", "Next.js", "MongoDB"
+            
         ],
         "collaborators" :[
             "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Ken Ng"
@@ -12,7 +12,7 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "",
         "development": "Internship",
-        "note": "Under Development"
+        "note": "Under Development. Additionally, technology stack cannot be revealed due to a NDA"
     },
 
     {
