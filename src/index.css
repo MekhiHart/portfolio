@@ -452,8 +452,11 @@ nav a:hover:before {
   }
 
   #nav > a{
-    scale: 75%;
+    font-size: 12px;
   }
+
+
+
 
 }
 
