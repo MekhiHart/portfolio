@@ -2,6 +2,7 @@ import Hero from "./Components/Hero";
 import NavBar from "./Components/NavBar";
 import Skills from "./Components/Skills";
 import PopUp from "./Components/PopUp";
+import About from "./Components/About";
 
 import {useEffect, useState} from "react";
 import skills from "./Data/skills.json"
@@ -81,6 +82,7 @@ function App() {
     <>
       <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       <Hero/>
+      <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>

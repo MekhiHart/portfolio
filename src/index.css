@@ -271,6 +271,39 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
+.about--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+#about--container--wrapper{
+  display: flex;
+
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  padding:30px;
+  width: 600px;
+  margin-bottom: 100px;
+  background-color:#EED6D3;
+  border-radius: 30px;
+  
+}
+
+#about--container--profile{
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 60px;
+}
+
+#about--container--wrapper > span{
+  padding-left: 30px;
+}
+
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;
@@ -377,6 +410,10 @@ nav a:hover:before {
   .skills--icon--container{
     margin-top: -20px;
   }
+
+  .about--container{
+    scale: 80%;
+  }
 }
 
 /* Width when popUp browser header starts to break */
@@ -406,6 +443,10 @@ nav a:hover:before {
 
   .popUp--header--right > img{
     display: none;
+  }
+
+  .about--container{
+    scale: 65%;
   }
 }
 
@@ -464,7 +505,9 @@ nav a:hover:before {
   }
 
 
-
+  .about--container{
+    scale: 50%;
+  }
 
 }
 
@@ -494,5 +537,8 @@ nav a:hover:before {
     padding-top: 5px;
   }
 
+  .about--container{
+    scale: 40%;
+  }
 }
 
