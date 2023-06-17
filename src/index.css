@@ -627,7 +627,7 @@ nav a:hover:before {
       align-items: center;
       flex-direction: column;
       width: 600px;
-      margin-top: 50px;
+      margin-top: 10px;
       margin-bottom: 100px;
   }
 
