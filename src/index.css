@@ -87,8 +87,9 @@ nav a:hover:before {
   flex-direction: column;
 }
 
-.hero--intro{
+.hero--intro > *{
   align-self: center;
+  font-weight: 500;
 
 }
 
@@ -181,7 +182,7 @@ nav a:hover:before {
   background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
   border: none;
 
-  margin: 0 10px
+  margin: 0 10px;
 }
 
 .popUp--tab{

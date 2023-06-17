@@ -6,7 +6,7 @@ export default function Hero(){
     return(
     <div className="hero--container fullScreen" id='HERO'>
         <div className="hero--intro">
-            <h1 style={{marginBottom: "-20px" , fontWeight:"bold"}}>Mekhi Hart Dela Cruz</h1>
+            <h1 style={{marginBottom: "-20px"}}>Mekhi Hart Dela Cruz</h1>
             <h2> <em> Software Engineer </em></h2>
             <h3 style={{marginBottom: "-20px"}}>California State University Long Beach</h3>
             <h4>B.S. in <i>Computer Science</i> | August 2020 - May 2024</h4>
