@@ -4,6 +4,7 @@ import Skills from "./Components/Skills";
 import PopUp from "./Components/PopUp";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
+import Footer from "./Components/Footer";
 
 import {useEffect, useState} from "react";
 import skills from "./Data/skills.json"
@@ -12,7 +13,6 @@ import skills from "./Data/skills.json"
 
 function App() {
   function scrollToDiv(divTarget){
-    console.log("div target: ", divTarget)
     divTarget.scrollIntoView({behavior:"smooth"})
   }
 
@@ -88,6 +88,7 @@ function App() {
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
+      <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )

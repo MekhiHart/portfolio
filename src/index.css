@@ -525,6 +525,14 @@ nav a:hover:before {
   margin-top: -10px;
 }
 
+#FOOTER{
+  height: 20vh;
+  background-color: #868B8E;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
 /** Media Queries */
 
 /** Edge Cases */
