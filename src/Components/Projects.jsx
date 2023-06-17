@@ -27,6 +27,8 @@ export default function Projects(){
 
                     <span style={{marginLeft:"10px", marginTop:"10px"}}>{project.description}</span>
 
+                    {project.note !== "" && <em style={{marginLeft: "10px"}}>Note:  {project.note} </em>}
+
                     <div style={{display:"flex"}}>
                         {project.liveLink !== "" && <a className="project--source" target="_blank" href={project.liveLink}>See Live</a>}
                         <a className="project--source" target="_blank" href={project.sourceCodeLink}>Source Code</a>
