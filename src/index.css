@@ -621,13 +621,17 @@ nav a:hover:before {
 /* When Project Component starts to break */
 @media screen and (max-width: 1200px){
 
+  .projects--container > h1{
+    margin-bottom: -60px;
+  }
+
     .project--component{
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
       width: 600px;
-      margin-top: 10px;
+      margin-top: 70px;
       margin-bottom: 100px;
   }
 
