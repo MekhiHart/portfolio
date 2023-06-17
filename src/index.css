@@ -358,6 +358,11 @@ nav a:hover:before {
   margin-top: 20px;
 }
 
+#project--video{
+  align-self: center;
+  justify-self: center;
+}
+
 
 /** Other */
 
