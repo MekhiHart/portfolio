@@ -455,8 +455,9 @@ nav a:hover:before {
     font-size: 12px;
   }
 
-  .skills--container > h1 {
+  .skills--container h1 {
     margin-top: 40px;
+    padding-top: 40px;
   }
 
 
