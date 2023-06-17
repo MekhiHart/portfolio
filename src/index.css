@@ -726,6 +726,7 @@ nav a:hover:before {
     margin: 0 0 0 10px
   }
 
+
 }
 
 /* Normal Width Mobile */
@@ -734,6 +735,13 @@ nav a:hover:before {
 
   .skills--container > *{
     scale: 80%;
+  }
+
+  .about--container  h2{
+    padding-top: 80px;
+  }
+  #about--container--wrapper{
+    margin-top: -80px;
   }
 }
  /* Smaller Width Mobile */
@@ -755,6 +763,13 @@ nav a:hover:before {
   }
   .svg--container{
     margin: -50px;
+  }
+
+  .about--container  h2{
+    padding-top: 120px;
+  }
+  #about--container--wrapper{
+    margin-top: -130px;
   }
 }
 
