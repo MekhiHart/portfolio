@@ -35,7 +35,7 @@ export default function Projects(){
                     </div>
                 </div>
 
-                {project.youtubeLink !== "" && <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"  height="360" frameborder="0"></iframe> }
+                {project.youtubeLink !== "" && <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe> }
                 
             </div>
         )
