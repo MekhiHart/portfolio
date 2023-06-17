@@ -28,7 +28,7 @@
         "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code in which the application scans the QR code which registers the attendee in the Firebase database. ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
-        "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
+        "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
         "development":"Hackathon",
         "note":"Project submited in a 24 hour hackathon affiliated with my University that won best Google Cloud Hack",
         "isConfidential": false
@@ -45,7 +45,7 @@
         "description" : "A MERN application built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data is used by the data analyis team to make improvements to future events and workshops ",
         "liveLink" : "https://www.beachhacks-schedule.com/",
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
-        "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
+        "youtubeLink" : "https://www.youtube.com/embed/dotNfCt43Uo",
         "development" : "Computer Science Organization",
         "note": "Production build has been archived. Backend and API endpoints has been disconnected to avoid manipulating data for the data analysis team",
         "isConfidential" :false
