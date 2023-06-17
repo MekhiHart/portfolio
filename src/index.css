@@ -606,11 +606,14 @@ nav a:hover:before {
       flex-direction: column;
       width: 600px;
       margin-top: 50px;
+      margin-bottom: 100px;
   }
 
   .project--information{
     display: flex;
   }
+
+
 
   #project--video{
     margin-left: 0px;

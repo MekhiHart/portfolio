@@ -17,7 +17,7 @@ export default function Projects(){
         return (
             <div className="project--component" id="PROJECTS">
                 <div className="project--information">
-                    <u><h3 style={{paddingLeft:"10px", fontSize:"24px"}}>{project.projectName}</h3></u>
+                    <h3 style={{paddingLeft:"10px", fontSize:"24px"}}><u>{project.projectName}</u></h3>
 
                     <div >
                         {techStack}
