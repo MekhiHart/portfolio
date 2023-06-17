@@ -4,7 +4,7 @@ export default function About(){
 
     return(
         <>
-            <div className="about--container">
+            <div className="about--container fullScreen" id="ABOUT">
                 <h2>
                     About Me
                 </h2>

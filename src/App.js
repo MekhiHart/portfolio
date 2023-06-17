@@ -62,7 +62,8 @@ function App() {
     const heroDiv = document.getElementById("HERO")
     const skillsDiv = document.getElementById("SKILLS")
     const projectsDiv = document.getElementById("PROJECTS")
-    setScrollDivs([heroDiv, skillsDiv,projectsDiv])
+    const aboutDiv = document.getElementById("ABOUT")
+    setScrollDivs([heroDiv, aboutDiv, skillsDiv,projectsDiv])
   },[])
 
   useEffect(()=> {

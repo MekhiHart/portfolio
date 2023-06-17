@@ -25,12 +25,12 @@
         "collaborators" :[
 
         ],
-        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code in which the application scans the QR code which registers the attendee in the Firebase database. ",
+        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code in where the application scans the QR code that registers the attendee in the Firebase database. ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
         "development":"Hackathon",
-        "note":"Project submited in a 24 hour hackathon affiliated with my University that won best Google Cloud Hack",
+        "note":"Project submitted in a 24 hour hackathon affiliated with my University. Project submission won best Google Cloud Hack",
         "isConfidential": false
     },
 
