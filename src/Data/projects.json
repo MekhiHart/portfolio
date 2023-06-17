@@ -11,7 +11,8 @@
         "liveLink" : "",
         "sourceCodeLink" : "",
         "youtubeLink" : "",
-        "development": "Internship"
+        "development": "Internship",
+        "note": "Under Development"
     },
 
     {
@@ -27,7 +28,8 @@
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "",
-        "development":"Hackathon"
+        "development":"Hackathon",
+        "note":""
     },
 
     {
@@ -42,7 +44,8 @@
         "liveLink" : "https://www.beachhacks-schedule.com/",
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "",
-        "development" : "Computer Science Organization"
+        "development" : "Computer Science Organization",
+        "note": ""
     }
 
 ]

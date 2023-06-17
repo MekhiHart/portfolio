@@ -25,9 +25,15 @@ export default function Projects(){
                         {collaboratorSize === 0 ? <b>Solo Project</b> : <><b>Collaborators: </b> {collaborators}</>}
                     </div>
 
+                    <span style={{marginLeft:"10px", marginTop:"10px"}}>{project.description}</span>
+
+                    <div style={{display:"flex"}}>
+                        <a className="project--source" target="_blank" href={project.liveLink}>See Live</a>
+                        <a className="project--source" target="_blank" href={project.sourceCodeLink}>Source Code</a>
+                    </div>
                 </div>
 
-                <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="JavaScript Jobs USA Demo -- Mapbox Job Search Tool" src="https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1" id="project--video" width="640" height="360" frameborder="0"></iframe>
+                <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1" id="project--video" width="640" height="360" frameborder="0"></iframe>
             </div>
         )
 
