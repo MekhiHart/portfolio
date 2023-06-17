@@ -5,10 +5,6 @@ import profile from "../Assets/mekhi_profile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
 import PNG from "../Assets/PNG/PNG"
-import SVG from "../Assets/SVG/svg"
-import Python from "../Assets/PNG/Python.png"
-import { icon } from '@fortawesome/fontawesome-svg-core'
-
 
 export default function PopUp(props){
     function handleButtonClick(value){
