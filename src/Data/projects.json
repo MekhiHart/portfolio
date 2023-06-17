@@ -30,7 +30,7 @@
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
         "development":"Hackathon",
-        "note":"",
+        "note":"Project submited in a 24 hour hackathon affiliated with my University that won best Google Cloud Hack",
         "isConfidential": false
     },
 
@@ -42,7 +42,7 @@
         "collaborators" :[
             "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
         ],
-        "description" : "A MERN application built for the BeachHacks organization that intends to track the popularity of events and workshops by the organization. The data is used by the data analyis team to make improvements to future events and workshops ",
+        "description" : "A MERN application built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data is used by the data analyis team to make improvements to future events and workshops ",
         "liveLink" : "https://www.beachhacks-schedule.com/",
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
