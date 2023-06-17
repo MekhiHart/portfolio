@@ -15,7 +15,7 @@ export default function Projects(){
         return (
             <div className="project--component" id="PROJECTS">
                 <div className="project--information">
-                    <h3 style={{marginLeft:"10px"}}>{project.projectName}</h3>
+                    <u><h3 style={{marginLeft:"10px"}}>{project.projectName}</h3></u>
 
                     <div>
                         {techStack}
@@ -27,9 +27,9 @@ export default function Projects(){
 
                     <span className="project--description">{project.description}</span>
 
-                    {project.note !== "" && <em style={{marginLeft: "10px"}}>Note:  {project.note} </em>}
+                    {project.note !== "" && <em className="project--note" style={{marginLeft: "10px"}}>Note:  {project.note} </em>}
 
-                    <div style={{display:"flex"}}>
+                    <div className="project--link--wrapper" style={{display:"flex"}}>
                         {project.liveLink !== "" && <a className="project--source" target="_blank" href={project.liveLink}>See Live</a>}
                         <a className="project--source" target="_blank" href={project.sourceCodeLink}>Source Code</a>
                     </div>
