@@ -3,8 +3,10 @@ export default function Projects(){
 
     const projects = ProjectsData.map(project => {
 
+        const isConfidential = project.isConfidential
         const techStack = project.techStack.map(technology => {
-            return <span className="project--technology">{technology}</span>
+            const style = isConfidential ? {backgroundColor: "red"} : {}
+            return <span style={style} className="project--technology">{technology}</span>
         })
 
         // conditionally renders collaborator description depending on size

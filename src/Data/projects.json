@@ -12,7 +12,8 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "",
         "development": "Internship",
-        "note": "Currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company"
+        "note": "Currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company",
+        "isConfidential": true
     },
 
     {
@@ -29,7 +30,8 @@
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
         "development":"Hackathon",
-        "note":""
+        "note":"",
+        "isConfidential": false
     },
 
     {
@@ -45,7 +47,8 @@
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
         "development" : "Computer Science Organization",
-        "note": ""
+        "note": "",
+        "isConfidential" :false
     }
 
 ]
