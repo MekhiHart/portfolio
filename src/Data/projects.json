@@ -2,7 +2,7 @@
     {
         "projectName" : "Hash Bio",
         "techStack" : [
-            "React", "Express.js", "Next.js", "Vite"
+            "React", "Express.js", "Next.js", "MongoDB"
         ],
         "collaborators" :[
             "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Ken Ng"
