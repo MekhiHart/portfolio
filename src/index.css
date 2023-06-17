@@ -635,6 +635,7 @@ nav a:hover:before {
 
   .project--technology{
     font-size: 8px;
+    margin: 2px
   }
 
 }
