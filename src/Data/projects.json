@@ -17,7 +17,7 @@
     {
         "projectName" : "Fast Tracker",
         "techStack" : [
-            "React", "Firebase", "Vite", "QR Generator", "QR Scanner"
+            "React", "Firebase", "Vite", "QR Code"
 
         ],
         "collaborators" :[

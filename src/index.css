@@ -318,11 +318,48 @@ nav a:hover:before {
 
 
 /** Projects section */
+.projects--container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
-/* #tab--seperator{
-  border-left: 1px solid #94979c;
-  margin: 6px 2px
-} */
+
+
+.project--component{
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+
+  background-color: #E7D2CC;
+  height: 500px;
+  width: 1140px;
+  margin-bottom: 50px;
+}
+
+.project--information{
+  display: flex;
+  flex-direction: column;
+  background-color: #8286b8;
+}
+
+.project--technology{
+  background-color: #868B8E;
+  color: white;
+  margin: 12px;
+  padding: 10px;
+  font-weight: 700;
+  border:solid black 2px
+
+}
+
+.project--collaborators{
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+
+/** Other */
 
  #closePopUp{
   background-color: #6a768a;
