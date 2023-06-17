@@ -526,6 +526,7 @@ nav a:hover:before {
 }
 
 #FOOTER{
+  margin-top: 40px;
   height: 20vh;
   background-color: #868B8E;
   display: flex;
