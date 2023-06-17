@@ -19,7 +19,7 @@ export default function Projects(){
                 <div className="project--information">
                     <u><h3 style={{paddingLeft:"10px", fontSize:"24px"}}>{project.projectName}</h3></u>
 
-                    <div>
+                    <div >
                         {techStack}
                     </div>
 
