@@ -325,9 +325,7 @@ nav a:hover:before {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: yellow;
- 
+  flex-direction: column; 
 }
 
 #about--container--wrapper{
