@@ -12,7 +12,7 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "",
         "development": "Internship",
-        "note": "Internship project currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company (Social PayMe). Live link will be displayed once production build is published",
+        "note": "Internship project currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company (Social PayMe). Live link will be displayed once production build is published and stack will be disclosed during the interview process",
         "isConfidential": true
     },
 
@@ -47,7 +47,7 @@
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
         "development" : "Computer Science Organization",
-        "note": "Production build has been archived to be frontend application to avoid manipulating data for the data analysis team since BeachHacks events are over for 2022-2023",
+        "note": "Production build has been archived. Backend and API endpoints has been disconnected to avoid manipulating data for the data analysis team",
         "isConfidential" :false
     }
 
