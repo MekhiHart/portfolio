@@ -16,6 +16,49 @@ code {
 }
 
 
+/** Shape Divider */
+.shape--divider--1 {
+
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape--divider--1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.shape--divider--1 .shape-fill {
+  fill: #EEEDE7;
+}
+
+.shape--divider--2 {
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape--divider--2 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.shape--divider--2 .shape-fill {
+  fill: #EEEDE7;
+}
+
+
+
+
 /** Nav section */
 
 nav{
@@ -95,17 +138,8 @@ nav a:hover:before {
 .hero--intro > *{
   align-self: center;
   font-weight: 500;
-
 }
 
-.hero--right{
-  padding-top: 35vh;
-  padding-left: 50px;
-}
-
-.hero--left--container > *{
-  font-weight: normal;
-}
 
 .hero--links{
   padding-top: 15px;
@@ -492,6 +526,14 @@ nav a:hover:before {
 
 /** Edge Cases */
 
+/* When shape dividers are not rendered anymore */
+@media screen and (max-width: 1200px){
+  .divider{
+    display: none;
+  }
+
+}
+
 /* When browser icons starts to break */
 @media screen and (max-width: 777px){
 
@@ -680,7 +722,5 @@ nav a:hover:before {
     font-size: 9px !important;
     padding-top: 5px;
   }
-
-
 }
 
