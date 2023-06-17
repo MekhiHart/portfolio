@@ -534,6 +534,10 @@ nav a:hover:before {
   padding-top: 30px;
 }
 
+#FOOTER > *:hover{
+  cursor: pointer;
+}
+
 /** Media Queries */
 
 /** Edge Cases */
