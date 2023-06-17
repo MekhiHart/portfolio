@@ -16,6 +16,8 @@ code {
 }
 
 
+/** Nav section */
+
 nav{
   /* margin-top: 25px; */
   display: flex;
@@ -76,6 +78,9 @@ nav a:hover:before {
   transition: 0.5s;
 }
 
+
+/** Hero section */
+
 .hero--links > *{
   color:#868B8E
 }
@@ -114,6 +119,8 @@ nav a:hover:before {
   top: -2px;
 }
 
+
+/** Skills section  */
 .skills--container{
   display: flex;
   justify-content: center;
@@ -148,6 +155,8 @@ nav a:hover:before {
   opacity: 50%;
 }
 
+
+/** Pop Up section */
 .popUp--overlay{
   position: fixed;
   top: 0px;
@@ -271,6 +280,8 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
+/** About Section */
+
 .about--container{
   display: flex;
   justify-content: center;
@@ -294,6 +305,7 @@ nav a:hover:before {
   
 }
 
+
 #about--container--profile{
   max-width: 200px;
   max-height: 200px;
@@ -304,6 +316,8 @@ nav a:hover:before {
   padding-left: 30px;
 }
 
+
+/** Projects section */
 
 /* #tab--seperator{
   border-left: 1px solid #94979c;

@@ -1,5 +1,5 @@
-{
-    "HashBio":{
+[
+    {
         "projectName" : "Hash Bio",
         "techStack" : [
             "React", "Express.js", "Next.js", "Vite"
@@ -14,7 +14,7 @@
         "development": "Internship"
     },
 
-    "FastTracker":{
+    {
         "projectName" : "Fast Tracker",
         "techStack" : [
             "React", "Firebase", "Vite", "QR Generator", "QR Scanner"
@@ -30,7 +30,7 @@
         "development":"Hackathon"
     },
 
-    "BeachHacks":{
+    {
         "projectName" : "BeachHacks Schedule",
         "techStack" : [
             "React", "MongoDB", "Node.js", "Express.js"
@@ -45,5 +45,4 @@
         "development" : "Computer Science Organization"
     }
 
-    
-}
+]

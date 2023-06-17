@@ -3,6 +3,7 @@ import NavBar from "./Components/NavBar";
 import Skills from "./Components/Skills";
 import PopUp from "./Components/PopUp";
 import About from "./Components/About";
+import Projects from "./Components/Projects";
 
 import {useEffect, useState} from "react";
 import skills from "./Data/skills.json"
@@ -84,6 +85,7 @@ function App() {
       <Hero/>
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
+      <Projects/>
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )
