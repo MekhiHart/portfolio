@@ -7,7 +7,7 @@
         "collaborators" :[
             "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Ken Ng"
         ],
-        "description" : "",
+        "description" : "A web application that streamlines the process of taking attendance through the use of QR codes. This application is developed for organization hosting large events with the requirement of taking attendance quickly and reliably.",
         "liveLink" : "",
         "sourceCodeLink" : "",
         "youtubeLink" : "",
@@ -38,7 +38,7 @@
             "React", "MongoDB", "Node.js", "Express.js"
         ],
         "collaborators" :[
-
+            "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
         ],
         "description" : "A MERN application built for the BeachHacks organization that intends to track the popularity of events and workshops by the organization. The data is used by the data analyis team to make improvements to future events and workshops ",
         "liveLink" : "https://www.beachhacks-schedule.com/",

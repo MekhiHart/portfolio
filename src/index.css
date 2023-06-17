@@ -363,6 +363,7 @@ nav a:hover:before {
   margin-top: 20px;
   margin-left: 50px;
   padding-left: 40px;
+  width: 640px;
 }
 
 .project--source{
@@ -528,6 +529,44 @@ nav a:hover:before {
   }
 }
 
+
+/* When Project Component starts to break */
+@media screen and (max-width: 1200px){
+
+    .project--component{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 600px;
+  }
+
+  .project--information{
+    display: flex;
+  }
+
+  #project--video{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+}
+
+@media screen and (max-width: 800px){
+
+  .project--component{
+    width: 400px;
+  }
+  #project--video{
+    width: 300px;
+  }
+
+
+}
+
+
+
+
+
 /* Device Media Quries */
 
 /* Desktop  */
@@ -585,6 +624,17 @@ nav a:hover:before {
 
   .about--container{
     scale: 50%;
+  }
+
+
+
+  .project--component{
+    width: 300px;
+    scale: 90%;
+  }
+
+  .project--technology{
+    font-size: 8px;
   }
 
 }

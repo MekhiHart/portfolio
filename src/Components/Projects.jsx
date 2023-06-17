@@ -35,7 +35,7 @@ export default function Projects(){
                     </div>
                 </div>
 
-                <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1" id="project--video" width="640" height="360" frameborder="0"></iframe>
+                <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src="https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1" id="project--video"  height="360" frameborder="0"></iframe>
             </div>
         )
 
