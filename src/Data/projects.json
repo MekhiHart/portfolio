@@ -12,7 +12,7 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "",
         "development": "Internship",
-        "note": "Currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company",
+        "note": "Internship project currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company (Social PayMe)",
         "isConfidential": true
     },
 
@@ -25,7 +25,7 @@
         "collaborators" :[
 
         ],
-        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably.",
+        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code in which the application scans the QR code which registers the attendee in the Firebase database. ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
@@ -47,7 +47,7 @@
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/8gwzAvs_lgU?enablejsapi=1&amp;origin=https%3A%2F%2Fwww.danny-berger.dev&amp;widgetid=1",
         "development" : "Computer Science Organization",
-        "note": "",
+        "note": "Production build has been archived to be frontend application to avoid manipulating data for the data analysis team since BeachHacks events are over for 2022-2023",
         "isConfidential" :false
     }
 
