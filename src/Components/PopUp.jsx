@@ -59,12 +59,12 @@ export default function PopUp(props){
     return(
         <div className="popUp--overlay">
 
-            <div className="popUp--tabs">
+            <div className="popUp--tabs modal">
                 {buttons}
                 <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
             </div>
 
-            <div className="popUp--container"> 
+            <div className="popUp--container modal"> 
                 <div id="popUp--header">
                     <div className='popUp--header--left'>
                         <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>

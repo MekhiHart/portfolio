@@ -319,6 +319,39 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
+.modal[open]{
+  animation: fade-in 500ms forwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out{
+  100%{
+    opacity: 1;
+  }
+  0%{
+    opacity: 0;
+  }
+}
+
+@keyframes slide-up{
+  0%{
+  transform: translateY(100%)
+  }
+
+  100%{
+    transform: translateY(0%)
+    }
+
+}
+
 /** About Section */
 
 .about--container{
@@ -329,15 +362,13 @@ nav a:hover:before {
 }
 
 #about--container--wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   justify-items: center;
   align-items: center;
   padding:70px;
   margin: 0 200px;
   border-radius: 30px;
-
-  
+  width: 600px;
 }
 
 
@@ -345,10 +376,14 @@ nav a:hover:before {
   max-width: 200px;
   max-height: 200px;
   border-radius: 60px;
+  padding-top: 30px;
 }
 
-#about--container--wrapper > span{
-  padding-left: 30px;
+
+#about--container--description{
+  line-height: 1.8;
+  padding-left: 50px;
+  /* padding-left: 50px; */
 }
 
 
@@ -560,12 +595,18 @@ nav a:hover:before {
     display: flex;
     flex-direction: column;
     scale: 90%;
-    margin: 0 20px
-
+    margin: 0 20px;
+    
+  
   }
+
 
   #about--container--wrapper > img{
     padding-bottom: 30px;
+  }
+
+  #about--container--description{
+    padding-left:0px
   }
 
 }
@@ -754,6 +795,9 @@ nav a:hover:before {
     margin: 0 0 0 10px
   }
 
+  #about--container--wrapper{
+    width: 400px;
+  }
 
 }
 
