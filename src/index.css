@@ -477,10 +477,18 @@ nav a:hover:before {
   font-weight: 700;
   border:solid black 2px;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
 .project--source:hover{
   text-decoration: underline;
+  color:#E8B4B8 ;
+  border-color: #EEEDE7;
+  cursor: pointer;
+}
+
+.project--source::before{
+    transition: transform 0.17s ease-out;
 }
 
 .project--description{

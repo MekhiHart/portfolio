@@ -32,8 +32,8 @@ export default function Projects(){
                     {project.note !== "" && <em className="project--note" style={{marginLeft: "10px"}}>Note:  {project.note} </em>}
 
                     <div className="project--link--wrapper" style={{display:"flex"}}>
-                        {project.liveLink !== "" && <a className="project--source" target="_blank" href={project.liveLink}>See Live</a>}
-                        {project.sourceCodeLink !== "" && <a className="project--source" target="_blank" href={project.sourceCodeLink}>Source Code</a>}
+                        {project.liveLink !== "" && <a className="project--source button-30" target="_blank" href={project.liveLink}>See Live</a>}
+                        {project.sourceCodeLink !== "" && <a className="project--source button-30" target="_blank" href={project.sourceCodeLink}>Source Code</a>}
                     </div>
                 </div>
 
