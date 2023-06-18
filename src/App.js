@@ -30,6 +30,13 @@ function App() {
     })
   }
 
+  const [formData,setFormData] = useState({
+    email:"",
+    name:"",
+    text:""
+    
+  })
+  
   const [scrollDivs, setScrollDivs] = useState([])
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
