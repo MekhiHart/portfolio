@@ -319,12 +319,12 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
-.modal{
-  animation: fade-out 500ms forwards
-}
 
 .modal{
   animation: slide-up 500ms forwards;
+}
+.modal[closing]{
+  animation: fade-out 500ms forwards;
 }
 
 
@@ -353,6 +353,17 @@ nav a:hover:before {
 
   100%{
     transform: translateY(0%)
+    }
+
+}
+
+@keyframes slide-down{
+  0%{
+  transform: translateY(0%)
+  }
+
+  100%{
+    transform: translateY(100%)
     }
 
 }

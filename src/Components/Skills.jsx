@@ -4,8 +4,8 @@ import {faDatabase,faScrewdriverWrench, faLaptopCode} from '@fortawesome/free-so
 
 export default function Skills(props){
     function handleButtonClick(value){
+
         setPopUp({isClicked:true})
-        
         handlePopUpData(value) // changes what to render based on button clicked on the skills section
         handleTabButtons(value)
     }

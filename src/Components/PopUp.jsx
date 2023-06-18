@@ -7,6 +7,11 @@ import {faX} from '@fortawesome/free-solid-svg-icons'
 import PNG from "../Assets/PNG/PNG"
 
 export default function PopUp(props){
+    function closeModal(){
+        const modal = document.querySelector("#modal")
+        modal.setAttribute("closing", "")
+        modal.addEventListener("animationend", () => setPopUp({isClicked:false}))
+    }
     function handleButtonClick(value){
         // changes what to render when tab is clicked
         handlePopUpData(value)
@@ -58,11 +63,10 @@ export default function PopUp(props){
 
     return(
         <div className="popUp--overlay">
-            <div className='modal'>
-
+            <div className='modal' id='modal'>
                 <div className="popUp--tabs">
                     {buttons}
-                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+                    <button onClick={closeModal} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
                 </div>
 
                 <div  className="popUp--container"> 
