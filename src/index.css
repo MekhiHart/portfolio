@@ -323,9 +323,20 @@ nav a:hover:before {
 .modal{
   animation: slide-up 500ms forwards;
 }
+
+.popUp--overlay{
+  animation: fade-in 500ms forwards
+}
+
+.popUp--overlay[closing]{
+  animation: fade-out 500ms forwards
+}
+
+
 .modal[closing]{
   animation: fade-out 500ms forwards;
 }
+
 
 
 @keyframes fade-in{
