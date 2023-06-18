@@ -13,6 +13,14 @@ import skills from "./Data/skills.json"
 
 
 function App() {
+
+  function handleFormChange(event){
+    const target = event.target
+    
+    console.log("target: ", target.name)
+    console.log("value: ", target.value)
+
+  }
   function scrollToDiv(divTarget){
     divTarget.scrollIntoView({behavior:"smooth"})
   }
@@ -97,7 +105,7 @@ function App() {
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
-      <Contact formData={formData} setFormData={setFormData} />
+      <Contact formData={formData} handleFormChange={handleFormChange} />
       <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
