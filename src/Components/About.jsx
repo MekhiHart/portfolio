@@ -1,4 +1,4 @@
-import Profile from "../Assets/ProfilePic.png"
+import Profile from "../Assets/animatedProfile.png"
 
 export default function About(){
 
