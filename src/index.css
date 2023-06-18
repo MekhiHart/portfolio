@@ -15,10 +15,6 @@ code {
     monospace;
 }
 
-* {
-  
-}
-
 
 /** Shape Divider */
 .shape--divider--1 {
@@ -838,7 +834,7 @@ nav a:hover:before {
   }
 
   #about--container--wrapper{
-    width: 350px;
+    width: 290px;
   }
 
 
