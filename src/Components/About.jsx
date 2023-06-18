@@ -14,7 +14,7 @@ export default function About(){
 
                     <span>I am a first-generation student that immigrated in the United States from the Philippines.<br/><br/>
                     Adapting into a new country developed my tenacity to 
-                    solve challenging problems that supports my skills as a Software Engineering.
+                    solve challenging problems that supports my skills as a Software Engineer.
                     <br/><br/> However when I'm not working on a project, I love cooking trending recipies that I find in Instagram 
                     with my partner.
                     </span>
