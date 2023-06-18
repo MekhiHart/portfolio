@@ -58,36 +58,38 @@ export default function PopUp(props){
 
     return(
         <div className="popUp--overlay">
+            <div className='modal'>
 
-            <div className="popUp--tabs modal">
-                {buttons}
-                <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
-            </div>
+                <div className="popUp--tabs">
+                    {buttons}
+                    <button onClick={() => setPopUp({isClicked:false})} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+                </div>
 
-            <div  className="popUp--container modal"> 
-                <div id="popUp--header">
-                    <div className='popUp--header--left'>
-                        <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
-                        <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
-                        <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
-                        <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
-                    </div>
-
-                    <div className='popUp--header--right'>
-                        <div id="popUp--header--search">
-                            <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                            <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
+                <div  className="popUp--container"> 
+                    <div id="popUp--header">
+                        <div className='popUp--header--left'>
+                            <FontAwesomeIcon className="popUp--header--icon" style={{marginLeft:"10px", marginRight:"10px"}}  icon={faArrowLeft} size='1x'/>
+                            <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"20px"}}  icon={faArrowRight} size='1x'/>
+                            <FontAwesomeIcon className="popUp--header--icon" style={{marginRight:"15px"}} icon={faRotateRight} size='1x'/>
+                            <FontAwesomeIcon className="popUp--header--icon" icon={faHouse} size='1x'/>
                         </div>
-                        <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
+
+                        <div className='popUp--header--right'>
+                            <div id="popUp--header--search">
+                                <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
+                                <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
+                            </div>
+                            <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
+                        </div>
                     </div>
+
+                    <h1 id="popUp--name">{popUpData.name}</h1>
+
+                    <div className="skills--icon--container">
+                        {icons}
+                    </div>
+
                 </div>
-
-                <h1 id="popUp--name">{popUpData.name}</h1>
-
-                <div className="skills--icon--container">
-                    {icons}
-                </div>
-
             </div>
         </div>
     )

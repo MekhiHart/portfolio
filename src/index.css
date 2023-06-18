@@ -319,9 +319,14 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
-.modal[class]{
-  animation: fade-in 500ms forwards;
+.modal{
+  animation: fade-out 500ms forwards
 }
+
+.modal{
+  animation: slide-up 500ms forwards;
+}
+
 
 @keyframes fade-in{
   0%{
@@ -332,11 +337,11 @@ nav a:hover:before {
   }
 }
 
-@keyframes fade-out{
-  100%{
+@keyframes fade-out {
+  0% {
     opacity: 1;
   }
-  0%{
+  100% {
     opacity: 0;
   }
 }
