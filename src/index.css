@@ -329,8 +329,8 @@ nav a:hover:before {
 }
 
 #about--container--wrapper{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   justify-items: center;
   align-items: center;
   padding:70px;
@@ -345,7 +345,6 @@ nav a:hover:before {
   max-width: 200px;
   max-height: 200px;
   border-radius: 60px;
-  padding-bottom: 40px;
 }
 
 #about--container--wrapper > span{
