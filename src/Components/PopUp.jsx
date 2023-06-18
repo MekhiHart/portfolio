@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPython, faReact} from "@fortawesome/free-brands-svg-icons"
 import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
-import profile from "../Assets/mekhi_profile.png"
+import profile from "../Assets/animatedProfile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
 import PNG from "../Assets/PNG/PNG"
