@@ -19,7 +19,7 @@
     {
         "projectName" : "Fast Tracker",
         "techStack" : [
-            "React", "Firebase", "Vite", "QR Code"
+            "TypeScript","React", "Firebase", "Vite"
 
         ],
         "collaborators" :[
@@ -37,7 +37,7 @@
     {
         "projectName" : "BeachHacks Schedule",
         "techStack" : [
-            "React", "MongoDB", "Node.js", "Express.js"
+            "JavaScript","React", "MongoDB", "Node.js", "Express.js"
         ],
         "collaborators" :[
             "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"

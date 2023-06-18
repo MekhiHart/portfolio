@@ -530,6 +530,7 @@ nav a:hover:before {
 
 .fullScreen{
   height: 100vh;
+  flex-wrap: wr;
 }
 
 .button-30 {
@@ -656,7 +657,7 @@ nav a:hover:before {
   #about--container--wrapper{
     display: flex;
     flex-direction: column;
-    scale: 70%;
+    scale: 80%;
     margin: 0 10px
   }
 }
@@ -832,12 +833,11 @@ nav a:hover:before {
   }
 
   .project--technology{
-    font-size: 8px;
-    margin: 0 0 0 10px
+    margin: 5px 0 0 10px
   }
 
   #about--container--wrapper{
-    width: 310px;
+    width: 350px;
   }
 
 
