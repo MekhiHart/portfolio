@@ -19,8 +19,10 @@ import Firestore from "./Firebase.png"
 import Git from "./Git.png"
 import AWS from "./AWS.png"
 import DynamoDB from "./DynamoDB.png"
+import Go from "./Go.png"
 
 export default {
+    Go,
     JavaScript, 
     React, 
     GitHub, 
