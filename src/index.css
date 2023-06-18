@@ -329,14 +329,13 @@ nav a:hover:before {
 }
 
 #about--container--wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   padding:70px;
   margin: 0 200px;
   border-radius: 30px;
-  background-color: #EED6D3;
 
   
 }
@@ -346,6 +345,7 @@ nav a:hover:before {
   max-width: 200px;
   max-height: 200px;
   border-radius: 60px;
+  padding-bottom: 40px;
 }
 
 #about--container--wrapper > span{
