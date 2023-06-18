@@ -334,7 +334,7 @@ nav a:hover:before {
 
 
 .modal[closing]{
-  animation: fade-out 500ms forwards;
+  animation: slide-down 500ms forwards;
 }
 
 
