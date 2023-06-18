@@ -319,7 +319,7 @@ nav a:hover:before {
   margin-left: 5px;
 }
 
-.modal[open]{
+.modal[class]{
   animation: fade-in 500ms forwards;
 }
 
