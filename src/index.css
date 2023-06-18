@@ -507,6 +507,31 @@ nav a:hover:before {
   padding-top: 20px;
 }
 
+/** Contact Component*/
+.contact--wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact--form{
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+}
+
+.contact--heading{
+  height: 40px;
+  margin: 15px 0;
+}
+
+.contact--message{
+  resize: vertical;  
+  height: 150px;
+}
+
+
 /** Other */
 
  #closePopUp{

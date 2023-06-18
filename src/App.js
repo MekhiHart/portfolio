@@ -5,6 +5,7 @@ import PopUp from "./Components/PopUp";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
+import Contact from "./Components/Contact";
 
 import {useEffect, useState} from "react";
 import skills from "./Data/skills.json"
@@ -31,12 +32,13 @@ function App() {
   }
 
   const [formData,setFormData] = useState({
-    email:"",
+    subject:"",
     name:"",
-    text:""
+    email:"",
+    message:""
     
   })
-  
+
   const [scrollDivs, setScrollDivs] = useState([])
   const [popUp,setPopUp] = useState({isClicked:false}) // * initial value
 
@@ -95,7 +97,8 @@ function App() {
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
-      <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
+      <Contact formData={formData} setFormData={setFormData} />
+      <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )
