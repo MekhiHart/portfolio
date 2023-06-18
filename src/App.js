@@ -18,13 +18,30 @@ function App() {
     const target = event.target
     const {name,value} = target
 
+    // dynamically changes the values for the form data
     setFormData(prevFormData =>({
       ...prevFormData,
       [name]: value
     }))
+  }
 
-    console.log(formData)
+  async function submitForm(event){
+    const api = "/api/sendEmail"
+    event.preventDefault()
+    console.log("Form submitted")
+    const requestQuery = process.env.REACT_APP_PROXY + api
+    console.log("Request: ", requestQuery)
 
+    const requestOptions ={
+      method:"POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(formData)
+    }
+
+    const response = await fetch(requestQuery, requestOptions)
+    const responseJson = await response.json()
+    const data = responseJson.data()
+    console.log("Data: ", responseJson)
   }
   function scrollToDiv(divTarget){
     divTarget.scrollIntoView({behavior:"smooth"})
@@ -110,7 +127,7 @@ function App() {
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
-      <Contact formData={formData} handleFormChange={handleFormChange} />
+      <Contact formData={formData} handleFormChange={handleFormChange} submitForm={submitForm} />
       <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
