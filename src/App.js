@@ -16,9 +16,14 @@ function App() {
 
   function handleFormChange(event){
     const target = event.target
-    
-    console.log("target: ", target.name)
-    console.log("value: ", target.value)
+    const {name,value} = target
+
+    setFormData(prevFormData =>({
+      ...prevFormData,
+      [name]: value
+    }))
+
+    console.log(formData)
 
   }
   function scrollToDiv(divTarget){
