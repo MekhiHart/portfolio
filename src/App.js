@@ -39,9 +39,8 @@ function App() {
     }
 
     const response = await fetch(requestQuery, requestOptions)
-    const responseJson = await response.json()
-    const data = responseJson.data()
-    console.log("Data: ", responseJson)
+    const data = await response.json()
+    const isSuccsessful = data.isSuccsessful
   }
   function scrollToDiv(divTarget){
     divTarget.scrollIntoView({behavior:"smooth"})
