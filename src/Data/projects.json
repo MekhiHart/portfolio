@@ -11,6 +11,7 @@
         "liveLink" : "",
         "sourceCodeLink" : "",
         "youtubeLink" : "",
+        "companyWebsite": "https://www.socialpayme.com/",
         "development": "Internship",
         "note": "Internship project currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company (Social PayMe). Live link will be displayed once production build is published and stack will be disclosed during the interview process",
         "isConfidential": true

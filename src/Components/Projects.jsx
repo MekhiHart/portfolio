@@ -34,6 +34,8 @@ export default function Projects(){
                     <div className="project--link--wrapper" style={{display:"flex"}}>
                         {project.liveLink !== "" && <a className="project--source button-30" target="_blank" href={project.liveLink}>See Live</a>}
                         {project.sourceCodeLink !== "" && <a className="project--source button-30" target="_blank" href={project.sourceCodeLink}>Source Code</a>}
+                        {project.liveLink === "" && <a className="project--source button-30" target="_blank" href={project.companyWebsite}>Company Website</a>} 
+
                     </div>
                 </div>
 
