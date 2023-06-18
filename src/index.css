@@ -834,7 +834,7 @@ nav a:hover:before {
 }
 
 /* Normal Width Mobile */
-@media screen and (min-width: 380px) and (max-width: 485px){ 
+@media screen and (min-width: 390px) and (max-width: 485px){ 
 
 
   .skills--container > *{
@@ -849,7 +849,7 @@ nav a:hover:before {
   }
 }
  /* Smaller Width Mobile */
-@media screen and (max-width: 380px) { 
+@media screen and (max-width: 390px) { 
   #nav > a{
     scale: 80%;
   }
@@ -866,7 +866,7 @@ nav a:hover:before {
     padding-top: 5px;
   }
   .svg--container{
-    margin: -50px;
+    margin: -53px;
   }
 
   .about--container  h2{
