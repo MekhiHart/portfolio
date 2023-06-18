@@ -531,11 +531,23 @@ nav a:hover:before {
   background-color: #868B8E;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 #FOOTER > *:hover{
   cursor: pointer;
+}
+
+#FOOTER > .hero--links {
+  padding-top: 30px;
+}
+
+#FOOTER > .hero--links > *{
+  color: white;
 }
 
 /** Media Queries */
