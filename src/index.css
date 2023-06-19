@@ -960,10 +960,6 @@ nav a:hover:before {
 
 }
 
-@media screen and (max-height: 750px) {
-  
-}
-
 
 /** When contact me component starts to break */
 @media screen and (max-width:872px){ 
@@ -1160,6 +1156,14 @@ nav a:hover:before {
   }
   #FOOTER{
     padding-bottom: 50px;
+  }
+}
+
+
+@media screen and (min-width:690px) and (max-height:700px){
+  .svg--container{
+    scale: 50%;
+    margin: -45px;
   }
 }
 
