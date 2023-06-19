@@ -18,11 +18,15 @@ function App() {
     const target = event.target
     const {name,value} = target
 
+    console.log("Value: ", value)
+
     // dynamically changes the values for the form data
     setFormData(prevFormData =>({
       ...prevFormData,
       [name]: value
     }))
+
+    console.log(formData)
   }
 
   async function submitForm(event){

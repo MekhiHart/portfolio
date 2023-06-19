@@ -514,7 +514,17 @@ nav a:hover:before {
   justify-content: center;
   align-items: center;
   background-color: #EED6D3;
+  font-family: Segoe UI;
 }
+
+ .contact--form > *{
+  font-family: Segoe UI;
+  font-size: 18px;
+ }
+
+ .contact--form >*:not(:last-child){
+  padding-left: 12px;
+ }
 
 .contact--form{
   display: flex;
