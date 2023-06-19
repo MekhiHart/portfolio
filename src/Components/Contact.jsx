@@ -6,7 +6,7 @@ export default function Contact(props){
 
     const invalidMessage = (
         <div id="contact--invalidMessage">
-            Please fill out this field
+            Please fill out this field.
         </div>
     )
 
