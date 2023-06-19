@@ -889,6 +889,10 @@ nav a:hover:before {
     margin-top: 90px;
   }
 
+  #contact--submit{
+    scale: 80%;
+  }
+
   .contact--wrapper > form{
     width: 350px;
   }
@@ -972,7 +976,9 @@ nav a:hover:before {
     width: 250px;
   }
 
-
+  #contact--submit{
+    scale: 70%;
+  }
 
 
 }
