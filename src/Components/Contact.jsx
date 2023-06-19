@@ -8,15 +8,18 @@ export default function Contact(props){
             <h1>Contact Me</h1>
             <form className="contact--form" onSubmit={(event) => submitForm(event)}>
 
-                <select name="subject" value={subject} onChange={(event) => handleFormChange(event)}>
+                <select required name="subject" value={subject} onChange={(event) => handleFormChange(event)}>
                     <option value="1" hidden>Select a Subject</option>
+                    <option value="General Message">Personal Message</option>
                     <option value="Job Opportunity">Job Opportunity</option>
-                    <option value="Personal Message">Personal Message</option>
+                    <option value="Project Collaboration">Project Collaboration</option>
+                    <option value="Feedback">Feedback or Suggestions</option>
+                    <option value="Other">Other</option>
                 </select>
                 
-                <input value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                <input value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                <textarea value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
+                <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
                 <input type="submit" />
             </form>
         </div>

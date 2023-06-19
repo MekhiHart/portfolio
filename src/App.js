@@ -30,21 +30,31 @@ function App() {
   }
 
   async function submitForm(event){
-    const api = "/api/sendEmail"
     event.preventDefault()
-    console.log("Form submitted")
-    const requestQuery = process.env.REACT_APP_PROXY + api
-    
-    const requestOptions ={
-      method:"POST",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(formData)
+    console.log(formData)
+    if (formData.subject === ""){
+      console.log("Subject not filled out")
     }
 
-    const response = await fetch(requestQuery, requestOptions)
-    const data = await response.json()
-    const isSuccsessful = data.isSuccsessful
-    console.log(isSuccsessful)
+    // when subject is filled filled, then send email
+    else{ 
+      const api = "/api/sendEmail"
+      
+      console.log("Form submitted")
+      const requestQuery = process.env.REACT_APP_PROXY + api
+      
+      const requestOptions ={
+        method:"POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(formData)
+      }
+  
+      const response = await fetch(requestQuery, requestOptions)
+      const data = await response.json()
+      const isSuccsessful = data.isSuccsessful
+      console.log(isSuccsessful)
+    }
+
   }
   function scrollToDiv(divTarget){
     divTarget.scrollIntoView({behavior:"smooth"})
