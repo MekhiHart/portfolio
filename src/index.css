@@ -1082,7 +1082,9 @@ nav a:hover:before {
     scale: 70%;
   }
 
-
+  .form--state{
+    font-size: 16px;
+  }
 }
 
 
