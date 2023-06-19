@@ -1003,9 +1003,9 @@ nav a:hover:before {
 
 /* Readjustment of footer on taller phones */
 @media screen and (max-width: 450px) and (max-height:915px) {
-  .popUp--header--icon{
+  /* .popUp--header--icon{
     margin-top: 150px;
-  }
+  } */
   
 }
 
@@ -1142,9 +1142,9 @@ nav a:hover:before {
   .svg--container{
     margin: -60px;
   }
-  .popUp--header--icon{
+  /* .popUp--header--icon{
     margin-top: 65px;
-  } 
+  }  */
  
 }
 
