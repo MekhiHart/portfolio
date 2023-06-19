@@ -14,11 +14,12 @@ import skills from "./Data/skills.json"
 
 function App() {
 
-  function handleFormChange(event){
+  function handleFormChange(event,setIsInvalidSubject){
     const target = event.target
     const {name,value} = target
 
-    console.log("Value: ", value)
+    console.log("Name: ", name)
+    if (name === "subject") setIsInvalidSubject(false) // when subject property is changed
 
     // dynamically changes the values for the form data
     setFormData(prevFormData =>({
