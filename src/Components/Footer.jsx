@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 export default function Footer(props){
@@ -8,7 +8,7 @@ export default function Footer(props){
     return(
 
         <div id="FOOTER">
-            <FontAwesomeIcon onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faArrowUp} size='2x'/>
+            <FontAwesomeIcon onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faAngleUp} size='2x'/>
 
             <div className="hero--links">
                 <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>

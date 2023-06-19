@@ -144,8 +144,8 @@ function App() {
       <About/>
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
-      <Contact formData={formData} handleFormChange={handleFormChange} submitForm={submitForm} />
-      <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
+      <Contact formData={formData} handleFormChange={handleFormChange} submitForm={submitForm} scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
+      {/* <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} /> */}
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )

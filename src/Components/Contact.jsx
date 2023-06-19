@@ -1,5 +1,11 @@
 import { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import {faFile} from '@fortawesome/free-solid-svg-icons'
 export default function Contact(props){
+    const {scrollToDiv, scrollDivs} = props
+    const [heroDiv] = scrollDivs
     const {formData, handleFormChange, submitForm} = props
     const {subject,name,email, message} = formData
     const [isInvalidSubject, setIsInvalidSubject] = useState(false)
@@ -12,26 +18,42 @@ export default function Contact(props){
 
 //<input value={subject} placeholder="Subject" name="subject" type="radio" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
     return(
-        <div className="contact--wrapper" id="CONTACT" >
-            <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
-            <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject)}>
-                <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
-                    <option value="1" hidden>Select a Subject</option>
-                    <option value="General Message">Personal Message</option>
-                    <option value="Job Opportunity">Job Opportunity</option>
-                    <option value="Project Collaboration">Project Collaboration</option>
-                    <option value="Feedback">Feedback or Suggestions</option>
-                    <option value="Other">Other</option>
-                </select>
-                {isInvalidSubject && invalidMessage}
 
-                <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
+        <>
+            <div className="contact--wrapper" id="CONTACT" >
+                <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
+                <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject)}>
+                    <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
+                        <option value="1" hidden>Select a Subject</option>
+                        <option value="General Message">Personal Message</option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Project Collaboration">Project Collaboration</option>
+                        <option value="Feedback">Feedback or Suggestions</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    {isInvalidSubject && invalidMessage}
 
-                <input type="submit" id="contact--submit" className="button-30" value="Submit Message" />
-            </form>
-        </div>
+                    <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                    <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                    <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
+
+                    <input type="submit" id="contact--submit" className="button-30" value="Submit Message" />
+                </form>
+
+                <div id="FOOTER">
+                    <FontAwesomeIcon onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faAngleUp} size='2x'/>
+
+                    <div className="hero--links">
+                        <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
+                        <a href="https://www.linkedin.com/in/mekhihart-delacruz/" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
+                        <a id="resume" href="https://drive.google.com/file/d/12Kqr3mP8Z75CRPphWRdP-PGQisb6zUsJ/view?usp=sharing" target='_blank'><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} ></span></a>
+                    </div>
+                </div>
+            </div>
+
+        
+
+        </>
     )
 
 }
