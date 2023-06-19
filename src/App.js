@@ -29,7 +29,7 @@ function App() {
     console.log(formData)
   }
 
-  async function submitForm(event,setIsInvalidSubject){
+  async function submitForm(event,setIsInvalidSubject,formState,setFormState){
     event.preventDefault()
 
     console.log(formData)
@@ -40,8 +40,10 @@ function App() {
 
     // when subject is filled filled, then send email
     else{ 
+      //conditionally renders a loading sign
+      setFormState("Sending")
+
       const api = "/api/sendEmail"
-      
       console.log("Form submitted")
       const requestQuery = process.env.REACT_APP_PROXY + api
       
@@ -54,6 +56,11 @@ function App() {
       const response = await fetch(requestQuery, requestOptions)
       const data = await response.json()
       const isSuccsessful = data.isSuccsessful
+
+
+
+      // * conditionally renders a success div
+      setFormState(isSuccsessful ? "Successful" : "Unsuccessful")
       console.log(isSuccsessful)
     }
 

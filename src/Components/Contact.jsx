@@ -4,11 +4,13 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 export default function Contact(props){
+    const availableFormStates = ["Not Sent", "Sending","Success","Failure"]
     const {scrollToDiv, scrollDivs} = props
     const [heroDiv] = scrollDivs
     const {formData, handleFormChange, submitForm} = props
     const {subject,name,email, message} = formData
     const [isInvalidSubject, setIsInvalidSubject] = useState(false)
+    const [formState,setFormState] = useState("Not Sent")
 
     const invalidMessage = (
         <div id="contact--invalidMessage">
@@ -16,29 +18,50 @@ export default function Contact(props){
         </div>
     )
 
+    const formComponent = (
+        <>
+            <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
+            <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject, formState, setFormState)}>
+                <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
+                    <option value="1" hidden>Select a Subject</option>
+                    <option value="General Message">Personal Message</option>
+                    <option value="Job Opportunity">Job Opportunity</option>
+                    <option value="Project Collaboration">Project Collaboration</option>
+                    <option value="Feedback">Feedback or Suggestions</option>
+                    <option value="Other">Other</option>
+                </select>
+                {isInvalidSubject && invalidMessage}
+
+                <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
+                <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
+
+                <input type="submit" id="contact--submit" className="button-30 project--source" value="Submit Message" />
+            </form>
+        </>
+    )
+
+    const loadingDiv = (
+        <div>Loading...</div>
+    )
+
+    const successfulDiv = (
+        <div>Email Sent!</div>
+    )
+
+    const unsuccsessfulDiv = (
+        <div>Email Not Sent</div>
+    )
+
 //<input value={subject} placeholder="Subject" name="subject" type="radio" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
     return(
 
 
             <div className="contact--wrapper" id="CONTACT" >
-                <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
-                <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject)}>
-                    <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
-                        <option value="1" hidden>Select a Subject</option>
-                        <option value="General Message">Personal Message</option>
-                        <option value="Job Opportunity">Job Opportunity</option>
-                        <option value="Project Collaboration">Project Collaboration</option>
-                        <option value="Feedback">Feedback or Suggestions</option>
-                        <option value="Other">Other</option>
-                    </select>
-                    {isInvalidSubject && invalidMessage}
-
-                    <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                    <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
-                    <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
-
-                    <input type="submit" id="contact--submit" className="button-30" value="Submit Message" />
-                </form>
+                {formState === "Not Sent" && formComponent }
+                {formState === "Sending" && loadingDiv}
+                {formState === "Successful" && successfulDiv }
+                {formState === "Unsuccsessful" &&  unsuccsessfulDiv}
 
                 <div id="FOOTER">
                     <FontAwesomeIcon onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faAngleUp} size='2x'/>
