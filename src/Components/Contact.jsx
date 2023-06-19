@@ -19,7 +19,7 @@ export default function Contact(props){
 //<input value={subject} placeholder="Subject" name="subject" type="radio" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
     return(
 
-        <>
+
             <div className="contact--wrapper" id="CONTACT" >
                 <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
                 <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject)}>
@@ -53,7 +53,6 @@ export default function Contact(props){
 
         
 
-        </>
     )
 
 }
