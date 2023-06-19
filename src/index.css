@@ -889,6 +889,10 @@ nav a:hover:before {
     margin-top: 90px;
   }
 
+  .contact--wrapper > h1{
+    font-size: 28px;
+  }
+
   #contact--submit{
     scale: 80%;
   }
