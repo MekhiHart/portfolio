@@ -13,7 +13,7 @@ export default function Contact(props){
     const {formData, handleFormChange, submitForm} = props
     const {subject,name,email, message} = formData
     const [isInvalidSubject, setIsInvalidSubject] = useState(false)
-    const [formState,setFormState] = useState("Successful")
+    const [formState,setFormState] = useState("Not Sent")
 
     const invalidMessage = (
         <div id="contact--invalidMessage">
