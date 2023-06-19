@@ -517,8 +517,9 @@ nav a:hover:before {
 /** Contact Component*/
 
 #CONTACT > *{
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .contact--wrapper{
   display: flex;
   flex-direction: column;
@@ -567,9 +568,20 @@ nav a:hover:before {
   border-right: none;
 }
 
+.contact--form > *{
+  font-family: "Segoe UI",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+} 
+
+#contact--subject, .contact--heading, .contact--message, #contact--submit{
+  font-family: "Segoe UI" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #contact--subject{
   width: 100%;
+  margin-top: 15px;
+  font-family: "Segoe UI" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 #contact--submit{
@@ -718,7 +730,7 @@ nav a:hover:before {
 }
 
 #FOOTER > .hero--links {
-  padding-top: 30px;
+  padding-top: 15px;
 }
 
 #FOOTER > .hero--links > *{
