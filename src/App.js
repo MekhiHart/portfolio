@@ -4,7 +4,6 @@ import Skills from "./Components/Skills";
 import PopUp from "./Components/PopUp";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
-import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
 
 import {useEffect, useState} from "react";
@@ -145,7 +144,6 @@ function App() {
       <Skills setPopUp={setPopUp} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons}/>
       <Projects/>
       <Contact formData={formData} handleFormChange={handleFormChange} submitForm={submitForm} scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} />
-      {/* <Footer scrollToDiv={scrollToDiv} scrollDivs={scrollDivs} /> */}
       {popUp.isClicked && <PopUp setPopUp={setPopUp} popUpData={popUpData} handlePopUpData={handlePopUpData} handleTabButtons={handleTabButtons} tabButtons={tabButtons}/>}
     </>
   )

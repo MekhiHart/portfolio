@@ -282,7 +282,7 @@ nav a:hover:before {
   border-radius: 50px;
   padding: 5px;
   transition: background-color .5s;
-  margin-top: 80px;
+  margin-top: 130px;
 }
 
 #popUp--header--search--icon{
@@ -699,7 +699,6 @@ nav a:hover:before {
 }
 
 #FOOTER{
-
   background-color: #21252b;
   display: flex;
   justify-content: center;
@@ -896,6 +895,14 @@ nav a:hover:before {
 }
 
 
+/* Readjustment of footer on taller phones */
+@media screen and (max-width: 450px) and (max-height:915px) {
+  .popUp--header--icon{
+    margin-top: 150px;
+  }
+  
+}
+
 
 /** Device Media Quries */
 
@@ -911,7 +918,7 @@ nav a:hover:before {
 
 /* Tablet Landscape */
 @media screen and (min-width:768px) and (max-width: 1024){ 
-
+  
 }
 
 /* Tablet*/
@@ -967,7 +974,10 @@ nav a:hover:before {
 
 
 
+
 }
+
+
 
 /* Normal Width Mobile */
 @media screen and (min-width: 390px) and (max-width: 485px){ 
@@ -1018,6 +1028,10 @@ nav a:hover:before {
   .svg--container{
     margin: -60px;
   }
+  .popUp--header--icon{
+    margin-top: 65px;
+  } 
+ 
 }
 
 /* Iphone 5*/
