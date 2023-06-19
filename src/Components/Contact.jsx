@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
+import starShark from "../Assets/Star_Shark.png"
+
 export default function Contact(props){
-    const availableFormStates = ["Not Sent", "Sending","Success","Failure"]
+    const availableFormStates = ["Not Sent", "Sending","Successful","Failure"]
     const {scrollToDiv, scrollDivs} = props
     const [heroDiv] = scrollDivs
     const {formData, handleFormChange, submitForm} = props
@@ -42,11 +44,28 @@ export default function Contact(props){
     )
 
     const loadingDiv = (
-        <div>Loading...</div>
+        
+        <>
+            <div class="container">
+                <div class="dash uno"></div>
+                <div class="dash dos"></div>
+                <div class="dash tres"></div>
+                <div class="dash cuatro"></div>
+            </div>
+
+            <h3>Loading...</h3>
+        
+        </>
+
+
     )
 
     const successfulDiv = (
-        <div>Email Sent!</div>
+        <>
+            <img src={starShark} style={{maxWidth:"120px", maxHeight:"120px"}}/>
+            <h3 style={{color:"white"}}>Message was successfully sent to Mekhi!</h3>
+        </>
+
     )
 
     const unsuccsessfulDiv = (
@@ -55,8 +74,6 @@ export default function Contact(props){
 
 //<input value={subject} placeholder="Subject" name="subject" type="radio" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
     return(
-
-
             <div className="contact--wrapper" id="CONTACT" >
                 {formState === "Not Sent" && formComponent }
                 {formState === "Sending" && loadingDiv}
