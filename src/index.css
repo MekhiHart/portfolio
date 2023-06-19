@@ -515,6 +515,10 @@ nav a:hover:before {
 }
 
 /** Contact Component*/
+
+#CONTACT > *{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .contact--wrapper{
   display: flex;
   flex-direction: column;
