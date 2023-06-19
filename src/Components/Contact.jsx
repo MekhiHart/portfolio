@@ -12,8 +12,8 @@ export default function Contact(props){
 
 //<input value={subject} placeholder="Subject" name="subject" type="radio" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
     return(
-        <div className="contact--wrapper fullScreen" id="CONTACT" >
-            <h1>Contact Me</h1>
+        <div className="contact--wrapper" id="CONTACT" >
+            <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
             <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject)}>
                 <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
                     <option value="1" hidden>Select a Subject</option>
@@ -28,7 +28,8 @@ export default function Contact(props){
                 <input required value={name} placeholder="Name" type="text" name="name" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
                 <input required value={email} placeholder="Email" type="text" name="email" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
                 <textarea required value={message} placeholder="Message" type="text"name="message" className="contact--message" onChange={(event) => handleFormChange(event)}/>
-                <input type="submit" />
+
+                <input type="submit" id="contact--submit" className="button-30" value="Submit Message" />
             </form>
         </div>
     )

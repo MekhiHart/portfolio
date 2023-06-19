@@ -15,6 +15,9 @@ code {
     monospace;
 }
 
+h1, h2, h3{
+  font-weight: 600;
+}
 
 /** Shape Divider */
 .shape--divider--1 {
@@ -452,7 +455,7 @@ nav a:hover:before {
   border: 1px solid black;
   margin: 10px;
   padding: 7px;
-  font-weight: 700;
+  font-weight: 600;
   border:solid black 2px
 
 }
@@ -514,8 +517,13 @@ nav a:hover:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #EED6D3;
+  background-color: #21252b;
   font-family: Segoe UI;
+  height: 80vh;
+}
+
+.contact--wrapper{
+  
 }
 
  .contact--form > *{
@@ -525,7 +533,8 @@ nav a:hover:before {
 
  .contact--form >*:not(:last-child){
   padding-left: 12px;
- }
+  border-radius: 8px;
+}
 
 .contact--form{
   display: flex;
@@ -547,6 +556,15 @@ nav a:hover:before {
   width: 100%;
 }
 
+#contact--submit{
+  text-align: center;
+  align-self: center;
+
+  margin-top: 20px;
+  padding: 20px;
+  width: 200px;
+  font-weight: 600;
+}
 @keyframes slide-down-invalidMessage{
   0%{
     transform: translateY(-20%)
@@ -621,6 +639,7 @@ nav a:hover:before {
   white-space: nowrap;
   will-change: box-shadow,transform;
   font-size: 18px;
+  font-weight: 600;
 }
 
 .button-30:focus {
@@ -663,7 +682,7 @@ nav a:hover:before {
 #FOOTER{
   padding-top: 20px;
   height: 20vh;
-  background-color: #868B8E;
+  background-color: #21252b;
   display: flex;
   justify-content: center;
 

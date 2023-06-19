@@ -10,7 +10,7 @@ export default function About(){
                 <div id="about--container--wrapper">
                     <img id="about--container--profile" src={Profile} />
 
-                    <span id="about--container--description"><b style={{fontSize:"24px"}}>About Me:</b> <br></br> I am a first-generation student that immigrated in the United States from the Philippines.
+                    <span id="about--container--description"><b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> I am a first-generation student that immigrated in the United States from the Philippines.
                     Adapting into a new country developed my tenacity to 
                     solve challenging problems that supports my skills as a Software Engineer. However when I'm not working on a project, I love cooking trending recipies that I find in Instagram 
                     with my partner.
