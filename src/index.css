@@ -513,6 +513,7 @@ nav a:hover:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #EED6D3;
 }
 
 .contact--form{
@@ -621,7 +622,7 @@ nav a:hover:before {
 }
 
 #FOOTER{
-  margin-top: 40px;
+  padding-top: 20px;
   height: 20vh;
   background-color: #868B8E;
   display: flex;
@@ -795,10 +796,32 @@ nav a:hover:before {
 }
 
 
+/** When contact me component starts to break */
+@media screen and (max-width:872px){ 
+
+  .contact--wrapper{
+    margin-top: 70px;
+  }
+
+  .contact--wrapper > form{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width:550px){ 
+
+  .contact--wrapper{
+    margin-top: 90px;
+  }
+
+  .contact--wrapper > form{
+    width: 350px;
+  }
+}
 
 
 
-/* Device Media Quries */
+/** Device Media Quries */
 
 /* Desktop  */
 @media screen and (min-width:1600px){ 
@@ -860,6 +883,10 @@ nav a:hover:before {
 
   #about--container--wrapper{
     width: 290px;
+  }
+
+  .contact--wrapper > form{
+    width: 250px;
   }
 
 

@@ -4,7 +4,7 @@ export default function Contact(props){
 
 
     return(
-        <div className="contact--wrapper" id="CONTACT" >
+        <div className="contact--wrapper fullScreen" id="CONTACT" >
             <h1>Contact Me</h1>
             <form className="contact--form" onSubmit={(event) => submitForm(event)}>
                 <input value={subject} placeholder="Subject" name="subject" type="text" className="contact--heading" onChange={(event) => handleFormChange(event)}/>
