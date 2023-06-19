@@ -629,144 +629,79 @@ nav a:hover:before {
 
   /* Loading div*/
 
-  .container {
-    display: flex;
+
+ .form--state{
+  color:white
+ }
+
+ .dot1 {
+  animation: visibility 3s linear infinite;
+  color:white
+ }@keyframes visibility {
+  0% {
+  opacity: 1;
   }
-  
-  .dash {
-    margin: 0 15px;
-    width: 35px;
-    height: 15px;
-    border-radius: 8px;
-    background: #FF2CBD;
-    box-shadow: 0 0 10px 0 #FECDFF;
+  65% {
+  opacity: 1;
   }
-  
-  .uno {
-    margin-right: -18px;
-    transform-origin: center left;
-    animation: spin 3s linear infinite;  
+  66% {
+  opacity: 0;
   }
-  
-  .dos {
-    transform-origin: center right;
-    animation: spin2 3s linear infinite;
-    animation-delay: .2s;
+  100% {
+  opacity: 0;
   }
-  
-  .tres {
-    transform-origin: center right;
-    animation: spin3 3s linear infinite;
-    animation-delay: .3s;
+ }
+
+ .dot2 {
+  animation: visibility2 3s linear infinite;
+  color:white
+ }@keyframes visibility2 {
+  0% {
+   opacity: 0;
   }
-  
-  .cuatro {
-    transform-origin: center right;
-    animation: spin4 3s linear infinite;
-    animation-delay: .4s;
+  21% {
+   opacity: 0;
   }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(360deg);
-    }
-    30% {
-      transform: rotate(370deg);
-    }
-    35% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  22% {
+   opacity: 1;
   }
-  
-  @keyframes spin2 {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(0deg);
-    }
-    30% {
-      transform: rotate(-180deg);
-    }
-    35% {
-      transform: rotate(-190deg);
-    }
-    40% {
-      transform: rotate(-180deg);
-    }
-    78% {
-      transform: rotate(-180deg);
-    }
-    95% {
-      transform: rotate(-360deg);
-    }
-    98% {
-      transform: rotate(-370deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
+  65% {
+   opacity: 1;
   }
-  
-  @keyframes spin3 {
-    0% {
-      transform: rotate(0deg);
-    }
-    27% {
-      transform: rotate(0deg);  
-    }
-    40% {
-      transform: rotate(180deg);
-    }
-    45% {
-      transform: rotate(190deg);
-    }
-    50% {
-      transform: rotate(180deg);
-    }
-    62% {
-      transform: rotate(180deg);
-    }
-    75% {
-      transform: rotate(360deg);
-    }
-    80% {
-      transform: rotate(370deg);
-    }
-    85% {
-      transform: rotate(360deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+  66% {
+   opacity: 0;
   }
-  
-  @keyframes spin4 {
-    0% {
-      transform: rotate(0deg);
-    }
-    38% {
-      transform: rotate(0deg);
-    }
-    60% {
-      transform: rotate(-360deg);
-    }
-    65% {
-      transform: rotate(-370deg);
-    }
-    75% {
-      transform: rotate(-360deg);
-    }
-    100% {
-      transform: rotate(-360deg);
-    }
+  100% {
+   opacity: 0;
   }
+ }
+
+ .dot3 {
+  animation: visibility3 3s linear infinite;
+  color:white
+ }@keyframes visibility3 {
+  0% {
+   opacity: 0;
+  }
+  43% {
+   opacity: 0;
+  }
+  44% {
+   opacity: 1;
+  }
+  65% {
+   opacity: 1;
+  }
+  66% {
+   opacity: 0;
+  }
+  100% {
+   opacity: 0;
+  }
+ }
+
+
+ 
 
  #closePopUp{
   background-color: #6a768a;

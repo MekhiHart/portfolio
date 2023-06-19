@@ -4,6 +4,7 @@ import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 import starShark from "../Assets/Star_Shark.png"
+import loadingShark from "../Assets/loadingShark.png"
 
 export default function Contact(props){
     const availableFormStates = ["Not Sent", "Sending","Successful","Failure"]
@@ -12,7 +13,7 @@ export default function Contact(props){
     const {formData, handleFormChange, submitForm} = props
     const {subject,name,email, message} = formData
     const [isInvalidSubject, setIsInvalidSubject] = useState(false)
-    const [formState,setFormState] = useState("Not Sent")
+    const [formState,setFormState] = useState("Successful")
 
     const invalidMessage = (
         <div id="contact--invalidMessage">
@@ -46,14 +47,14 @@ export default function Contact(props){
     const loadingDiv = (
         
         <>
-            <div class="container">
-                <div class="dash uno"></div>
-                <div class="dash dos"></div>
-                <div class="dash tres"></div>
-                <div class="dash cuatro"></div>
-            </div>
-
-            <h3>Loading...</h3>
+            <img className="shark--asset" src={loadingShark} style={{width:"160px", height:"140px"}} />
+                <h2 className="form--state">
+                    Loading 
+                    <span class="dot1">.</span>
+                    <span class="dot2">.</span>
+                    <span class="dot3">.</span>
+                </h2>
+                
         
         </>
 
@@ -62,8 +63,8 @@ export default function Contact(props){
 
     const successfulDiv = (
         <>
-            <img src={starShark} style={{maxWidth:"120px", maxHeight:"120px"}}/>
-            <h3 style={{color:"white"}}>Message was successfully sent to Mekhi!</h3>
+            <img className="shark--asset afterSendingForm" src={starShark} style={{width:"140px", height:"160px"}}/>
+            <h2 className="form--state" style={{color:"white"}}>Message was successfully sent to Mekhi!</h2>
         </>
 
     )
