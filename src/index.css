@@ -1131,6 +1131,10 @@ nav a:hover:before {
   #about--container--wrapper{
     margin-top: -100px;
   }
+
+  .form--state{
+    font-size: 13px;
+  }
 }
 
 /* Smaller Height Phones */
