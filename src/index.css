@@ -542,6 +542,10 @@ nav a:hover:before {
   height: 150px;
 }
 
+#contact--subject{
+  width: 100%;
+}
+
 
 /** Other */
 

@@ -29,11 +29,13 @@ function App() {
     console.log(formData)
   }
 
-  async function submitForm(event){
+  async function submitForm(event,setIsInvalidSubject){
     event.preventDefault()
+
     console.log(formData)
     if (formData.subject === ""){
-      console.log("Subject not filled out")
+      console.log("Subject not filled")
+      setIsInvalidSubject(true)
     }
 
     // when subject is filled filled, then send email
