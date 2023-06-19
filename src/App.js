@@ -30,8 +30,7 @@ function App() {
     event.preventDefault()
     console.log("Form submitted")
     const requestQuery = process.env.REACT_APP_PROXY + api
-    console.log("Request: ", requestQuery)
-
+    
     const requestOptions ={
       method:"POST",
       headers: {"Content-Type": "application/json"},
