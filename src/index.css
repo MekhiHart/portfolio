@@ -106,6 +106,22 @@ nav a:hover{
 
 }
 
+#social--payme{
+  color: #00c75e;
+  text-decoration: none;
+}
+
+#social--payme:hover{
+  text-decoration: underline;
+}
+
+#social--payme--logo{
+  width:256px;
+  height:71px;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
 /* nav a:before {
   content: "";
   position: absolute;
