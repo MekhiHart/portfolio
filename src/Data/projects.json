@@ -13,7 +13,7 @@
         "youtubeLink" : "",
         "companyWebsite": "https://www.socialpayme.com/",
         "development": "Internship",
-        "note": "Internship project currently under development. Additionally, technology stack and source code cannot be revealed due to a signed NDA with the company (Social PayMe). Live link will be displayed once production build is published and stack will be disclosed during the interview process",
+        "note": "Internship project currently under development. Additionally, source code cannot be revealed due to a signed NDA with the company (Social PayMe). Live link will be displayed once production build is deployed, and technology stack will be disclosed during an interview process",
         "isConfidential": true
     },
 
@@ -31,7 +31,7 @@
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
         "development":"Hackathon",
-        "note":"Project submitted in a 24 hour hackathon affiliated with my University. Project submission won best Google Cloud Hack while competing against 109 participants",
+        "note":"If testing out live code, I recommend having two seperate devices. One to scan QR code and one to generate the QR code. 'test' is the id for both attendee and volunteer user for demonstration purposes. See video for more information",
         "isConfidential": false
     },
 
@@ -48,7 +48,7 @@
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/dotNfCt43Uo",
         "development" : "Computer Science Organization",
-        "note": "Production build has been archived. Backend and API endpoints has been disconnected to avoid manipulating data for the data analysis team",
+        "note": "Repository has been archived and API endpoints has been removed, but front-end is still available.",
         "isConfidential" :false
     }
 

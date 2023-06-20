@@ -440,7 +440,7 @@ nav a:hover:before {
   grid-template-columns: 3fr 4fr;
 
   /* background-color: #E7D2CC; */
-  height: 500px;
+  height: 700px;
   width: 1140px;
   margin-bottom: 100px;
   margin-top: 50px;
@@ -474,7 +474,9 @@ nav a:hover:before {
   padding-top: 20px;
   padding-left: 50px;
   width: 640px;
-  height:360px
+  height:360px;
+  padding-right: 50px;
+
 }
 
 .project--source{
@@ -1006,6 +1008,7 @@ nav a:hover:before {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      height: 700px ;
       width: 600px;
       margin-top: 70px;
       margin-bottom: 100px;
