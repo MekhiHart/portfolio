@@ -825,7 +825,7 @@ nav a:hover:before {
   scale: 70%;
 }
 
-/* Embed pdf*/
+/** Embed pdf*/
 .resume--wrapper{
   display: flex;
   flex-direction: column;
@@ -837,7 +837,7 @@ nav a:hover:before {
 }
 
 #resume--pdf{
-  width: 40%;
+  width: 60%;
   height: 70vh;
 }
 
@@ -845,6 +845,59 @@ nav a:hover:before {
 /** Media Queries */
 
 /** Edge Cases */
+
+/* Resume component*/
+
+@media screen and (max-width: 780px) {
+  #resume--pdf{
+    width: 80%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 445px) {
+  #resume--pdf{
+    width: 90%;
+    height: 70vh;
+  }
+}
+/* @media screen and (max-width:1100px) {
+  #resume--pdf{
+    width: 80%;
+  }
+}
+
+@media screen and (max-width:846px) {
+  #resume--pdf{
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width:652px) {
+  #resume--pdf{
+    width: 90%;
+
+  }
+}
+
+@media screen and (max-width:525px) {
+  #resume--pdf{
+    width: 90%;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width:415px) {
+  #resume--pdf{
+    width: 90%;
+    height: 80vh;
+  }
+} */
+
+
+
+
 
 
 /* About Section */

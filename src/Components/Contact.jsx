@@ -5,6 +5,7 @@ import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 import starShark from "../Assets/Star_Shark.png"
 import loadingShark from "../Assets/loadingShark.png"
+import { Link } from "react-router-dom"
 
 export default function Contact(props){
     const availableFormStates = ["Not Sent", "Sending","Successful","Failure"]
@@ -87,7 +88,7 @@ export default function Contact(props){
                     <div className="hero--links">
                         <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
                         <a href="https://www.linkedin.com/in/mekhihart-delacruz/" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
-                        <a id="resume" href="https://drive.google.com/file/d/12Kqr3mP8Z75CRPphWRdP-PGQisb6zUsJ/view?usp=sharing" target='_blank'><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} ></span></a>
+                        <Link to="/Resume" id="resume"><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} ></span></Link>
                     </div>
                 </div>
             </div>
