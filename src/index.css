@@ -570,17 +570,21 @@ nav a:hover:before {
 
 .contact--form > *{
   font-family: "Segoe UI",'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-color: white;
 
 } 
 
 #contact--subject, .contact--heading, .contact--message, #contact--submit{
   font-family: "Segoe UI" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-color: white;
+
 }
 
 #contact--subject{
   width: 100%;
   margin-top: 15px;
   font-family: "Segoe UI" 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-color: white;
 
 }
 
@@ -592,12 +596,16 @@ nav a:hover:before {
   padding: 20px;
   width: 200px;
   font-weight: 600;
+  border-color: white;
+
 }
 
 #contact--subject, .contact--heading{
   border-top: none;
   border-left: none;
   border-right: none;
+  border-color: white;
+
 }
 
 @keyframes slide-down-invalidMessage{
