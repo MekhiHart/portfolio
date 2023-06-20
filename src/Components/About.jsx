@@ -11,7 +11,7 @@ export default function About(){
                     <img id="about--container--profile" src={Profile} />
 
                     <span id="about--container--description"><b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi and I'm a first-generation student that immigrated to the United States in 2013. 
-                    I fell in love with integrating what I've learned in my classes into projects from high school, which incentivized me to specialize in Software Engineering. I have experience developing full-stack projects
+                    I fell in love with integrating what I've learned in my classes into projects from high school which incentivized me to specialize in Software Engineering. I have experience developing full-stack projects
                     but on my time off, I enjoy cooking trending food recipes with my partner. 
 
                     </span>
