@@ -798,6 +798,7 @@ nav a:hover:before {
   align-items: center;
   width: 100%;
   background-color: #333842;
+  margin-top: 80px;
 }
 
 #FOOTER > *:hover{
@@ -1138,9 +1139,9 @@ nav a:hover:before {
   .svg--container{
     margin: -60px;
   }
-  /* .popUp--header--icon{
-    margin-top: 65px;
-  }  */
+  #FOOTER{
+    margin-top: 20px;
+  }
  
 }
 
@@ -1160,10 +1161,18 @@ nav a:hover:before {
 }
 
 
-@media screen and (min-width:690px) and (max-height:700px){
+@media screen and (max-width:325px) and (max-height:570px){
   .svg--container{
     scale: 50%;
     margin: -45px;
   }
+
+
+
+  .contact--form{
+    margin-top: -50px;
+    scale: 75% 
+  }
+
 }
 
