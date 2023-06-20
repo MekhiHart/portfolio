@@ -20,8 +20,11 @@ import Git from "./Git.png"
 import AWS from "./AWS.png"
 import DynamoDB from "./DynamoDB.png"
 import Go from "./Go.png"
+import Lambda from "./Lambda.png"
+import Scrum from "./Scrum.png"
 
 export default {
+    Scrum,
     Go,
     JavaScript, 
     React, 
@@ -44,4 +47,5 @@ export default {
     Git,
     AWS,
     DynamoDB,
+    Lambda
  }
