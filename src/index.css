@@ -825,6 +825,23 @@ nav a:hover:before {
   scale: 70%;
 }
 
+/* Embed pdf*/
+.resume--wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:#EEEDE7;
+
+}
+
+#resume--pdf{
+  width: 40%;
+  height: 70vh;
+}
+
+
 /** Media Queries */
 
 /** Edge Cases */
