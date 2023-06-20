@@ -27,7 +27,7 @@ export default function Contact(props){
             <h1 style={{color:"white", fontWeight:"600"}}>Contact Me</h1>
             <form className="contact--form" onSubmit={(event) => submitForm(event,setIsInvalidSubject, formState, setFormState)}>
                 <select id="contact--subject" required name="subject" value={subject} onChange={(event) => handleFormChange(event,setIsInvalidSubject)}>
-                    <option value="1" hidden>Select a Subject</option>
+                    <option value="1" hidden>Select a Title</option>
                     <option value="General Message">Personal Message</option>
                     <option value="Job Opportunity">Job Opportunity</option>
                     <option value="Project Collaboration">Project Collaboration</option>
