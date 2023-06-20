@@ -12,7 +12,6 @@ export default function PopUp(props){
         const modalOverlay = document.querySelector("#modal--overlay")
         modal.setAttribute("closing", "")
         modalOverlay.setAttribute("closing",'')
-        console.log(modalOverlay)
         
         modal.addEventListener("animationend", () => setPopUp({isClicked:false}))
     }

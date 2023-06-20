@@ -13,26 +13,20 @@ export default function Home(){
     function handleFormChange(event,setIsInvalidSubject){
         const target = event.target
         const {name,value} = target
-    
-        console.log("Name: ", name)
-        if (name === "subject") setIsInvalidSubject(false) // when subject property is changed
+            if (name === "subject") setIsInvalidSubject(false) // when subject property is changed
     
         // dynamically changes the values for the form data
         setFormData(prevFormData =>({
           ...prevFormData,
           [name]: value
         }))
-    
-        console.log(formData)
-      }
+          }
     
       async function submitForm(event,setIsInvalidSubject,formState,setFormState){
         event.preventDefault()
         
     
-        console.log(formData)
         if (formData.subject === ""){
-          console.log("Subject not filled")
           setIsInvalidSubject(true)
         }
     
@@ -42,7 +36,6 @@ export default function Home(){
           setFormState("Sending")
     
           const api = "/api/sendEmail"
-          console.log("Form submitted")
           // const requestQuery = "http://localhost:3001" + api // local testing
           const requestQuery = process.env.REACT_APP_PROXY + api
           
@@ -60,7 +53,6 @@ export default function Home(){
     
           // * conditionally renders a success div
           setFormState(isSuccsessful ? "Successful" : "Unsuccessful")
-          console.log(isSuccsessful)
         }
     
       }
@@ -139,9 +131,7 @@ export default function Home(){
             body.classList.remove('no-scroll')
         }
       },[popUp.isClicked])
-    
-      // useEffect(() =>console.log("Clcicksed"),popUp)
-    
+        
       return (
         <>
           <NavBar scrollToDiv={scrollToDiv} scrollDivs={scrollDivs}/>
