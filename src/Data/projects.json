@@ -31,7 +31,7 @@
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
         "development":"Hackathon",
-        "note":"If testing out live code, I recommend having two seperate devices. One to scan QR code and one to generate the QR code. 'test' is the id for both attendee and volunteer user for demonstration purposes. See video for more information",
+        "note":"If testing out live code, I recommend having two seperate devices. One to scan QR code and one to generate the QR code. 'test' is the id used for both attendee and volunteer user for demonstration purposes. See video for more information",
         "isConfidential": false
     },
 

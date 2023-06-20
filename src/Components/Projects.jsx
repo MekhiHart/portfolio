@@ -5,7 +5,7 @@ export default function Projects(){
 
         const isConfidential = project.isConfidential
         const techStack = project.techStack.map(technology => {
-            const style = isConfidential ? {backgroundColor: "red"} : {}
+            const style = isConfidential ? {backgroundColor: "#E32636"} : {}
             return <span style={style} className="project--technology">{technology}</span>
         })
 
@@ -19,6 +19,7 @@ export default function Projects(){
                 <div className="project--information">
                     <h3 style={{paddingLeft:"10px", fontSize:"24px"}}><u>{project.projectName}</u></h3>
 
+                    <h3 style={{marginLeft:"12px"}}>Tech Stack:</h3>
                     <div style={{display:"flex", flexWrap:"wrap"}}>
                         {techStack}
                     </div>
