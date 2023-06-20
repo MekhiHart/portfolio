@@ -1127,7 +1127,9 @@ nav a:hover:before {
   }
 
   #nav > a{
-    font-size: 12px;
+    font-size: 14px;
+    padding: 5px 9px;
+
   }
 
   .skills--container h1 {
