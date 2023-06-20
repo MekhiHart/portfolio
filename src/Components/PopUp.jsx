@@ -29,7 +29,7 @@ export default function PopUp(props){
         let buttonStyle = {}
 
         if (isClicked){
-            buttonStyle = {backgroundColor:"#21252b", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"#EEEDE7" }
+            buttonStyle = {backgroundColor:"#EEEDE7", borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:"black"}
         }
         else{
             // buttonStyle = {backgroundColor:"green"}

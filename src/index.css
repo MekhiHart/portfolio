@@ -227,9 +227,9 @@ nav a:hover:before {
 
 .popUp--container{
   z-index: 102;
-  background-color: #21252b;
+  background-color: #EEEDE7;
   height: 85vh;
-  color: #EEEDE7;
+  color: black;
   text-align: center;
   border: none;
   border-bottom-left-radius: 20px;
@@ -245,7 +245,7 @@ nav a:hover:before {
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-  background-color: #6a768a; /* Prevents children opacity change, only changes background opacity*/
+  background-color: #F9F9FB; /* Prevents children opacity change, only changes background opacity*/
   border: none;
 
   margin: 0 10px;
@@ -255,20 +255,21 @@ nav a:hover:before {
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #333842;
+  background-color: #DCD2CC;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  color: #EEEDE7;
+  color: black;
   transition: background-color .5s;
 }
 
 .popUp--tab:hover{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  
 }
 
 .popUp--tab:hover{
-  background-color: #545c6d;
+  background-color: #FDF4E3
 }
 
 #popUp--header{
@@ -286,14 +287,7 @@ nav a:hover:before {
   justify-content: center;
 }
 
-#popUp--header--search{
-  background-color: #6a768a;
-  width: 100%;
-  margin-left: 10px;
-  border-radius: 20px;
-  display: flex;
-  margin-right: 10px;
-}
+
 
 .popUp--header--icon{
   border-radius: 50px;
@@ -311,7 +305,7 @@ nav a:hover:before {
 }
 
 #popUp--header--search{
-  background-color: #6a768a;
+  background-color: #F9F9FB;
   width: 100%;
   border-radius: 20px;
   display: flex;
@@ -737,14 +731,14 @@ nav a:hover:before {
  
 
  #closePopUp{
-  background-color: #6a768a;
+  background-color: #F9F9FB;
   margin-left: auto;
   border: none;
   padding: 10px 10px;
   transition: color .5s;
   margin-top: 5px;
   margin-right: 10px;
-  color:#EEEDE7
+  color:black
 }
 
 #closePopUp:hover{
