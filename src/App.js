@@ -31,6 +31,7 @@ function App() {
 
   async function submitForm(event,setIsInvalidSubject,formState,setFormState){
     event.preventDefault()
+    
 
     console.log(formData)
     if (formData.subject === ""){
@@ -45,6 +46,7 @@ function App() {
 
       const api = "/api/sendEmail"
       console.log("Form submitted")
+      // const requestQuery = "http://localhost:3001" + api // local testing
       const requestQuery = process.env.REACT_APP_PROXY + api
       
       const requestOptions ={

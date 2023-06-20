@@ -131,7 +131,7 @@ nav a:hover:before {
 /** Hero section */
 
 .hero--links > *{
-  color:#868B8E
+  color:#333842
 }
 
 .hero--container{
@@ -525,7 +525,7 @@ nav a:hover:before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #21252b;
+  background-color: #333842;
   font-family: Segoe UI;
   height: 100vh;
 }
@@ -540,7 +540,7 @@ nav a:hover:before {
 
  .contact--form >*:not(:last-child){
   padding-left: 12px;
-  background-color: #21252b
+  background-color: #333842
 }
 
 .contact--form{
@@ -797,7 +797,7 @@ nav a:hover:before {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-color: #21252b;
+  background-color: #333842;
 }
 
 #FOOTER > *:hover{
