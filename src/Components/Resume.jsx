@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom"
 export default function Resume(){
     return(
         <div>
-            Resume
+            <Link to="/">Home</Link>
         </div>
     )
 
