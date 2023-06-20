@@ -57,7 +57,7 @@ export default function Projects(){
             </div>
 
             <div className="projects--container" id="PROJECTS">
-                <h1>Projects</h1>
+                <h1>Selected Projects</h1>
                 {projects}
             </div>
         
