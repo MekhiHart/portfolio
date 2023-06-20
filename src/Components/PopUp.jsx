@@ -90,8 +90,7 @@ export default function PopUp(props){
                                 <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
                                 <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
                             </div>
-                            <FontAwesomeIcon onClick={() => setIsLightMode(prevState => !prevState)} className="popUp--header--icon" id="change--mode" icon={icon} size='1x'/>
-                        </div>
+                            <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>                        </div>
                     </div>
 
                     <h1 id="popUp--name">{popUpData.name}</h1>
