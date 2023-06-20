@@ -43,7 +43,7 @@
         "collaborators" :[
             "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
         ],
-        "description" : "A MERN application built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data is used by the data analyis team to make improvements to future events and workshops ",
+        "description" : "A full-stack web application (MERN) built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data was used by the data analysis team to generate a report that will be used to make improvements to future events and workshops ",
         "liveLink" : "https://www.beachhacks-schedule.com/",
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/dotNfCt43Uo",
