@@ -1,4 +1,7 @@
 import ProjectsData from "../Data/projects.json"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faPersonDigging} from '@fortawesome/free-solid-svg-icons'
+
 export default function Projects(){
 
     const projects = ProjectsData.map(project => {
@@ -12,6 +15,13 @@ export default function Projects(){
         // conditionally renders collaborator description depending on size
         const collaboratorSize = project.collaborators.length
         const collaborators = project.collaborators.map((collaborator, index) => index === collaboratorSize - 1 ?" and " + collaborator : collaborator + ", ")
+
+        const constructionDiv = (
+            <div id="project--video" style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+                <FontAwesomeIcon icon={faPersonDigging} size='2x'/>
+                <h2>In Development</h2>
+            </div>
+        )
 
 
         return (
@@ -40,7 +50,7 @@ export default function Projects(){
                     </div>
                 </div>
 
-                {project.youtubeLink !== "" && <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe> }
+                {project.youtubeLink === "" ? constructionDiv : <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe> }
                 
             </div>
         )
