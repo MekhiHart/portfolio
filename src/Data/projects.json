@@ -26,7 +26,7 @@
         "collaborators" :[
 
         ],
-        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code in where the application scans the QR code that registers the attendee in the Firebase database. ",
+        "description" : "A tool that streamlines the process of taking attendance through the use of QR codes. This application is developed for an organization hosting large events with the requirement of taking attendance quickly and reliably. To use this application, the organization and attendee must preferrably have a mobile phone. The attendee shows their QR code, and the volunteer using the application scans the QR code that registers the attendee in the datbase. ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
@@ -38,7 +38,7 @@
     {
         "projectName" : "BeachHacks Schedule",
         "techStack" : [
-            "JavaScript","React", "MongoDB", "Node.js", "Express.js"
+            "JavaScript","React", "MongoDB", "Node.js", "Express.js", "REST API"
         ],
         "collaborators" :[
             "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
