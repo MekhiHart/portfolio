@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPython, faReact} from "@fortawesome/free-brands-svg-icons"
-import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo } from '@fortawesome/free-solid-svg-icons'
+import {faDatabase,faScrewdriverWrench,faLaptopCode,faArrowLeft, faArrowRight, faRotateRight, faHouse, faCircleInfo, faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
 import profile from "../Assets/animatedProfile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
@@ -20,9 +21,12 @@ export default function PopUp(props){
         handlePopUpData(value)
         handleTabButtons(value)
     }
-
+    const [isLightMode,setIsLightMode] = useState(true)
     const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
     const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
+
+    const textColor = isLightMode ? "white" : "black"
+    const icon = isLightMode ? faSun : faMoon
 
     const buttons = tabButtons.map((buttonObj, index) =>{
         const {isClicked, name} = buttonObj
@@ -86,7 +90,7 @@ export default function PopUp(props){
                                 <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
                                 <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
                             </div>
-                            <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>
+                            <FontAwesomeIcon onClick={() => setIsLightMode(prevState => !prevState)} className="popUp--header--icon" id="change--mode" icon={icon} size='1x'/>
                         </div>
                     </div>
 
