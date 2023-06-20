@@ -102,20 +102,6 @@ export default function Home(){
     
       const [popUpData,setPopUpData] = useState({})
     
-      useEffect(() =>{ // * handles hiding nav bar
-        var lastScrollTop;
-        const navbar = document.getElementById('nav');
-        window.addEventListener('scroll',function(){
-          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          if(scrollTop > lastScrollTop){
-          navbar.style.top='-90px';
-          }
-          else{
-          navbar.style.top='0';
-          }
-          lastScrollTop = scrollTop;
-        });
-      }, [])
     
       useEffect(() =>{ // * Handles getting divs for nav bar to jumpt to
         // * web page section
