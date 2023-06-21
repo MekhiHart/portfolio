@@ -83,7 +83,7 @@ export default function Contact(props){
                 {formState === "Unsuccsessful" &&  unsuccsessfulDiv}
 
                 <div id="FOOTER">
-                    <FontAwesomeIcon onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faAngleUp} size='2x'/>
+                    <FontAwesomeIcon id="angle--up" onClick={() => scrollToDiv(heroDiv)} style={{color:"white"}} className="popUp--header--icon" icon={faAngleUp} size='2x'/>
 
                     <div className="hero--links">
                         <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
