@@ -1027,7 +1027,7 @@ nav a:hover:before {
 @media screen and (max-width: 1200px){
 
   .projects--container > h1{
-    margin-bottom: -60px;
+    margin-bottom: -40px;
   }
 
     .project--component{
