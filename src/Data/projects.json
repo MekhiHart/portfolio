@@ -26,7 +26,7 @@
         "collaborators" :[
 
         ],
-        "description" : "An attendance tracker tool that streamlines the process through QR codes. This application is developed for organization hosting events with the requirement of taking attendance quickly and reliably. Project submitted for a Google affiliated hackathon and won Best Google Cloud Hack, while competing against 109 competitors",
+        "description" : "An attendance tracker tool that streamlines the process through QR codes. This application is developed for an organization hosting events with the requirement of taking attendance quickly and reliably. Project submitted for a Google affiliated hackathon and won Best Google Cloud Hack, while competing against 109 competitors",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
