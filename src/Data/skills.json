@@ -24,7 +24,7 @@
     "Databases":[ 
         "PostgreSQL",
         "MongoDB", 
-        "Firebase",
+        "Firestore",
         "DynamoDB"
     ],
 
@@ -33,7 +33,7 @@
         "Git",
         "Node",
         "AWS",
-        "Firestore",
+        "Firebase",
         "Lambda",
         "Scrum"
     ]
