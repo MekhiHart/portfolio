@@ -229,15 +229,15 @@ nav a:hover:before {
 
 .popUp--container{
   z-index: 102;
-  background-color: #EEEDE7;
   height: 85vh;
   color: black;
   text-align: center;
   border: none;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  margin: 0 10px
-  
+  margin: 0 10px;
+  transition: background-color .5s;
+
 }
 
 
@@ -249,6 +249,7 @@ nav a:hover:before {
   justify-content:flex-start;
   background-color: #F9F9FB; /* Prevents children opacity change, only changes background opacity*/
   border: none;
+  transition: background-color .5s;
 
   margin: 0 10px;
 }
@@ -257,7 +258,6 @@ nav a:hover:before {
   border: none;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #DCD2CC;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   color: black;
@@ -272,7 +272,7 @@ nav a:hover:before {
 }
 
 .popUp--tab:hover{
-  background-color: #FDF4E3
+  background-color: #f3f3f3 !important
 }
 
 #popUp--header{
@@ -343,6 +343,16 @@ nav a:hover:before {
 #popUp--header--search--url{
   margin-top: 8px;
   margin-left: 5px;
+}
+
+#switch--mode{
+  height: 17px;
+  width: 17px;
+}
+
+#switch--mode:hover{
+  background-color: #FDF4E3;
+  cursor: pointer;
 }
 
 
@@ -514,7 +524,6 @@ nav a:hover:before {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 15px;
-
 }
 
 .project--source{
@@ -767,7 +776,9 @@ nav a:hover:before {
   transition: color .5s;
   margin-top: 5px;
   margin-right: 10px;
-  color:black
+  color:black;
+  transition: background-color .5s;
+
 }
 
 #closePopUp:hover{
