@@ -156,6 +156,8 @@ nav a:hover:before {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  animation: fade-in 2000ms forwards
+
 }
 
 .hero--intro > *{
@@ -321,12 +323,13 @@ nav a:hover:before {
 
 .svg--container{
   margin-top: -25px;
+  
 }
 
 .svg--icon{
   max-height: 100px;
   min-height: 100px;
-  padding: 30px 30px
+  padding: 30px 30px;
   /* padding: 20px 70px; */
 }
 
@@ -357,7 +360,7 @@ nav a:hover:before {
 
 
 .modal[closing]{
-  animation: slide-down 500ms forwards;
+  animation: slide-down 1000ms forwards;
 }
 
 
