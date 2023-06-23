@@ -48,7 +48,7 @@ export default function Projects(){
         const collaborators = project.collaborators.map((collaborator, index) => index === collaboratorSize - 1 ?" and " + collaborator : collaborator + ", ")
 
         const constructionDiv = (
-            <div id="project--video" style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+            <div id="project--video" className="construction--div">
                 {socialPayMe}
                 <h2 style={{fontSize:"18px"}}>In Development</h2>
                 <FontAwesomeIcon icon={faPersonDigging} size='2x'/>
