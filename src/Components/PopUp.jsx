@@ -10,8 +10,8 @@ import { text } from '@fortawesome/fontawesome-svg-core'
 
 export default function PopUp(props){
     function closeModal(){
-        const modal = document.querySelector("#modal")
-        const modalOverlay = document.querySelector("#modal--overlay")
+        const modal = document.getElementById("modal")
+        const modalOverlay = document.getElementById("modal--overlay")
         modal.setAttribute("closing", "")
         modalOverlay.setAttribute("closing",'')
         
