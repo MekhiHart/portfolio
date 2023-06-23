@@ -6,6 +6,7 @@ import profile from "../Assets/animatedProfile.png"
 
 import {faX} from '@fortawesome/free-solid-svg-icons'
 import PNG from "../Assets/PNG/PNG"
+import { text } from '@fortawesome/fontawesome-svg-core'
 
 export default function PopUp(props){
     function closeModal(){
@@ -25,9 +26,10 @@ export default function PopUp(props){
     const {setPopUp, popUpData, handlePopUpData, handleTabButtons, tabButtons} = props
     const buttonIcons = [faLaptopCode, faReact, faDatabase, faScrewdriverWrench]
 
-    const tabSelectedColor = isLightMode ? "rgb(238, 237, 231)" : "#545c6d"
+    const tabSelectedColor = isLightMode ? "rgb(238, 237, 231)" : "#21252b"
     const tabColor = isLightMode ? "#DCD2CC" : "#333842"
     const textColor = isLightMode ? "black" : "white"
+    const hoverColor = isLightMode ? "#fdf4e3" : "#545c6d"
 
     const searchHeaderColor = isLightMode ? " #F9F9FB" : "#6a768a"
     const tabHeader = searchHeaderColor
@@ -39,12 +41,12 @@ export default function PopUp(props){
         let buttonStyle = {}
 
         if (isClicked){
-            buttonStyle = {backgroundColor:tabSelectedColor, borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:textColor}
+            buttonStyle = {backgroundColor:tabSelectedColor, borderTopRightRadius:"10px", borderTopLeftRadius:"10px", color:textColor, borderColor:textColor}
         }
         else{
             buttonStyle = {backgroundColor:tabColor, color:textColor}
         }
-        return  <button className="popUp--tab" style={buttonStyle} onClick={() => handleButtonClick(name)}>
+        return  <button  className="popUp--tab" style={buttonStyle} onClick={() => handleButtonClick(name)}>
             {<FontAwesomeIcon icon={buttonIcons[index]} size='1x'/>} <span className="popUp--tab--name">{name}</span>
             </button>
     })

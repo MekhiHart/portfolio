@@ -268,11 +268,12 @@ nav a:hover:before {
 .popUp--tab:hover{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
+  cursor: pointer;
   
 }
 
 .popUp--tab:hover{
-  background-color: #f3f3f3 !important
+  background-color: #d1d1d1 !important
 }
 
 #popUp--header{
@@ -288,6 +289,7 @@ nav a:hover:before {
   display: flex;
   width: 90%;
   justify-content: center;
+  
 }
 
 
@@ -318,8 +320,10 @@ nav a:hover:before {
   border-radius: 20px;
   display: flex;
   margin-left: 20px;
+  transition: background-color 500ms
   /* margin-bottom:10px; */
 }
+
 
 .svg--container{
   margin-top: -25px;
@@ -351,7 +355,7 @@ nav a:hover:before {
 }
 
 #switch--mode:hover{
-  background-color: #FDF4E3;
+  background-color: #d1d1d1;
   cursor: pointer;
 }
 
