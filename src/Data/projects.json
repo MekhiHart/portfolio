@@ -20,7 +20,7 @@
     {
         "projectName" : "Fast Tracker",
         "techStack" : [
-            "TypeScript","React", "Firebase", "Vite"
+            "TypeScript","React", "Firestore", "Vite"
 
         ],
         "collaborators" :[
