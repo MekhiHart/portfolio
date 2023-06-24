@@ -1025,7 +1025,13 @@ nav a:hover:before {
 }
 
 /* Width when popUp browser header starts to break */
-@media screen and (max-height: 850px) {
+@media screen  and (min-height: 850px) {
+  .svg--container{
+    scale: 85%;
+    margin: -20px
+  }
+}
+@media screen  and (max-height: 800px) {
   .svg--container{
     scale: 80%;
     margin: -30px
