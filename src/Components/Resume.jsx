@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import pdfFile from "../Assets/Software Engineer Resume 2023.pdf"
+import pdfFile from "../Assets/Software Engineer Resume.pdf"
 export default function Resume(){
     return(
         <div className="resume--wrapper">
