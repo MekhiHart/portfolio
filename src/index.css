@@ -420,6 +420,7 @@ nav a:hover:before {
 }
 
 
+
 /** About Section */
 
 .about--container{
@@ -1167,8 +1168,10 @@ nav a:hover:before {
 /** Device Media Quries */
 
 /* Desktop  */
-@media screen and (min-width:1600px){ 
-
+@media screen and (min-width:1400px){ 
+  .svg--container{
+    padding: 50px !important
+  }
 }
 
 /* Laptop  */
