@@ -62,9 +62,14 @@ export default function PopUp(props){
                 src = PNG["CSharp"]
                 break;
 
-                case ("Firebase"):
-                    src = PNG["Firestore"]
-                    break;
+            case ("Firebase"):
+                src = PNG["Firestore"]
+                break;
+
+            case("ReactNative"):
+                src = PNG["ReactNative"]
+                skill = "React Native"
+                break
         
             default:
                 src = PNG[skill]
