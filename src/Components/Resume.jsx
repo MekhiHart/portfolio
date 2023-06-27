@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
 import pdfFile from "../Assets/Software Engineer Resume.pdf"
 export default function Resume(){
-    const pdfLink = "https://drive.google.com/file/d/1tLauRmPK_irDtssJW_YZlZZTWdVfz1hX/view"
-    const embedLink = "https://drive.google.com/file/d/1tLauRmPK_irDtssJW_YZlZZTWdVfz1hX/preview"
+    const pdfLink = "https://drive.google.com/file/d/11AtymOg93uquPp4MexIc6SwpVIGAPW9p/view"
+    const embedLink = "https://drive.google.com/file/d/11AtymOg93uquPp4MexIc6SwpVIGAPW9p/preview"
     return(
         <div className="resume--wrapper">
             <h1>Resume</h1>
