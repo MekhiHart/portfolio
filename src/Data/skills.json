@@ -1,5 +1,6 @@
 {
     "Frameworks":[
+    "Expo",
     "React",
     "ReactNative" ,
     "Express", 
@@ -9,9 +10,9 @@
     ],
 
     "Languages":[
-        "Go",
-        "JavaScript",
         "TypeScript",
+        "JavaScript",
+        "Go",
         "Python",
         "C++",
         "C#",

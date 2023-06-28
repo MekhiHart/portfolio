@@ -23,8 +23,10 @@ import Go from "./Go.png"
 import Lambda from "./Lambda.png"
 import Scrum from "./Scrum.png"
 import ReactNative from "./ReactNative.png"
+import Expo from "./Expo.png"
 
 export default {
+    Expo,
     ReactNative,
     Scrum,
     Go,
