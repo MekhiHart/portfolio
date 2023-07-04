@@ -1192,7 +1192,8 @@ nav a:hover:before {
 /* Includes both normal width mobile and small mobile */
 @media screen and (max-width:485px) {
   .construction--div{
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
+    margin-bottom:40px;
   }
 
   .projects--container > h1{
