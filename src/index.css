@@ -1191,6 +1191,10 @@ nav a:hover:before {
 
 /* Includes both normal width mobile and small mobile */
 @media screen and (max-width:485px) {
+
+  .projects--container > h1{
+    margin-bottom: 30px;
+  }
   #popUp--header--search--url{
     font-size: 12px;
     padding-top: 4px;

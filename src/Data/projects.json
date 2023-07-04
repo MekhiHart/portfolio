@@ -2,10 +2,10 @@
     {
         "projectName" : "Hashtag Bio",
         "techStack" : [
-            "Confidential"
+            "React Native", "Expo", "TypeScript", "DynamoDB", "Node.js", "Express.js", "REST API", "AWS Amplify", "AWS Lambda"
         ],
         "collaborators" :[
-            "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Ken Ng"
+            "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Kriti Chapagain", "Ken Ng"
         ],
         "description" : "A central hub built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates to strategically cater their content to their demographic audience, and mint their social media posts as NFTs to avoid payola if their content is affiliated with a brand or company",
         "liveLink" : "",
@@ -14,7 +14,7 @@
         "companyWebsite": "https://www.socialpayme.com/",
         "development": "Internship",
         "note": "Internship project with Social Payme. Source code cannot be revealed due to a signed NDA with the company. Live link will be displayed once production build is deployed. Technology stack will be disclosed during an interview process",
-        "isConfidential": true
+        "isConfidential": false
     },
 
     {
