@@ -2,18 +2,18 @@
     {
         "projectName" : "Hashtag Bio",
         "techStack" : [
-            "React Native", "Expo", "TypeScript", "DynamoDB", "Node.js", "Express.js", "REST API", "AWS Amplify", "AWS Lambda"
+            "React Native", "TypeScript", "DynamoDB", "Node.js", "Express.js", "REST API", "Expo"
         ],
         "collaborators" :[
             "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Kriti Chapagain", "Ken Ng"
         ],
-        "description" : "A central hub built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates to strategically cater their content to their demographic audience, and mint their social media posts as NFTs to avoid payola if their content is affiliated with a brand or company",
+        "description" : "Hashtag Bio is a central hub built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates. This was my internship project with Social PayMe where I contributed to 33% (287 GitHub commits) of the total changes made to the production repository.",
         "liveLink" : "",
         "sourceCodeLink" : "",
         "youtubeLink" : "",
         "companyWebsite": "https://www.socialpayme.com/",
         "development": "Internship",
-        "note": "Internship project with Social Payme. Source code cannot be revealed due to a signed NDA with the company. Live link will be displayed once production build is deployed. Technology stack will be disclosed during an interview process",
+        "note": "Internship project with Social Payme. Source code cannot be revealed due to a signed NDA with the company.",
         "isConfidential": false
     },
 
@@ -26,7 +26,7 @@
         "collaborators" :[
 
         ],
-        "description" : "An attendance tracker tool that streamlines the process through QR codes. This application is developed for an organization hosting events with the requirement of taking attendance quickly and reliably. Project submitted for a Google sponsored hackathon and won Best Google Cloud Hack while competing against 109 competitors",
+        "description" : "This project was awarded the Best Google Cloud Hack 2023 during a Google sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborous process of taking attendance by 280% (14 seconds to .5 seconds). ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
