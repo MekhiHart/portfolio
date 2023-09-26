@@ -12,8 +12,8 @@
     "Languages":[
         "TypeScript",
         "JavaScript",
-        "Go",
         "Python",
+        "Swift",
         "C++",
         "C#",
         "C",
@@ -35,6 +35,8 @@
         "Git",
         "Node",
         "AWS",
+        "Docker",
+        "Jenkins",
         "Firebase",
         "Lambda",
         "Scrum"

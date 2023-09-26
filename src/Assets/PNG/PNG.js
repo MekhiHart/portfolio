@@ -24,8 +24,14 @@ import Lambda from "./Lambda.png"
 import Scrum from "./Scrum.png"
 import ReactNative from "./ReactNative.png"
 import Expo from "./Expo.png"
+import Docker from "./Docker.png"
+import Jenkins from "./Jenkins.png"
+import Swift from "./Swift.png"
 
 export default {
+    Swift,
+    Jenkins,
+    Docker,
     Expo,
     ReactNative,
     Scrum,
