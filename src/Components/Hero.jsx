@@ -18,7 +18,7 @@ export default function Hero(){
             <div className="hero--links">
                 <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
                 <a href="https://www.linkedin.com/in/mekhihart-delacruz/" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
-                <Link to="/Resume" id="resume"><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} >Resume</span></Link>
+                <a style={{textDecoration: "none"}} href="https://drive.google.com/file/d/1sHVFwuQKn0G4GnZ1rL3pQfSBL_8Q0x-F/view?usp=sharing" target='_blank'> <FontAwesomeIcon icon={faFile} size='2x'/> <span style={{marginLeft:"3px"}} >Resume</span> </a>
             </div>
         </div>
 
