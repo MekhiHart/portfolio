@@ -27,8 +27,9 @@ import Expo from "./Expo.png"
 import Docker from "./Docker.png"
 import Jenkins from "./Jenkins.png"
 import Swift from "./Swift.png"
-
+import MicrosoftNet from "./Microsoft_Net.png"
 export default {
+    MicrosoftNet,
     Swift,
     Jenkins,
     Docker,

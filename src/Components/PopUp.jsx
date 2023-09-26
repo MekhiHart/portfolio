@@ -70,6 +70,11 @@ export default function PopUp(props){
                 src = PNG["ReactNative"]
                 skill = "React Native"
                 break
+
+            case("Microsoft_Net"):
+                src = PNG["MicrosoftNet"]
+                skill = ".NET"
+                break
         
             default:
                 src = PNG[skill]
