@@ -24,8 +24,6 @@ export default function Projects(){
         const constructionDiv = (
             <div id="project--video" className="construction--div">
                 <img src={socialPayMe} style={{width:"160px", height:"60px"}}/>
-                <h2 style={{fontSize:"18px"}}>In Development</h2>
-                <FontAwesomeIcon icon={faPersonDigging} size='2x'/>
             </div>
         )
 
