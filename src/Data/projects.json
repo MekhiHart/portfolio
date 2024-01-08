@@ -50,6 +50,23 @@
         "development" : "Computer Science Organization",
         "note": "Repository has been archived and API endpoints has been removed but front-end is still available.",
         "isConfidential" :false
+    },
+
+    {
+        "projectName" : "Sunspot",
+        "techStack" : [
+            "Godot", "GDScript"
+        ],
+        "collaborators" :[
+            "Mia Lang", "Michael Rodriguez", "Silas Prouty"
+        ],
+        "description" : "A desktop game built with a team of four indie developers. It's a 2D pixel art game about a sentient sunflower attempting to escape a cursed flowershop!",
+        "liveLink" : "https://itch.io/embed-upload/6109761?color=5f634f",
+        "sourceCodeLink" : "",
+        "youtubeLink" : "https://itch.io/embed-upload/6109761?color=5f634f",
+        "development" : "Game",
+        "note": "",
+        "isConfidential" :false
     }
 
 ]
