@@ -1,11 +1,16 @@
 import ProjectsData from "../Data/projects.json"
+import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faPersonDigging} from '@fortawesome/free-solid-svg-icons'
 import socialPayMe from "../Assets/socialPayMe.png"
 export default function Projects(){
-   
-    const projects = ProjectsData.map(project => {
+    const [isGameRunning, setIsGameRunning] = useState(false)
 
+    useEffect(() => {
+        console.log("gameRunning: ", isGameRunning)
+    }, [isGameRunning])
+    const projects = ProjectsData.map(project => {
+        
         const isConfidential = project.isConfidential
         const techStack = project.techStack.map(technology => {
             const style = isConfidential ? {backgroundColor: "#E32636"} : {}
@@ -22,6 +27,20 @@ export default function Projects(){
                 <h2 style={{fontSize:"18px"}}>In Development</h2>
                 <FontAwesomeIcon icon={faPersonDigging} size='2x'/>
             </div>
+        )
+
+        const gameDiv = (
+                <>
+                    {isGameRunning ? <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe>  : <div id="project--video" style={{display:"flex", alignItems:"center", justifyContent:"center"}}> <button className="project--source button-30" onClick={() => setIsGameRunning((prev) => !prev)} >Run Game</button> </div> }
+                </>
+                
+            
+        )
+
+        const iFrame = (
+            <>
+                {project.development === "Game" ? gameDiv : <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe>  }
+            </>
         )
 
 
@@ -51,7 +70,7 @@ export default function Projects(){
                     </div>
                 </div>
 
-                {project.youtubeLink === "" ? constructionDiv : <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe> }
+                {project.youtubeLink === "" ? constructionDiv : iFrame}
                 
             </div>
         )
