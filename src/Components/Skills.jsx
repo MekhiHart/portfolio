@@ -35,7 +35,7 @@ export default function Skills(props){
         )
     }
     return(
-        <div className="skills--container" id='SKILLS'>
+        <div style={{marginTop: -2}} className="skills--container" id='SKILLS'>
             <h1>Technical Skills</h1>
             <div className="skills--grid">
                 {buttons}

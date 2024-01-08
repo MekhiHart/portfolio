@@ -1,7 +1,7 @@
 import ProjectsData from "../Data/projects.json"
 import { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPersonDigging} from '@fortawesome/free-solid-svg-icons'
+import {faPersonDigging, faPlay} from '@fortawesome/free-solid-svg-icons'
 import socialPayMe from "../Assets/socialPayMe.png"
 export default function Projects(){
     const [isGameRunning, setIsGameRunning] = useState(false)
@@ -31,7 +31,14 @@ export default function Projects(){
 
         const gameDiv = (
                 <>
-                    {isGameRunning ? <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe>  : <div id="project--video" style={{display:"flex", alignItems:"center", justifyContent:"center"}}> <button className="project--source button-30" onClick={() => setIsGameRunning((prev) => !prev)} >Run Game</button> </div> }
+                    {isGameRunning ? <iframe allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" src={project.youtubeLink} id="project--video"   frameborder="0"></iframe>  : 
+                    <div id="project--video" style={{display:"flex", alignItems:"center", justifyContent:"center", backgroundColor: "#5f634f"}}> 
+                        <div style={{display:"flex"}}>
+                            
+                            <button className="project--source button-30" style={{backgroundColor:"#ffa"}} onClick={() => setIsGameRunning((prev) => !prev)} >{<><FontAwesomeIcon icon={faPlay} style={{paddingRight: "10"}} /> <span>Run Game</span> </>}</button> 
+
+                        </div>
+                    </div> }
                 </>
                 
             
