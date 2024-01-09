@@ -26,7 +26,7 @@
         "collaborators" :[
 
         ],
-        "description" : "This project was awarded the Best Google Cloud Hack 2023 during a Google sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborous process of taking attendance by 280% (14 seconds to .5 seconds). ",
+        "description" : "This project won the Best Google Cloud Hack 2023 during a Google sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborious process of taking attendance by 89% (14 seconds to 1.5 seconds). ",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
@@ -65,7 +65,7 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "https://itch.io/embed-upload/6109761?color=5f634f",
         "development" : "Game",
-        "note": "Running the game will have music and sound. Lower the volume if necessary :). Additionally, the game might load for some time and the game can be played in the Itch.io platform by clicking the \"See Live\" button.",
+        "note": "Running the game will have music and sound. Lower the volume if necessary :). Additionally, the game might load for some time. The game can also be played in the Itch.io platform by clicking the \"See Live\" button.",
         "isConfidential" :false
     }
 
