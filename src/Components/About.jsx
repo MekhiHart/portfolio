@@ -10,8 +10,8 @@ export default function About(){
                 <div id="about--container--wrapper">
                     <img id="about--container--profile" src={Profile} />
 
-                    <span id="about--container--description"><b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi and I'm a first-generation student that immigrated to the United States in 2013. 
-                    I fell in love with integrating what I've learned in projects during high school which incentivized me to major Aerospace. However, I loved the idea of developing software to solve real life problems which made me switch to Computer Science specializing in Software Engineering.
+                    <span id="about--container--description"><b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi and I'm a first-gen university student and first-gen immigrant that immigrated to the United States in 2013. 
+                    Bringing my ideas to life is what inspired me to pursue Computer Science. I have experience from game development, web development, and mobile development and I am pursing to become a Software Engineer.
 
                     </span>
     

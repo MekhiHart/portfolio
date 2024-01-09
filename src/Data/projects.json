@@ -65,7 +65,7 @@
         "sourceCodeLink" : "",
         "youtubeLink" : "https://itch.io/embed-upload/6109761?color=5f634f",
         "development" : "Game",
-        "note": "Running the game will have music and sound. Lower the volume if necessary :). Additionally, the game might load for some time. The game can also be played in the Itch.io platform by clicking the \"See Live\" button.",
+        "note": "The game can be played by pressing the \"Run Game\" button! Playing the game will have music and sound and lower the volume if necessary :). If you're interested in seeing more games we developed, press the \"See Live\" button!",
         "isConfidential" :false
     }
 
