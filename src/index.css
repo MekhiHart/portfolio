@@ -778,16 +778,15 @@ nav a:hover:before {
   margin-left: auto;
   border: none;
   padding: 10px 10px;
-  transition: color .5s;
   margin-top: 5px;
   margin-right: 10px;
-  color:black;
   transition: background-color .5s;
 
 }
 
 #closePopUp:hover{
-  color: #E32636;
+  color: #E32636 !important; 
+  cursor: pointer;
   
 }
 
