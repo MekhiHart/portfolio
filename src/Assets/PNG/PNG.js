@@ -28,7 +28,9 @@ import Docker from "./Docker.png"
 import Jenkins from "./Jenkins.png"
 import Swift from "./Swift.png"
 import MicrosoftNet from "./Microsoft_Net.png"
+import SwiftUI from "./SwiftUI.png"
 export default {
+    SwiftUI,
     MicrosoftNet,
     Swift,
     Jenkins,

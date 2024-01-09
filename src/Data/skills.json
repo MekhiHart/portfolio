@@ -2,6 +2,7 @@
     "Frameworks":[
         "React",
         "ReactNative" ,
+        "SwiftUI",
         "Microsoft_Net",
         "Express", 
         "Expo",
