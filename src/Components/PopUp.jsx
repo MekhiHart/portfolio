@@ -91,7 +91,7 @@ export default function PopUp(props){
             <div className='modal' id='modal'>
                 <div className="popUp--tabs" style={{backgroundColor:tabHeader}} >
                     {buttons}
-                    <button style={{backgroundColor:tabHeader}} onClick={closeModal} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
+                    <button style={{backgroundColor:searchHeaderColor, color:textColor}} onClick={closeModal} id="closePopUp"><FontAwesomeIcon icon={faX} size='1x'/></button>
                 </div>
 
                 <div style={{backgroundColor:mainColor, color:textColor}}  className="popUp--container"> 
