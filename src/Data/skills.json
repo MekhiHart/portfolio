@@ -29,7 +29,8 @@
         "PostgreSQL",
         "MongoDB", 
         "Firestore",
-        "DynamoDB"
+        "DynamoDB",
+        "S3"
     ],
 
     "Tools":[

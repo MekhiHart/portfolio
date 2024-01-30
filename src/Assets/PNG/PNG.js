@@ -29,7 +29,9 @@ import Jenkins from "./Jenkins.png"
 import Swift from "./Swift.png"
 import MicrosoftNet from "./Microsoft_Net.png"
 import SwiftUI from "./SwiftUI.png"
+import S3 from "./S3.png"
 export default {
+    S3,
     SwiftUI,
     MicrosoftNet,
     Swift,
