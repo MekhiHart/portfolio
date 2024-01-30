@@ -2,6 +2,7 @@ import { useState } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons"
+import { faGamepad } from "@fortawesome/free-solid-svg-icons"
 import {faFile} from '@fortawesome/free-solid-svg-icons'
 import starShark from "../Assets/Star_Shark.png"
 import loadingShark from "../Assets/loadingShark.png"
@@ -88,7 +89,8 @@ export default function Contact(props){
                     <div className="hero--links">
                         <a href="https://github.com/MekhiHart" target='_blank'><FontAwesomeIcon icon={faGithub} size='2x'/></a>
                         <a href="https://www.linkedin.com/in/mekhihart-delacruz/" target='_blank'><FontAwesomeIcon icon={faLinkedin} size='2x'/></a>
-                        <Link to="/Resume" id="resume"><FontAwesomeIcon icon={faFile} size='2x'/><span style={{marginLeft:"3px"}} ></span></Link>
+                        <a style={{textDecoration: "none"}} href="https://drive.google.com/file/d/1sHVFwuQKn0G4GnZ1rL3pQfSBL_8Q0x-F/view?usp=sharing" target='_blank'> <FontAwesomeIcon icon={faFile} size='2x'/> </a>
+                        <a href="https://bropharah.itch.io/" target='_blank'><FontAwesomeIcon icon={faGamepad} size='2x'/></a>
                     </div>
                 </div>
             </div>
