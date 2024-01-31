@@ -12,7 +12,7 @@ export default function Hero(){
                 <h1 style={{marginBottom: "-20px"}}>Mekhi Hart Dela Cruz</h1>
                 <h2>  Incoming SWE Intern @ <span style={{color:"#e50a14", fontWeight:"bold", fontFamily:"Bebas Neue", letterSpacing:"2px"}}>Netflix</span> </h2>
                 <h3 style={{marginBottom: "-20px"}}>California State University Long Beach</h3>
-                <h4>B.S. in <i>Computer Science</i> | December 2024</h4>``
+                <h4>B.S. in <i>Computer Science</i> | December 2024</h4>
             </div>
 
             <div className="hero--links">
