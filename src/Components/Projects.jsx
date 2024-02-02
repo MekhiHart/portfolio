@@ -8,7 +8,6 @@ export default function Projects(){
     const [isGameRunning, setIsGameRunning] = useState(false)
 
     useEffect(() => {
-        console.log("gameRunning: ", isGameRunning)
     }, [isGameRunning])
     const projects = ProjectsData.map(project => {
         
