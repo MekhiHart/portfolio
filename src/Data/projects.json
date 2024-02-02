@@ -16,23 +16,6 @@
         "note": "MVP built but currently in development to finish upload feature, and password lock. Data will take around 30 seconds to load since backend service is hosted on a free tier plan",
         "isConfidential": false
     },
-    {
-        "projectName" : "Hashtag Bio",
-        "techStack" : [
-            "React Native", "TypeScript", "DynamoDB", "Node.js", "Express.js", "REST API", "Expo"
-        ],
-        "collaborators" :[
-            "Jonathan Powell", "Joseph Jophy", "Mike Odnis", "Yikai Liu", "Kriti Chapagain", "Ken Ng"
-        ],
-        "description" : "Hashtag Bio is a central hub built for social media influencers that are looking to increase their exposure to the public, track and calculate engagement rates. This was my internship project with Social PayMe where I contributed to 33% (287 GitHub commits) of the total changes made to the development repository.",
-        "liveLink" : "",
-        "sourceCodeLink" : "",
-        "youtubeLink" : "",
-        "companyWebsite": "https://www.socialpayme.com/",
-        "development": "Internship",
-        "note": "Internship project with Social Payme. Source code cannot be revealed due to a signed NDA with the company.",
-        "isConfidential": false
-    },
 
     {
         "projectName" : "Fast Tracker",
