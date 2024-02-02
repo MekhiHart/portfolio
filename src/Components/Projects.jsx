@@ -20,7 +20,7 @@ export default function Projects(){
 
         // conditionally renders collaborator description depending on size
         const collaboratorSize = project.collaborators.length
-        const collaborators = project.collaborators.map((collaborator, index) => index === collaboratorSize - 1 ?" and " + collaborator : collaborator + ", ")
+        const collaborators = project.collaborators.map((collaborator, index) => index === collaboratorSize - 1 ? collaborator : collaborator + ", ")
 
         const constructionDiv = (
             <div id="project--video" className="construction--div">
