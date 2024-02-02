@@ -13,7 +13,7 @@
         "youtubeLink" : "https://www.youtube.com/embed/s8zWuXVQT2I?si=LnyU0FXLjcPRg7P5",
         "companyWebsite": "https://www.socialpayme.com/",
         "development": "Club",
-        "note": "MVP built but currently in development to finish upload feature, and password lock. Data will take around 30 seconds to load since backend service is hosted on a free tier plan",
+        "note": "MVP built but currently in development to finish upload feature, and password lock. Data will take around 30 seconds to load since backend service is hosted on a free tier plan.",
         "isConfidential": false
     },
 
@@ -26,12 +26,12 @@
         "collaborators" :[
 
         ],
-        "description" : "This project won the Best Google Cloud Hack 2023 during a Google sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborious process of taking attendance by 89% (14 seconds to 1.5 seconds). ",
+        "description" : "This project won the Best Google Cloud Hack 2023 during a Google sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborious process of taking attendance by 89% (14 seconds to 1.5 seconds).",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
         "youtubeLink" : "https://www.youtube.com/embed/m-QqPMXl9Wg",
         "development":"Hackathon",
-        "note":"If testing out live code, I recommend having two seperate devices. One device to scan the QR code, and another device to generate the QR code. 'test' is the id used for both attendee and volunteer user for demonstration purposes. See video for more information",
+        "note":"If testing out live code, I recommend having two seperate devices. One device to scan the QR code, and another device to generate the QR code. 'test' is the id used for both attendee and volunteer user for demonstration purposes. See video for more information.",
         "isConfidential": false
     },
 
@@ -43,7 +43,7 @@
         "collaborators" :[
             "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
         ],
-        "description" : "A full-stack web application (MERN) built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data was used by the data analysis team to generate a report that will be used to make improvements to future events and workshops ",
+        "description" : "A full-stack web application (MERN) built for the BeachHacks organization that tracks the popularity of events and workshops hosted by the organization. The data was used by the data analysis team to generate a report that will be used to make improvements to future events and workshops.",
         "liveLink" : "https://www.beachhacks-schedule.com/",
         "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
         "youtubeLink" : "https://www.youtube.com/embed/dotNfCt43Uo",
