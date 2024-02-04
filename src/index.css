@@ -1023,6 +1023,7 @@ nav a:hover:before {
   
   .hero--intro > h2{
     font-size:26px;
+    padding: 0px 10px
   }
 
   .hero--intro > h3{
