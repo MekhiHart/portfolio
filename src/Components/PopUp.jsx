@@ -106,7 +106,7 @@ export default function PopUp(props){
                         <div className='popUp--header--right'>
                             <div style={{backgroundColor:searchHeaderColor}} id="popUp--header--search">
                                 <FontAwesomeIcon id="popUp--header--search--icon" className="popUp--header--icon" icon={faCircleInfo} size='1x'/>
-                                <span id="popUp--header--search--url">www.MekhiHart_isCool.dev</span>
+                                <span id="popUp--header--search--url">www.MekhiHart_isCool.com</span>
                             </div>
                             <img alt="Mekhi's profile" className="popUp--header--icon" src={profile} style={{minWidth:"30px", maxHeight:"30px", borderRadius:"100px", marginTop:"0px"}}></img>                        </div>
                     </div>
