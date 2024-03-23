@@ -10,7 +10,10 @@ export default function About(){
                 <div id="about--container--wrapper">
                     <img id="about--container--profile" src={Profile} />
 
-                    <span id="about--container--description"><b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi Hart. I'm a first-generation immigrant and student. I immigrated from the Philippines in middle school in 2013. Bringing my ideas to life is what inspired me to pursue Computer Science. I have experience in game, web, and mobile development, but I focus on pursuing Software Engineering, specializing in Full-Stack development.
+                    <span id="about--container--description">
+                        <b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi Hart. I'm a first-generation immigrant and student. I immigrated from the Philippines when I was 13 for better opportunities. Bringing my ideas to life is what inspired me to pursue Computer Science. I have experience in game, web, and mobile development, but I focus on pursuing Software Engineering.
+                        <br/> <br/>
+                        <b>Fun fact</b>: In the history of CSULB, I am the <u>first person</u> to become a Software Engineer for <span  style={{color:"#e50a14", fontFamily: "Bebas Neue", fontWeight:"bold", letterSpacing:"1px", fontSize:"20px"}}>Netflix</span>.
 
                     </span>
     

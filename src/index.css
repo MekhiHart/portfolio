@@ -1037,7 +1037,7 @@ nav a:hover:before {
   }
 
   .hero--intro > h2 > #netflix--name {
-    font-weight: lighter !important; 
+    font-weight: normal !important
   }
 }
 
