@@ -29,7 +29,7 @@
         "description" : "This project won the Best Google Cloud Hack 2023 during a Google-sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborious process of taking attendance by 89% (14 seconds to 1.5 seconds). The big inspiration for this project was waiting in a long waiting queue to enter the hackathon, and the long process of taking attendance due to my complicated name :(.",
         "liveLink" : "https://fasttracker.netlify.app/",
         "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
-        "youtubeLink" : "https://www.youtube.com/embed/ov3b1Ondj1I?si=bZPf0mmqCg6h_H8R",
+        "youtubeLink" : "https://www.youtube.com/embed/XeoIvPlVfG8",
         "development":"Hackathon",
         "note":"If testing out live code, I recommend having two seperate devices. One device to scan the QR code, and another device to generate the QR code. 'test' is the id used for both attendee and volunteer user for demonstration purposes. See video for more information.",
         "isConfidential": false
