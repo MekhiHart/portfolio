@@ -10,7 +10,7 @@ export default function Hero(){
         <div className="hero--container fullScreen" id='HERO'>
             <div className="hero--intro">
                 <h1 className="hero--name" style={{marginBottom: "-15px"}}>Mekhi Hart Dela Cruz</h1>
-                <h2>  Incoming Software Engineer <br/> Intern @ <span id='netflix--name' style={{color:"#e50a14", fontWeight:"bold", fontFamily:"Bebas Neue", letterSpacing:"2px", textDecoration:"none"}}>Netflix</span> </h2>
+                <h2> Software Engineer <br/> Intern @ <span id='netflix--name' style={{color:"#e50a14", fontWeight:"bold", fontFamily:"Bebas Neue", letterSpacing:"2px", textDecoration:"none"}}>Netflix</span> </h2>
                 <h3 style={{marginBottom: "-20px"}}>California State University Long Beach</h3>
                 <h4>B.S. in <i>Computer Science</i> | December 2024</h4>
             </div>
