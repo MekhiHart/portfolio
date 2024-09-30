@@ -10,7 +10,9 @@ export default function About(){
                 <div id="about--container--wrapper">
                     <img id="about--container--profile" src={Profile} />
 
-                    <span id="about--container--description">
+                    <span style={{
+                        fontSize: 22
+                    }} id="about--container--description">
                         <b style={{fontSize:"24px", fontWeight:"600"}}>About Me:</b> <br></br> Hello! I'm Mekhi Hart. I'm a first-generation immigrant and student. I immigrated from the Philippines when I was 13 for better opportunities. Bringing my ideas to life is what inspired me to pursue Computer Science.
                     </span>
     
