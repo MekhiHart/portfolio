@@ -45,15 +45,6 @@ export default function Hero() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
-        <a
-          style={{ textDecoration: "none" }}
-          href="https://drive.google.com/file/d/1sHVFwuQKn0G4GnZ1rL3pQfSBL_8Q0x-F/view?usp=sharing"
-          target="_blank"
-        >
-          {" "}
-          <FontAwesomeIcon icon={faFile} size="2x" />{" "}
-          <span style={{ marginLeft: "3px" }}>Resume</span>{" "}
-        </a>
       </div>
     </div>
   );
