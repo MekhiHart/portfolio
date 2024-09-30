@@ -45,6 +45,9 @@ export default function Hero() {
         >
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
         </a>
+        <a href="https://bropharah.itch.io/" target="_blank">
+          <FontAwesomeIcon icon={faGamepad} size="2x" />
+        </a>
       </div>
     </div>
   );
