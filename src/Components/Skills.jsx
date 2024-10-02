@@ -4,8 +4,8 @@ import {faDatabase,faScrewdriverWrench, faLaptopCode} from '@fortawesome/free-so
 
 export default function Skills(props){
     function handleButtonClick(value){
+
         setPopUp({isClicked:true})
-        
         handlePopUpData(value) // changes what to render based on button clicked on the skills section
         handleTabButtons(value)
     }
@@ -35,7 +35,7 @@ export default function Skills(props){
         )
     }
     return(
-        <div className="skills--container" id='SKILLS'>
+        <div style={{marginTop: -2}} className="skills--container" id='SKILLS'>
             <h1>Technical Skills</h1>
             <div className="skills--grid">
                 {buttons}

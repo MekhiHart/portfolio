@@ -1,0 +1,72 @@
+[
+    {
+        "projectName" : "Race Data Visualizer",
+        "techStack" : [
+            "React", "TypeScript", "AWS S3", "Node.js", "Express.js", "REST API"
+        ],
+        "collaborators" :[
+            "Daniel Winn"
+        ],
+        "description" : "This project is developed for the CSULB Society of Automotive Engineers (SAE) club. I am currently a member of the Data Acquisition subsystem and our mission is to collect and analyze vital trends for each car component during the race. The web app serves as a data visualizer, enabling engineers to visually observe trends through multiline graphs and explore the relationships between different subsystems.",
+        "liveLink" : "https://65b56131de5e5fd2b32a75ba--phenomenal-longma-4aab82.netlify.app/",
+        "sourceCodeLink" : "https://github.com/MekhiHart/SAE-DataVis",
+        "youtubeLink" : "https://www.youtube.com/embed/s8zWuXVQT2I?si=LnyU0FXLjcPRg7P5",
+        "companyWebsite": "https://www.socialpayme.com/",
+        "development": "Club",
+        "note": "MVP built but currently in development to finish upload feature, and password lock. Data will take around 30 seconds to load since backend service is hosted on a free tier plan.",
+        "isConfidential": false
+    },
+
+    {
+        "projectName" : "Fast Tracker",
+        "techStack" : [
+            "TypeScript","React", "Firebase", "Vite"
+
+        ],
+        "collaborators" :[
+
+        ],
+        "description" : "This project won the Best Google Cloud Hack 2023 during a Google-sponsored hackathon. Fast Tracker is a tool that leverages QR codes to streamline the laborious process of taking attendance by 89% (14 seconds to 1.5 seconds). The big inspiration for this project was waiting in a long waiting queue to enter the hackathon, and the long process of taking attendance due to my complicated name :(.",
+        "liveLink" : "https://fasttracker.netlify.app/",
+        "sourceCodeLink" : "https://github.com/MekhiHart/fast-tracker",
+        "youtubeLink" : "https://www.youtube.com/embed/XeoIvPlVfG8",
+        "development":"Hackathon",
+        "note":"If testing out live code, I recommend having two seperate devices. One device to scan the QR code, and another device to generate the QR code. 'test' is the id used for both attendee and volunteer user for demonstration purposes. See video for more information.",
+        "isConfidential": false
+    },
+
+    {
+        "projectName" : "BeachHacks Schedule",
+        "techStack" : [
+            "JavaScript","React", "MongoDB", "Node.js", "Express.js", "REST API"
+        ],
+        "collaborators" :[
+            "Dening", "Carine Gordillo", "Jasmine San Juan", "Leslie Ortega"
+        ],
+        "description" : "This project is a full-stack web application (MERN) built for the BeachHacks Computer Science organization. The web app tracks the popularity of events and workshops hosted by the organization. The data was used by the data analysis team to generate a report that will be used to make improvements to future events and workshops.",
+        "liveLink" : "https://www.beachhacks-schedule.com/",
+        "sourceCodeLink" : "https://github.com/BeachHacks/schedule-alert-2023",
+        "youtubeLink" : "https://www.youtube.com/embed/dotNfCt43Uo",
+        "development" : "Computer Science Organization",
+        "note": "Repository has been archived and API endpoints has been removed but front-end is still available.",
+        "isConfidential" :false
+    },
+
+    {
+        "projectName" : "Sunspot",
+        "techStack" : [
+            "Godot Game Engine", "GDScript"
+        ],
+        "collaborators" :[
+            "Mia Lang (Artist)", "Michael Rodriguez (Sound Designer)", "Silas Prouty (Music Designer)"
+        ],
+        "description" : "A desktop game built with a team of four indie developers. It's a 2D-pixel art game about a sentient sunflower attempting to escape a cursed flower shop! The inspiration for this project was me finding an Instagram post of a plant with roots that looked like a pair of legs. I then thought \"Oh! This could make a cool game!\"",
+        "liveLink" : "https://bropharah.itch.io/sunspot",
+        "sourceCodeLink" : "",
+        "youtubeLink" : "https://itch.io/embed-upload/6109761?color=5f634f",
+        "development" : "Game",
+        "note": "The game can be played by pressing the \"Run Game\" button! Playing the game will have music and sound and lower the volume if necessary :). If you're interested in seeing more games we developed, press the \"See Live\" button!",
+        "isConfidential" :false
+    }
+
+]

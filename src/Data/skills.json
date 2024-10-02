@@ -1,17 +1,21 @@
 {
     "Frameworks":[
-    "React", 
-    "Express", 
-    "Node",
-    "Unity"
+        "React",
+        "ReactNative" ,
+        "SwiftUI",
+        "Microsoft_Net",
+        "Express", 
+        "Expo",
+        "Unity"
 
 
     ],
 
     "Languages":[
-        "JavaScript",
         "TypeScript",
+        "JavaScript",
         "Python",
+        "Swift",
         "C++",
         "C#",
         "C",
@@ -25,14 +29,20 @@
         "PostgreSQL",
         "MongoDB", 
         "Firestore",
-        "DynamoDB"
+        "DynamoDB",
+        "S3"
     ],
 
     "Tools":[
         "GitHub",
         "Git",
+        "Node",
         "AWS",
-        "Firebase"
+        "Docker",
+        "Jenkins",
+        "Firebase",
+        "Lambda",
+        "Scrum"
     ]
     
 }
